@@ -1,0 +1,28 @@
+
+<!--<div id='wrapper' width="100%" style="-webkit-overflow-scrolling:touch; overflow:scroll;">-->
+
+    <img id="mapimg" style="width:4200px;height:1358px;" data-width="4200" data-height="1358" src='images/map.jpg'/>
+
+<!--</div>-->
+
+
+<!--<style>-->
+<!--#wrapper {position:relative;overflow:hidden;height:580px;}-->
+<!--</style>-->
+
+<div class="tmpl_wrapper">
+
+
+            $(document).ready(function() {
+            setTimeout('init()', 1000);
+            });
+            function init() {
+            $('#wrapper').append('<img id="location_img" src="images/car.png" style="position:absolute;top:{{=it.place_y}}px;left:{{=it.place_x}}px;" />');
+            $('#wrapper').scrollTo({top:'{{=it.place_y}}px', left:'{{=it.place_x}}px'}, {duration:1000});
+            }
+
+
+
+
+
+</div>

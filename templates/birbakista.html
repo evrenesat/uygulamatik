@@ -1,0 +1,66 @@
+	{% extends 'subpage_base.html' %}
+    {% load blk %}
+
+		{% block 'subpage_content' %}
+
+                    <div class="altSayfa_icerikBaslik birbakistaBaslikStyle">
+                        {% blk 'baslik bir bakista' %}
+                    </div>
+
+
+                <div class="icerikDivCvr">
+                    <div class="icerikDiv_Left">
+                        <div class="icerikBaslik">{% blk 'altbaslik bir bakista 1' %}</div>
+                        <div class="altSayfa_icerik">
+                            {% blk 'icerik bir bakista 1' %}
+                        </div>
+                    </div>
+                    <div class="resim_Right"><img src="{{ MEDIA_URL }}images/bb_geribildirim.jpg"/>
+
+                    </div>
+                </div>
+            <div class="icerikDivCvr">
+                <div class="icerikDiv_Left">
+                    <div class="icerikBaslik">{% blk 'altbaslik bir bakista 3' %}</div>
+                    <div class="altSayfa_icerik">
+                        {% blk 'icerik bir bakista 3' %}
+                    </div>
+                </div>
+                <div class="resim_Right">
+                    <img src="{{ MEDIA_URL }}slayt2/data1/images/neredeyim/5.jpg"/>
+                </div>
+            </div>
+            <div class="icerikDivCvr">
+                <div class="icerikDiv_Left">
+                    <div class="icerikBaslik">{% blk 'altbaslik bir bakista 5' %}</div>
+                    <div class="altSayfa_icerik">
+                        {% blk 'icerik bir bakista 5' %}
+                    </div>
+                </div>
+                <div class="resim_Right">
+                    <img src="{{ MEDIA_URL }}images/bb_mobilticaret.jpg"/>
+                </div>
+            </div>
+                <div class="icerikDivCvr">
+                    <div class="resim_Left">
+                        <img src="{{ MEDIA_URL }}images/bb_kampanyalar.jpg"/>
+                    </div>
+                    <div class="icerikDiv_Right">
+                        <div class="icerikBaslik">{% blk 'altbaslik bir bakista 2' %}</div>
+                        <div class="altSayfa_icerik">
+                            {% blk 'icerik bir bakista 2' %}
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+
+
+				<div style="clear:both;">&nbsp;</div>
+
+
+
+		{% endblock 'subpage_content' %}

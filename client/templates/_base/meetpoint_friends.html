@@ -1,0 +1,33 @@
+<title>Arkadaşlarım</title>
+
+<div class="pedli">
+
+
+    <div class="tmpl_wrapper">
+
+        <div id="allfriends">
+            <div id="info_div">
+                Lütfen konumunuzun güncel olarak bildirileceği arkadaşlarınızı seçin...
+            </div>
+            <div>{%include _meetpoint_friendlist%}</div>
+        </div>
+        <div id="meetfriendswrapper">
+            <div id="info_div">
+                Konum bilginizin paylaşılacağı arkadaşlarınız aşağıda listelenmiştir.
+                Bu listeyi onaylıyorsanız, sağ üst köşedeki "Kaydet" düğmesine basınız.
+            </div>
+            <div id="meetfriends"> </div>
+        </div>
+
+    </div>
+</div>
+
+<footer>
+    <div data-role="navbar">
+        <ul>
+            <li><a class="ui-btn-active" data-icon="check" id="show_allfriends">Tüm<br> Arkadaşlarım</a></li>
+            <li><a id='show_meetfriends' data-icon="forward">Buluşacaklarım<br>&nbsp;</a></li>
+
+        </ul>
+    </div>
+</footer>

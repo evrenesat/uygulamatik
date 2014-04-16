@@ -1,0 +1,14 @@
+<title>{{#t("Katılımcı Listem")}}</title>
+<ul data-role='listview' class="tmpl_wrapper">
+    {{~favorite_exhibitors :id}}
+        <li>
+            <a data-oid="{{=id}}" class="cB">
+                {{? tv.exhibitors[id].logo}}
+                <img src="{{#tv.static}}/exh_xs_{{=tv.exhibitors[id].logo}}" />
+                {{?}}
+                <h3>{{=tv.exhibitors[id].company}}</h3>
+            </a>
+        </li>
+
+    {{~}}
+</ul>

@@ -1,0 +1,60 @@
+<title>Etkinlik Detayları</title>
+<div data-role="fieldcontain" class="tmpl_wrapper pedli">
+    <div class="infoheader">
+        {{? it.image}}
+        <img onerror="downloadOnDemand(this)" src="{{#tv.static}}/evnt_l_{{=it.image}}"/>
+        {{?}}
+        <h3>{{=it.title }}</h3>
+
+        <p>{{=it.start}} - {{=it.end}} </p>
+    </div>
+    <div id="event_detail_pane">
+        <div id="event_description">
+
+            {{=it.location }}
+            {{=it.description }}
+        </div>
+
+        <div id="event_speakers" style="display:none">
+            <ul data-role='listview' class="tmpl_wrapper">
+                {{~it.speakers :sid}}
+                <li>
+                    <a data-oid="{{=sid}}" class="cB">
+                        {{? tv.speakers[sid]['photo']}}
+                        <img src="{{#tv.static}}/per_xs_{{=tv.speakers[sid].photo}}"/>
+                        {{?}}
+                        <h3>{{=tv.speakers[sid].firstname}} {{=tv.speakers[sid].lastname}}</h3>
+                    </a>
+                </li>
+
+                {{~}}
+            </ul>
+        </div>
+    </div>
+    <footer>
+        {{? it.speakers_enabled || it.favorites_enabled }}
+        <div data-role="navbar" data-position="fixed" data-tap-toggle="false">
+            <ul>
+                <li><a id="iB1" class="ui-btn-active"
+                       data-icon="forward">{{#t("Detaylar <br>&nbsp;")}}</a>
+                </li>
+                {{? it.speakers_enabled}}
+                <li><a id="iB2" data-icon="info">{{#t("Konuşmacılar <br>&nbsp;")}}</a></li>
+                {{?}}
+                {{? it.favorites_enabled }}
+                {{? it.infavorites }}
+                <li><a data-oid="{{=it.id}}" id="iB4"
+                       data-icon="star">{{#t("Favorilerden<br>Çıkar")}}</a></li>
+                {{??}}
+                <li><a data-oid="{{=it.id}}" id="iB5"
+                       data-icon="star">{{#t("Favorilerime<br>Ekle")}}</a></li>
+                {{?}}
+                {{?}}
+                {{? it.node }}<li>
+                <a id="iB0" data-oid="{{=it.node}}" data-icon="grid">{{#t("Haritada<br>Göster")}}</a></li>
+                {{?}}
+            </ul>
+        </div>
+        {{?}}
+    </footer>
+</div>

@@ -1,0 +1,30 @@
+<title>{{#t("Kişisel Bilgiler")}}</title>
+<div class="tmpl_wrapper">
+
+    <div id="info_div">
+
+        {{#t("Lütfen iletişim bilgilerinizi giriniz.")}}
+    </div>
+
+
+<div id="personal_settings_wrapper" class="active_settings_tab pedli">
+
+
+       <form action="#save_personal_settings" method="post" class="static_form">
+           <label for="name">{{#t("Ad Soyad")}}:</label>
+           <input type="text" name="name" id="name" value="{{=it.name}}"/>
+           <label for="tel">{{#t("Telefon")}}:</label>
+           <input type="number" name="tel" id="tel" value="{{=it.tel}}"/>
+           <label for="email">{{#t("E-posta")}}:</label>
+           <input type="email" name="email" id="email" value="{{=it.email}}"/>
+           <label for="address">{{#t("Adres")}}:</label>
+           <textarea name="address" id="address">{{=it.address}}</textarea>
+       </form>
+
+
+
+   </div>
+
+
+
+</div>

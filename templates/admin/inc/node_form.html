@@ -1,0 +1,45 @@
+{% load i18n %}
+
+<div id="form_background">
+
+    <div id="form_wrapper">
+
+        {% block node_fields %}
+            <input type="hidden" name="nodeX" value="" />
+            <input type="hidden" name="nodeY" value="" />
+        {% endblock %}
+
+        <h2>{% trans "Node" %}</h2>
+
+        {% block node %}
+            <p>
+                <span>{% trans "Tur" %}</span>
+                <select name="type">
+                    <option value="">....</option>
+                    {% for i in types %}
+                        <option value="{{ i.0 }}">{{ i.1 }}</option>
+                    {% endfor %}
+                </select>
+
+                <span>{% trans "Isim" %}</span>
+                <input type="text" name="name" />
+            </p>
+        {% endblock %}
+
+        <div class="additional_widget">{% block additional_widget %}{% endblock %}</div>
+
+        <div id="matrix_section">
+            <h2>{% trans "Matrix" %}</h2>
+
+        </div>
+
+        <p>
+            {% block confirm_button %}
+                <input type="submit" name="node_submit" value="{% trans 'Kaydet' %}" />
+            {% endblock %}
+            <input type="button" name="node_cancel" value="{% trans 'Iptal' %}" />
+        </p>
+
+    </div>
+
+</div>

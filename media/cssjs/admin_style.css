@@ -1,0 +1,402 @@
+
+/***********************************************************
+ --->  Admin Paneli ile ilgili csslerin başlangıcı
+ **********************************************************/
+
+.homebody {
+           font-family: "Lucida Grande","DejaVu Sans","Bitstream Vera Sans","Verdana","Arial","sans-serif";
+   		margin:0;
+   		background-image:url(/media/admin_images/bg.png);
+
+
+
+
+         }
+
+
+
+#content.home {
+    margin:0;
+}
+
+#cptable td,#cptable th{
+    padding-top:0;
+    padding-bottom:0;
+}
+
+
+.mainCvr{
+    min-height: 600px;
+    font-size:16px;
+    position: relative;
+}
+
+
+.iphoneCvr{
+    width: 323px;
+    height: 581px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+
+.iphone{
+    width: 112%;
+    height: 101%;
+    background: url("/media/admin_images/iphone.png") no-repeat;
+    float: left;
+    position: absolute;
+    left: 250px;
+    -moz-transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    background-size: 100% 100%;
+}
+
+.iphoneAcik, .iphone:hover{
+    left: 10px;
+    -moz-transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+
+iframe.iphone_iframe{
+    height: 78%;
+    width: 77%;
+    background: #000000;
+    left: 8%;
+    position: absolute;
+    top: 10%;
+    border-radius: 5px;
+    overflow:hidden;
+}
+
+
+div.iphone_acik_kilitli{
+    height: 40px;
+    width: 237px;
+    float: left;
+    position: absolute;
+    bottom: 24px;
+    left: 56px;
+    background-image:url("/media/admin_images/acik.png");
+    background-size:100% 100%;
+    cursor:pointer;
+}
+
+div.iphoneAcik div.iphone_acik_kilitli{
+    background-image:url("/media/admin_images/kapali.png");
+}
+
+
+
+.adminPanelCvr{
+   /* width: 700px;*/
+    background: none repeat scroll 0 0 #F1F1F1;
+    float: left;
+    /*position: absolute;*/
+    z-index: 10;
+    border: 1px solid #BABABA;
+    border-radius: 0px 0px 10px 10px;
+    border-top: 0;
+    width: 45%;
+    height: 590px;
+    /*left: 363px;*/
+}
+
+#takipPanelCvr{
+    width: 407px;
+    background: none repeat scroll 0 0 #DADADA;
+    float: left;
+    margin-top: 10px;
+    border: 1px solid #FFFFFF;
+    border-radius: 0 10px 10px 0;
+    border-left: none;
+}
+
+div#takipPanelCvr div.p1 td{
+    font-size: 15px;
+    border:none;
+}
+div#takipPanelCvr div.p1{
+    background: url("/media/admin_images/p1.png") no-repeat;
+    height: 65px;
+    padding-left: 27px;
+
+    background-position: -8px;
+}
+
+.p1  table {
+    width:100%;
+}
+div#takipPanelCvr .p1 table td{
+    /*width: 260px;*/
+    padding-top: 16px;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.4);
+    color: #888888;
+}
+
+
+
+div#takipPanelCvr .p2{
+    background: url("/media/admin_images/p2.png") repeat-y scroll -8px 0 transparent;
+    padding-left: 22px;
+    /*min-height: 473px;*/
+    display:table;
+}
+
+div#takipPanelCvr .p3{
+    background: url("/media/admin_images/p3.png") no-repeat scroll -8px 0 transparent;
+    min-height: 90px;
+    padding-left: 30px;
+}
+
+.forumgb{
+    background: none repeat scroll 0 0 #F1F1F1;
+    float: left;
+    border: solid 1px #ADADAD;
+    margin-top: -30px;
+    border-radius: 5px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 300px;
+}
+
+.magazaislem{
+    width: 181px;
+    background: none repeat scroll 0 0 #F1F1F1;
+    float: left;
+    border: solid 1px #ADADAD;
+    margin-top: -30px;
+    border-radius: 5px;
+    margin-left: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 300px;
+}
+.sagbaslik{
+    height:20px;
+    margin-top:5px;
+    width:300px;
+    float: left;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.4);
+    color: #888888;
+}
+.istatistik h6{
+    margin:20px 10px 25px 65px;
+    color: #8a8a8a;
+}
+.istatistik{
+    width: 344px;
+    background-color: #fff;
+    background-image:url(/media/admin_images/istatistik.png);
+    background-repeat: no-repeat;
+    /*background-size: 50% 50%;*/
+    float: left;
+    border: solid 1px #ADADAD;
+    color: #8a8a8a;
+    margin-top: 0px;
+    padding-left:30px;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 200px;
+    margin-bottom: 5px;
+}
+
+.forumgb ul, .magazaislem ul{
+    float: left;
+    text-align: left;
+    padding-left: 1px;
+}
+
+ .forumgb ul li a, .magazaislem ul li a{
+    text-decoration: none;
+    font-size: 11px;
+    color: #787878;
+     margin-left: 14px;
+     display: block;
+     padding-bottom: 2px;
+ }
+
+.forumgb ul li a:hover, .magazaislem ul li a:hover{
+    text-decoration: underline;
+    color: #595959;
+}
+
+.forumgb, .magazaislem{
+    width: 180px;
+}
+.forumgb ul li, .magazaislem ul li{
+    color: #DA7D21;
+    font-size: 11px;
+    list-style: none;
+    min-height: 30px;
+    background-color: #E8E8E8;
+    border-bottom: 1px solid #C2C2C2;
+    padding-top: 2px;
+    width: 180px;
+}
+
+
+.adminPanelCvr table{
+    margin: 20px 0;
+    text-align: left;
+    width: 100%;
+    height: 100%;
+}
+
+.adminPanelCvr table th{
+    padding: 0% 0;
+    padding-left: 4%;
+    /*width: 200px;*/
+}
+
+.adminPanelCvr table span.ikon{
+    display: block;
+    float: left;
+    width: 80px;
+}
+
+.adminPanelCvr table span.ikon_b{
+    display: block;
+    float: left;
+    width: 80px;
+    opacity: 1;
+    margin-left: -80px;
+    position: relative;
+    -moz-transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+
+
+}
+
+
+.adminPanelCvr table th:hover span.ikon_b{
+    opacity: 0;
+    -moz-transition: all 0.6s ease-in-out;
+    -webkit-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+
+}
+
+
+.adminPanelCvr table th a{
+    -moz-transition: color  1s;
+    -webkit-transition: color 1s;
+    -o-transition: color  1s;
+    -ms-transition: color 1s;
+    transition: color 1s;
+}
+.adminPanelCvr table th:hover a{
+    color: #DA7D21;
+}
+.adminPanelCvr table th:hover {
+    cursor:pointer;
+}
+.adminPanelCvr table th a{
+    color: #989898;
+    text-decoration: none;
+    font-size: 20px;
+    text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.82), 0 1px 0 rgba(255, 242, 242, 0.96);
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.adminPanelCvr table th a:hover{
+    color: #DA7D21;
+
+}
+
+.adminPanelCvr table td.index{
+    width: 20px;
+}
+
+.adminPanelCvr table td.ara_cita{
+    height: 25px;
+    background: url("/media/admin_images/ara_cita.png") no-repeat 0 center transparent;
+    width: 1005;
+    background-size: 100% 100%;
+}
+
+.adminPanelCvr table td.ara_cita_dikey{
+    background: url("/media/admin_images/ara_cita_dikey.png") no-repeat;
+    width: 20px;
+}
+
+div.yonetimPaneli{
+    height: 60px;
+    /*width: 700px;*/
+    background: none repeat scroll 0 0 #E3E3E3;
+    border-radius: 10px 10px 0 0;
+    border: 1px solid #B5B5B5;
+    margin-left: -1px;
+    margin-top: -1px;
+    display: none;
+}
+
+div.yonetimPaneli span{
+    height: 35px;
+    /*width: 650px;*/
+    display: block;
+    color: #959595;
+    font-size: 22px;
+    margin-left: 20px;
+    margin-top: 16px;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.01), 0 1px 0 rgba(255, 255, 255, 0.77);
+}
+
+
+
+div.tesekkur{
+    height: 28px;
+    width: 8px;
+    background: none repeat scroll 0 0 #39D937;
+    float: left;
+}
+
+div.oneri{
+    height: 28px;
+    width: 8px;
+    background: none repeat scroll 0 0 #71D7FF;
+    float: left;
+}
+
+.fbdate{
+    font-size:9px;
+
+}
+div.sikayet{
+    height: 28px;
+    width: 8px;
+    background: none repeat scroll 0 0 #FB3939;
+    float: left;
+}
+
+div.okundu{
+    opacity: 0.1;
+}
+
+div.bekleyen{
+    height: 28px;
+    width: 8px;
+    background: none repeat scroll 0 0 #1862FF;
+    float: left;
+}
+
+li.reddedilen{
+    text-decoration: line-through;
+}
+
+div.reddedilen{
+    height: 28px;
+    width: 8px;
+    background: none repeat scroll 0 0 #1862FF;
+    float: left;
+    opacity: 0.1;
+}
+

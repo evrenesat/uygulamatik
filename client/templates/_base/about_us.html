@@ -1,0 +1,15 @@
+
+<div class="tmpl_wrapper">
+
+        {%include place_info%}
+        <h3 class="center">{{=it.name}}</h3>
+        <p>{{=it.description}}</p>
+        <p><strong>Yetkili: </strong>{{=it.authorized_person}}</p>
+        <p><strong>Adres: </strong>{{=it.address}}</p>
+        <p><strong>Telefon: </strong>{{=it.phone}}</p>
+        {{? it.gsm}}
+            <p><strong>GSM: </strong>{{=it.gsm}}</p>
+        {{?}}
+        <p><strong>E-Posta: </strong><a href="mail:{{=it.email}}">{{=it.email}}</a></p>
+
+</div>

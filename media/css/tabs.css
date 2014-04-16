@@ -1,0 +1,25 @@
+.col2:first-of-type {
+    margin-left: 5px;
+}
+.col2 {
+    display: block;
+    width: 48%;
+    float: left;
+    height: 100%;
+    vertical-align: top;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding: 0;
+    margin: 5px;
+}
+
+.ui-tabs .ui-tabs-panel:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.ui-tabs .ui-tabs-panel .col1 .vXMLLargeTextField,
+.ui-tabs .ui-tabs-panel .col1 .vLargeTextField {
+    width: 100%;
+}

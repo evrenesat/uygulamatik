@@ -1,0 +1,11 @@
+<title>{{#t("Tables")}}</title>
+<ul data-role='listview' class="tmpl_wrapper">
+        {{~it :table}}
+        <li>
+            <a data-oid="{{=table.id}}" class="cB">
+                <h3>{{=table.name}}</h3>
+                <p>{{=table.explanation}}</p>
+            </a>
+        </li>
+    {{~}}
+</ul>

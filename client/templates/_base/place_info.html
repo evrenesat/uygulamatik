@@ -1,0 +1,27 @@
+{{? it.place}}
+    {{? it.place.logo}}
+        <a data-href="place_details?id={{=it.place.place_id}}" class="nav_button" id='place_info'
+           style="background-image:url({{#tv.static}}/{{=it.place.logo}})">
+        </a>
+    {{??}}
+        <a data-href="place_details?id={{=it.place.place_id}}" class="nav_button" id='place_info'>
+            <span> {{=it.place.name}} </span>
+        </a>
+    {{?}}
+
+{{??}}
+
+
+    {{? it.logo}}
+        <a data-href="place_details?id={{=it.place_id}}" class="nav_button" id='place_info'
+           style="background-image:url({{#tv.static}}/{{=it.logo}})">
+        </a>
+    {{??}}
+        <a data-href="place_details?id={{=it.place_id}}" class="nav_button" id='place_info'>
+            <span> {{=it.name}} </span>
+        </a>
+    {{?}}
+
+{{?}}
+
+

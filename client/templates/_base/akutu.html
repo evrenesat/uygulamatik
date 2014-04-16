@@ -1,0 +1,14 @@
+<div data-theme="{{=document.theme }}" class="searchPopup ui-corner-all ui-popup ui-body-{{=document.theme }}">
+
+				<div style="padding:10px 20px;">
+				  <h3>Lütfen arama kriterinizi giriniz</h3>
+		          <label for="keyword" class="ui-hidden-accessible">Anahtar kelime:</label>
+                    <input type="text" name="keyword" id="keyword" value="" placeholder="anahtar kelime" data-theme="{{=document.theme }}" />
+                    <input type="hidden" name="action" id="action" value="{{=it.search_action}}" />
+
+		    	  <button data-theme="b" data-icon="search" data-inline="true" id="dosearch">Ara</button>
+		    	  <button data-icon="delete" data-theme="b" data-inline="true" id="closesearch">Vazgeç</button>
+				</div>
+
+		</div>
+

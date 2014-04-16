@@ -1,0 +1,286 @@
+{% extends "admin/base_site.html" %}
+{% load i18n admin_static localeurl_tags %}
+
+{% block extrastyle %}
+    {{ block.super }}
+    <link rel="stylesheet" type="text/css" href="{% static "admin/css/dashboard.css" %}"/>
+    <link rel="stylesheet" type="text/css" href="/media/cssjs/admin.css"/>
+    <script type="text/javascript" src="/media/cssjs/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="/media/cssjs/jquery.iframe-auto-height.plugin.1.9.0.min.js"></script>
+    <script>
+        window.APPID = '{{ request.session.appid }}';
+        window.SUBD = '{{ request.session.subd }}';
+        $(document).ready(function () {
+
+            window.mainframe = $('iframe#mainframe');
+            window.mainmenu = $('#mainmenu');
+
+            function rewidth() {
+                if ($('#sim_wrapper').length) {
+                    mainframe.width($(window).innerWidth() - 590);
+                } else {
+                    mainframe.width($(window).innerWidth() - 220);
+                }
+            }
+
+            {#            $('#sfooter').css({top:$(window).innerHeight()+100});#}
+
+            function re_place_footer(o) {
+{#                if (!o)o = {'newFrameHeight': $(window).innerHeight()}#}
+                var sfooter = $('#sfooter');
+                sfooter.hide();
+                var frame_offset = o ? o.newFrameHeight + 150 : $(document).innerHeight();
+                var menu_offset = mainmenu.height() +150;
+                var the_offset = frame_offset > menu_offset ? frame_offset : menu_offset;
+{#                var win_height_offset = $(window).innerHeight();#}
+{#                ftop = frame_offset > win_height_offset ? frame_offset : win_height_offset - sfooter.height();#}
+                sfooter .css({'top': the_offset, 'display':'block'})
+
+                if(o)mainframe.height(o.newFrameHeight+50);
+            }
+
+            re_place_footer()
+
+            $(window).on('resize', function(){rewidth();re_place_footer();mainframe.load()}).trigger('resize');
+
+            mainframe.iframeAutoHeight({minHeight: $(window).innerHeight() - 350,
+                callback: re_place_footer
+
+            });
+
+            {#            $('#result_list a').each(function () {#}
+            {#                var a = $(this);#}
+            {#                console.log(a);#}
+            {#                a.attr(a.attr() + '?pop=1');#}
+            {#            });#}
+
+            if (mainmenu.length > 0) {
+
+                if ($("#Umatik").length > 0) {
+
+                    mainmenu.animate({
+                        scrollTop: $("#Umatik").offset().top - 50,
+                        height: $(window).innerHeight() - 120
+                    }, 1000);
+                }
+
+                $(window).scroll(function () {
+                    if ($(window).scrollTop() > 60) {
+                        mainmenu.addClass('menuStop');//anamenu ekranda kalıyor//
+                        $('#sim_wrapper').addClass('sim_wrapperStop');//simulator ekranda kalıyor//
+                    }
+                    else {
+                        mainmenu.removeClass('menuStop');
+                        $('#sim_wrapper').removeClass('sim_wrapperStop');
+                    }
+                });
+
+            }
+
+{#            $('div#mainmenu td').hover(show_submenus)#}
+
+        if(!$.cookie("simulator_state") || $.cookie("simulator_state")=='open')simulator.openSimulator()
+        });
+{#        function show_submenus(){#}
+{#            $(this).parents('table').find('a.subm').hide();#}
+{#            $(this).find('a.subm').show('slow');#}
+{#        }#}
+    </script>
+    <script src='/media/cssjs/arrowmark.js'></script>
+    <script src="/media/cssjs/uygulamatikLib.js"></script>
+    <script src="/media/cssjs/site-events.js"></script>
+{% endblock %}
+
+{% block coltype %}colMS{% endblock %}
+
+{% block bodyclass %}dashboard{% endblock %}
+
+{% block breadcrumbs %}{% endblock %}
+{% block content_title %}{% endblock %}
+{% block bodystart %}
+    <div id="header">
+        <div id="branding">
+            {#        {% block branding %}#}
+        <span>
+          <h1 id="site-name">
+              <a href="/{{ LANGUAGE_CODE }}/admin/"><img src="/media/admin_images/admin_logo.png" title="Uygulamatik" alt="Uygulamatik"></a>
+              {#              <span>Yönetim Bölümü</span>#}
+          </h1>
+          </span>
+            {#        {% endblock %}#}
+        </div>
+        {% if user.is_active and user.is_staff %}
+            <div id="user-tools">
+                <span id="wellcomeuser">
+                {% trans 'Welcome,' %}
+                <strong>{% filter force_escape %}{% firstof user.first_name user.username %}{% endfilter %}</strong>.
+                {% block userlinks %}
+                    </span>
+
+
+
+                    {% if available_languages %}
+                        <ul class="personal_menu langselect">
+                            <li>
+                                <a href="javascript:void(0);">
+                                    {% for i in available_languages %}
+                                        {% if i.0 == request.LANGUAGE_CODE %}
+                                            <img src="{{ MEDIA_URL }}images/{{ i.0 }}.png"/>
+                                            {{ i.1 }}
+                                        {% endif %}
+                                    {% endfor %}
+                                </a>
+
+                                <div class="submenu">
+                                    <ul>
+                                        {% for i in available_languages %}
+                                            {% if i.0 != request.LANGUAGE_CODE %}
+                                                <li>
+                                                    <a href="{% url 'localeurl_change_locale' %}?locale={{ i.0 }}">
+                                                        <img src="{{ MEDIA_URL }}images/{{ i.0 }}.png"/>
+                                                        {{ i.1 }}
+                                                    </a>
+                                                </li>
+                                            {% endif %}
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    {% endif %}
+
+                    {% if user.has_usable_password %}
+                        <ul class="personal_menu settingsmenu">
+                            <li>
+                                <a id="islemler_ikon"><img src="{{ MEDIA_URL }}images/islemler.png"/>{% trans 'Ayarlar' %}</a>
+                                <div class="submenu">
+                                    <ul>
+                                        <li>
+                                            <a data-href="/{{ LANGUAGE_CODE }}/admin/change_password" class="change_password">
+                                                <img src="{{ MEDIA_URL }}images/sifre_degistir.png"/>
+                                                {% trans 'Change password' %}
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a data-href="/{{ LANGUAGE_CODE }}/admin/change_info" class="change_info">
+                                                <img src="{{ MEDIA_URL }}images/bilgilerimi_degistir.png"/>
+                                                {% trans 'Bilgilerimi Degistir' %}
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    {% endif %}
+
+                    {% if request.session.appid %}
+                        <a href="javascript:void(0);" data-id="{{ request.session.appid }}" id="sim_link"
+                           title="{% trans 'Simulator' %}">
+                            <img src="{{ MEDIA_URL }}images/simulator.png" style="vertical-align:middle;"/>
+                            {% trans 'App Simulator' %}
+                        </a>
+                    {% endif %}
+
+                    <div id="cikis">
+                        <a id="logout" href="{% url 'admin:logout' %}?next=/admin">
+                            <img src="{{ MEDIA_URL }}images/cikis.png"/>{% trans 'Log out' %}
+                        </a>
+                    </div>
+
+                {% endblock %}
+            </div>
+        {% endif %}
+        {% block nav-global %}{% endblock %}
+    </div>{% endblock %}
+{% block content %}
+
+    <div id="mainmenu">
+
+        {% if user.is_superuser %}
+            {% if app_list %}
+                {% for app in app_list %}
+                    <div class="module" style="border:none;">
+                        <table style="width:100%;" id="{{ app.name }}">
+                            <caption> {% blocktrans with name=app.name %}{{ name }}{% endblocktrans %}</caption>
+                            {% for model in app.models %}
+                                <tr>
+                                    {% if model.admin_url %}
+                                        <th scope="row"><a href="/{{ LANGUAGE_CODE }}{{ model.admin_url }}"
+                                                           target="mf">{{ model.name }}</a></th>
+                                    {% endif %}
+                                </tr>
+                            {% endfor %}
+                        </table>
+                    </div>
+                {% endfor %}
+            {% else %}
+                <p>{% trans "You don't have permission to edit anything." %}</p>
+            {% endif %}
+        {% else %}
+            {% include "admin/home.html" %}
+        {% endif %}
+    </div>
+
+    {% if request.user.is_superuser %}
+        <iframe id="mainframe" name="mf" src="/{{ LANGUAGE_CODE }}/admin/home/" frameborder="0"></iframe>
+    {% else %}
+        <iframe id="mainframe" name="mf" src="/{{ LANGUAGE_CODE }}/admin/umatik/application/{{ request.session.appid }}/"
+                frameborder="0"></iframe>
+    {% endif %}
+
+    {#<script src="/media/cssjs/arrowmark.js"></script>#}
+
+{% endblock %}
+
+
+
+{% block superfooter %}
+    <div id="sfooter">
+        <div style="clear:both;">&nbsp;</div>
+        <div class="footerDiv">
+            <div class="footer_cozumlerimiz">
+                <div class="footer_baslik">
+                    {% trans 'Çözümlerimiz' %}
+                </div>
+                <ul class="footer">
+                    <li>
+                        <a href="http://uygulamatik.com/#expo">Konferans ve Etkinlikler</a>
+                        <a href="http://uygulamatik.com/#avm">Alışveriş Merkezleri</a>
+                        <a href="http://uygulamatik.com/#kafe">Restoran, Cafe & Bar</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_hakkimizda">
+                <div class="footer_baslik">
+                    {% trans 'Uygulamatik' %}
+                </div>
+                <ul class="footer">
+                    <li>
+                        <a href="http://uygulamatik.com/#hakkimizda">{% trans 'Hakkımızda' %}</a>
+                        <a href="http://uygulamatik.com/blog">{% trans 'Blog' %}</a>
+                        <a href="http://facebook.com/uygulamatik"><span class="flogo">f</span>acebook</a>
+                        <a href="http://twitter.com/uygulamatik"><span class="flogo">t</span>witter</a>
+                        {#                    <a href="http://elipsis.com.tr">Elipsis</a>#}
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_iletisim">
+                <div class="footer_baslik">
+                    {% trans 'İletişim' %}
+                </div>
+                <div class="iletisim_bilgileri">
+                    Elipsis Yazılım Ltd.
+                    <br>
+                    1715 sokak No:11 Daire:4
+                    <br>
+                    Donanmacı Mh. Karşıyaka / İZMİR
+                    <br>
+                    +90 232 3234430
+                    <br>
+                    info@elipsis.com.tr
+                </div>
+            </div>
+            {#        <div class="uygulamatikFooter_logo"></div>#}
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,11 @@
+{% load i18n %}
+
+<p>
+    <span>{% trans "Katilimci" %}</span>
+    <select name="exhibitor">
+        <option value="">...</option>
+        {% for exhibitor in exhibitors %}
+            <option value="{{ exhibitor.id }}">{{ exhibitor }}</option>
+        {% endfor %}
+    </select>
+</p>

@@ -1,0 +1,75 @@
+{% load blk %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8' />
+	<title>Forum'da Ne Var?</title>
+	<link href="{{ MEDIA_URL }}css/Site{{request.GET.stil}}.css" rel="stylesheet" type="text/css"/>
+	<link href="{{ MEDIA_URL }}css/atooltip.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="{{ MEDIA_URL }}js/jquery.js"> </script>
+    <link href='http://fonts.googleapis.com/css?family=Oxygen&subset=latin-ext' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="{{ MEDIA_URL }}js/jquery.atooltip.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $('#oss img').aToolTip();
+        });
+    </script>
+
+    {%block extrahead%}
+
+    {%endblock%}
+
+</head>
+
+<body>
+<div id="backgroundDiv">
+
+        <div id="headerDiv">
+
+            <div id="logoDiv"><a href="/index/"><img src="{{ MEDIA_URL }}images/logo.png" /></a>
+            </div>
+
+            <div id="headerContent_right">
+                <div id="tepemenu">
+                    <a id="tepe_anasayfa_link" class="style_high" href="/index/">Anasayfa</a>
+                    <a id="tepe_iletisim_link" class="style_high" href="/iletisim/">İletişim</a>
+                </div>
+
+                <!--<div id="ossbackgroundDiv">-->
+                    <!--oss-->
+                <!--</div>-->
+
+>               <div id="oss">
+                    <ul>
+                        <li><img src="../media/images/1.png" title="Android" /></li>
+                        <li><img src="../media/images/2.png" title="iPhone / iPad" /></li>
+                        <li><img src="../media/images/3.png" title="BlackBerry" /></li>
+                        <li><img src="../media/images/4.png" title="Windows Phone" /></li>
+                        <li><img src="../media/images/5.png" title="Symbian" /></li>
+                        <li><img src="../media/images/6.png" title="Web & Mobil Web" /></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        {% block 'content' %}
+
+
+        {% endblock 'content' %}
+
+        <div id="footer">
+            <div id="footerContent_left">
+            Elipsis
+            </div>
+
+            <div id="footerContent_right">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+bind = "localhost:7020"
+accesslog = "/home/evren/pys/logs/forum-acc.log"
+errorlog = "/home/evren/pys/logs/forum-err.log"
+pidfile = "/tmp/forum.pid"
+user = 'evren'
+group = 'users'
+workers = 1
+#loglevel = 'debug'
+debug = False

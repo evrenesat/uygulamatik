@@ -1,0 +1,39 @@
+{{~it.products :i:index}}
+
+
+<li id="lid{{=i.id}}" data-corners="false" data-shadow="false" data-iconshadow="true"
+    data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="{{=document.theme }}"
+    class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-li-has-thumb ui-btn-up-{{=document.theme }}">
+    <div class="ui-btn-inner ui-li">
+        <div class="ui-btn-text"><a data-href="#product_details?id={{=i.id}}"
+                                    class="nav_button ui-link-inherit">
+
+            <img src="{{? i.image}}{{#tv.static}}/pr_s_{{=i.image}}{{??}}images/no_image.jpg{{?}}" style="height:100%;" class="ui-li-thumb">
+
+
+            <h3 class="ui-li-heading">{{=i.name}}</h3>
+
+            <p class="ui-li-desc"><strong>{{=i.place.name}}</strong></p>
+
+            <p class="bold ui-li-desc">
+
+                {{? i.cut_price}}
+
+                    <span class='cut_price'>{{=i.cut_price}} TL</span>
+                    <span class='price'><strike>{{=i.price}} TL</strike></span>
+                    {{? i.discount_rate}}
+                    <span class='discount_rate'>%{{=i.discount_rate}} İndirim</span>
+                    {{?}}
+
+                {{??}}
+                {{=i.price}} TL
+                {{?}}
+
+            </p>
+
+        </a></div>
+        <span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div>
+</li>
+
+
+{{~}}

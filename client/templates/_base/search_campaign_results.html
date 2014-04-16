@@ -1,0 +1,24 @@
+<div data-role="fieldcontain">
+    <form method="get" action="#search_campaign_results">
+        <input type="search" name="keyword" id="search_campaign" />
+        <input type="submit" value="Ara" />
+    </form>
+</div>
+
+<h4>Arama Sonuçları</h4>
+<ul data-role='listview' class="tmpl_wrapper">
+
+        <li>
+            <a data-href="#campaign_details?id={{=it.id}}" class="nav_button">
+                {{? it.image}}
+                    <img src="{{#tv.static}}/{{=it.image}}" />
+                {{??}}
+                    <img src="images/no_image.jpg" />
+                {{?}}
+                <h3>{{=it.name}}</h3>
+                <p><strong>{{=it.place__name}}</strong></p>
+                <p>{{=it.description}}</p>
+            </a>
+        </li>
+
+</ul>

@@ -1,0 +1,57 @@
+{% extends 'subpage_base.html' %}
+{% load blk %}
+
+	{%block extrahead%}
+		{{block.super}}
+		<link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}slayt2/engine1/style.css" />
+<link href='http://fonts.googleapis.com/css?family=Kaushan+Script&subset=latin-ext' rel='stylesheet' type='text/css'>
+	{%endblock%}
+
+
+	{% block 'subpage_content' %}
+				<div class="altSayfa_icerikDivCvr">
+					<div id="karekodCvr" class="altSayfa_icerikDiv">
+						<div id="karekodBaslik" class="altSayfa_icerikBaslik">{% blk 'baslik kampanyalar' %}</div>
+						<div id="karekodicerik" class="altSayfa_icerik">
+                            {% blk 'icerik kampanyalar' %}
+						</div>
+					</div>
+                    <div id="tabletEkran">
+                        <div id="girisBaslik">
+                            Fırsatı Yakalayın
+                        </div>
+                        <div id="x">
+                            <img src="/media/images/x.png"/>
+
+                        </div>
+                        <div id="kareKod">
+                            <img src="/media/images/karekod.png"/>
+                        </div>
+                        <div id="firsatFiyat">
+                            <span id="a1">89
+                                <img src="/media/images/ytl.png"/>
+                            </span>değil
+                            <br><br>
+                            Bu güne özel ve sadece,
+                            <br><br>
+                            <span id="a2">39
+                                <img src="/media/images/ytl.png"/>
+                            </span>
+
+                        </div>
+                        <div id="notCvr">
+                            <div id="not">
+                                Son 47 ürün
+                                <br>KAÇIRMAYIN!
+                            </div>
+                        </div>
+
+                    </div>
+
+
+				</div>
+
+			{% endblock 'subpage_content' %}
+
+	</div>
+

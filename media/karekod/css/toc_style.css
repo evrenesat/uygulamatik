@@ -1,0 +1,188 @@
+body {
+        font-family: Helvetica, Arial;
+		margin:0;
+		background-image:url(../images/bg.png);
+        overflow-x: hidden;
+      }
+      #wrapper {
+        width: 100%;
+		float:left;
+      }
+
+	  #wrapper .listDiv .leftDiv h1, #wrapper .listDiv .rightDiv h1 {
+	  	margin-top:40px;
+		margin-bottom:50px;
+		color:#F93;
+          text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.4);
+      }
+
+#wrapper .listDiv .leftDiv h2, #wrapper .listDiv .rightDiv h2 {
+    color: #9F9F9F;
+    text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.3), 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+      .toc {
+        background: none repeat scroll 0 0 #DADADA;
+        width: 170px;
+        position: fixed;
+        border: 1px solid #FFF;
+        color: #333;
+		border-radius:0 10px 10px 0 ;
+        -webkit-box-shadow: 1px 1px 6px rgba(50, 50, 50, 0.5);
+        -moz-box-shadow:    1px 1px 6px rgba(50, 50, 50, 0.5);
+        box-shadow:         1px 1px 6px rgba(50, 50, 50, 0.5);
+          list-style: none;
+          bottom: 10px;
+          font-size: 12px;
+      }
+
+      .toc ul li.toc-h1 a{
+          color: #FF9115;
+          font-size: 18px;
+          text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.3), 0 1px 0 rgba(255, 255, 255, 0.4);
+      }
+
+.toc ul li.toc-h2 a{
+    color: #5B5B5B;
+    text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.3), 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+.toc ul{
+    margin-left: -30px;
+}
+
+.toc ul li{
+    list-style: none;
+}
+
+.toc ul li:hover{
+    text-decoration: underline;
+    color: #9F9F9F;
+}
+
+      .toc a {
+        color: #333;
+		text-decoration:none;
+		list-style:none;
+      }
+	  .toc li.toc-h1 {
+
+      }
+      .toc li.toc-h2 {
+        margin-left: 10px
+      }
+      .toc li.toc-h3 {
+        margin-left: 20px
+      }
+      .toc-active {
+        color: #000;
+        font-weight: bold;
+      }
+
+	  .listDiv{
+		  width: 80%;
+		  padding-top:10px;
+		  float:left;
+		  margin-bottom:200px;
+          background: url("../images/qr_okut.png") no-repeat center;
+          background-size: 28%;
+          margin-left: 200px;
+      }
+
+	  .leftDiv{
+          float:left;
+      }
+
+		 .rightDiv{
+             float:right;
+         }
+
+		 .kod_left{
+			 float:left;
+			 min-height:250px;
+			 min-width:250px;
+			 background-color:#FFF;
+			 margin-bottom:200px;
+			 -webkit-box-shadow: 1px 1px 6px rgba(50, 50, 50, 0.5);
+             -moz-box-shadow:    1px 1px 6px rgba(50, 50, 50, 0.5);
+             box-shadow:         1px 1px 6px rgba(50, 50, 50, 0.5);
+			 border-radius:10px;
+			 }
+
+			 .kod_left img{
+				border-radius:10px;
+			 }
+
+			 .kod_right{
+			 float:right;
+			 min-height:250px;
+			 min-width:250px;
+			 background-color:#FFF;
+			 margin-bottom:200px;
+			 margin-top: 180px;
+			 -webkit-box-shadow: 1px 1px 6px rgba(50, 50, 50, 0.5);
+             -moz-box-shadow:    1px 1px 6px rgba(50, 50, 50, 0.5);
+             box-shadow:         1px 1px 6px rgba(50, 50, 50, 0.5);
+			 border-radius:10px;
+			 }
+
+			 .kod_right img{
+				border-radius:10px;
+			 }
+
+			 .kod_right_2{
+			 margin-top:60px !important;
+			 }
+
+      .header{
+          height: 480px;
+          width: 1355px;
+          background:url("../images/vitrin.jpg") no-repeat right #FFFFFF;
+          -webkit-box-shadow: 1px 1px 6px rgba(50, 50, 50, 0.5);
+          -moz-box-shadow:    1px 1px 6px rgba(50, 50, 50, 0.5);
+          box-shadow:         1px 1px 6px rgba(50, 50, 50, 0.5);
+          border: 2px solid #FFCD9C;
+          border-radius: 0 0 10px 10px;
+          margin:0 auto;
+          margin: -2px auto;
+      }
+
+      .resim{
+          height: 460px;
+          width: 606px;
+          float: left;
+          margin: 10px -2px;
+          background: url("../images/kod_resim.jpg") no-repeat;
+
+      }
+
+.aciklama{
+    height: 420px;
+    width: 315px;
+    background: none repeat scroll 0 0 #FFF6E8;
+    float: left;
+    margin: 10px 5px;
+    border: 1px solid #FFD167;
+    border-radius: 10px;
+    padding: 20px;
+    color: #737373;
+
+}
+
+.kod{
+    height: 460px;
+    width: 335px;
+    float: left;
+    margin: 20px;
+
+}
+
+
+.baslik{
+    width: 100%;
+    color: #EA8E06;
+    font-size: 25px;
+    margin-top: 20px;
+    text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.3), 0 1px 0 rgba(255, 255, 255, 0.4);
+    margin: 20px 0;
+}

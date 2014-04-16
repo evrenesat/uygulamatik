@@ -1,0 +1,31 @@
+<div class="tmpl_wrapper">
+
+
+        {%include place_info%}
+
+        <ul data-role='listview'>
+
+            {{~it.products :it}}
+            <li>
+                <a data-href="#product_details?id={{=it.id}}" class="nav_button">
+                    {{? it.image}}
+                    <img src="{{#tv.static}}/pr_s_{{=it.image}}" />
+                    {{??}}
+                    <img src="images/no_image.jpg" />
+                    {{?}}
+                    <h3>{{=it.name}}</h3>
+                    <p>
+                        <span class="cut_price">{{=it.cut_price}} TL</span>
+                        <span class="price"><strike>{{=it.price}} TL</strike></span>
+                        {{? it.discount_rate}}
+                            <span class='discount_rate'>%{{=it.discount_rate}} İndirim</span>
+                        {{?}}
+                    </p>
+                    <br>
+                </a>
+            </li>
+            {{~}}
+
+        </ul>
+
+</div>

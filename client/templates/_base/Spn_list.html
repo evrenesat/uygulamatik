@@ -1,0 +1,17 @@
+<title>{{#t("Sponsorlar")}}</title>
+<ul data-role='listview' class="tmpl_wrapper">
+    {{~it :st }}
+    <li data-role="list-divider">{{=st.title}}</li>
+        {{~st.sponsors :id}}
+            {{sponsor = tv.sponsors[id]}}
+            <li>
+                <a data-oid="{{=id}}" class="cB">
+                    {{? sponsor.logo}}
+                    <img src="{{#tv.static}}/spn_xs_{{=sponsor.logo}}" />
+                    {{?}}
+                    <h3>{{=sponsor.company}}</h3>
+                </a>
+            </li>
+        {{~}}
+    {{~}}
+</ul>

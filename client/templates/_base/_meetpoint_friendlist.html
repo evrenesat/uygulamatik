@@ -1,0 +1,10 @@
+<div data-role="fieldcontain">
+    <fieldset data-role="controlgroup">
+        {{~it.friends :i:idx}}
+        <input data-id="{{=i.id}}" type="checkbox" name="{{=it.type}}checkbox-{{=i.id}}" value="{{=i.id}}" {{?i.selected||it.checkall}}checked=1{{?}} id="{{=it.type}}checkbox-{{=i.id}}"
+               class="friends"/>
+        <label for="{{=it.type}}checkbox-{{=i.id}}"><img width=40
+                                            src="images/avatars/{{=i.avatar}}"><span> {{=i.name}}</span></label>
+        {{~}}
+    </fieldset>
+</div>

@@ -1,0 +1,16 @@
+<head-right>
+    <a href="#" class="searchbutton"  data-icon="search" data-role="button">Ara</a>
+    <a href="#" id="listview_button" data-role="button">ABC</a>
+</head-right>
+<div class='tmpl_wrapper' id="sqcont">
+
+
+        {{~it.categories :i}}
+            <a data-href="#{{=it.page}}?cat={{=i.product_category_id}}"  style="background-image:url({{#tv.static}}/{{=i.image}}?x=1)" class="nav_button hoverbutton"><span class="thm-{{=document.theme }}">{{=i.name}}</span></a>
+        {{~}}
+
+        {%include akutu%}
+
+
+</div>
+

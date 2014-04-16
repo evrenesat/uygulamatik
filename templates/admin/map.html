@@ -1,0 +1,74 @@
+{% extends "admin/base.html" %}
+{% block extrahead %}
+
+    <script type="text/coffeescript">
+
+
+    </script>
+<style>
+
+    #mapimg{
+            background-image: url(/media/admin_images/map.jpg);
+            background-size: 100% 100%;
+            width: 4200px;
+            height: 1358px;
+            -webkit-transform: translate3d(0, 0, 0);
+            position:relative;
+            }
+    .nodes {
+      width: 5px;
+      height: 5px;
+      background-color:#000;
+        color:#fff;
+        text-shadow: #000 2px 2px 2px;
+        font-size:14px;
+        font-weight: bold;
+    border:2px solid red;
+      z-index: 20;
+      position: absolute;
+
+    }
+
+</style>
+
+
+    <script type="text/javascript" src="/media/cssjs/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="/media/admin_images/jquery-ui-1.9.1.custom/js/jquery-ui-1.9.1.custom.min.js"></script>
+
+
+{% endblock %}
+{#    <script src="/media/cssjs/coffee-script.js"></script>#}
+{% block breadcrumbs %}
+    <div class="breadcrumbs">
+        <a href="/admin/">Ev</a> › Harita Düzenleyici
+    </div>
+    <script>
+        $(document).ready(function () {
+            $('#mapcontainer').css({height:$(window).height() * 0.78})
+        });
+
+    </script>
+
+
+
+
+{% endblock %}
+{% block coltype %}map{% endblock %}
+{% block bodyclass %}mapbody{% endblock %}
+{% block content %}
+
+    <div id="mapcontainer" style="position:relative;width:100%;overflow:auto">
+    <div id="mapimg">
+
+
+        {% for n in nodes %}
+        <div class="nodes" id='nd{{n.id}}' style="left:{{n.x }}px;top:{{n.y }}px">{{ n.name }}</div>
+        {% endfor %}
+
+
+
+
+    </div>
+    </div>
+    <script>alert("Bu modül henüz geliştirme aşamasındadır.")</script>
+{% endblock %}

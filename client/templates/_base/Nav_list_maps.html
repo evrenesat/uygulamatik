@@ -1,0 +1,11 @@
+<title>{{#t("Yerleşim Planı")}}</title>
+<ul data-role='listview' class="tmpl_wrapper">
+    {{for(var id in maps){}}
+        <li>
+            <a data-oid="{{=id}}" class="cB">
+                <h3>{{=maps[id].name}}</h3>
+            </a>
+        </li>
+
+    {{}}}
+</ul>

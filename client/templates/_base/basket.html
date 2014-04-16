@@ -1,0 +1,35 @@
+<div class="tmpl_wrapper">
+    <div id="info_div">Sepetinizdeki ürünler aşağıda listelenmiştir. Alışverişinizi tamamlamak için sağ köşedeki
+        "Siparişi Tamamla" düğmesini kullanabilirsiniz.
+    </div>
+    <table class='standard_table generic_center'>
+        <tr>
+            <th>&nbsp;</th>
+            <th>Ürün</th>
+            <th>Adet</th>
+            <th>Fiyat</th>
+            <th>&nbsp;</th>
+        </tr>
+        <tbody>
+        {{~it.products :it}}
+        <tr id='tr_{{=it.id}}'>
+            <td><img width="50" src="{{#tv.static}}/pr_xs_{{=it.image}}"/></td>
+            <td>{{=it.name}}</td>
+            <td>{{=it.count}}</td>
+            <td>{{=it.price}} TL</td>
+            <td>
+                <a data-sid="{{=it.id}}" class="deletebutton" data-role="button" data-icon="delete" data-iconpos="notext" data-mini="true" data-inline="true" data-corners="true" data-shadow="true" data-iconshadow="true"/>
+            </td>
+        </tr>
+        {{~}}
+
+        </tbody>
+    </table>
+
+
+</div>
+
+
+
+
+

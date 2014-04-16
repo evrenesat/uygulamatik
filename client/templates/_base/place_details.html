@@ -1,0 +1,61 @@
+<title>-</title>
+
+
+
+<div class="tmpl_wrapper">
+
+        {%include place_info%}
+        {{? it.campaign }}
+
+        <a class='nav_button' data-href="#campaign_details?id={{=it.campaign.id}}" id='place_campaign_slider'>
+            {{? it.campaign.special_background}}
+            <style>a#place_campaign_slider{background-image:url({{#tv.static}}/{{=it.campaign.special_background}})}</style>
+            {{?}}
+            {{?  !it.campaign.no_text}}
+
+            <h1>{{=it.campaign.name}}</h1>
+            {{? it.campaign.product}}
+            <img src="{{#tv.static}}/{{=it.campaign.product.image}}" />
+            <h2>{{=it.campaign.product.name}}</h2>
+            <h3>{{? it.campaign.product.cut_price}}{{=it.campaign.product.cut_price}}<br>{{?}} {{=it.campaign.product.price}} TL</h3>
+            {{?}}
+            <h4>{{=it.campaign.s_date}} - {{=it.campaign.e_date}}</h4>
+            {{?}}
+
+        </a>
+        {{?}}
+
+        <div id="place_sub_categories" class="ustpedli">
+
+
+            <a data-href="#about_us?id={{=it.place_id}}" style="background-image:url(images/place/hakkimizda.png)"
+               class="nav_button hoverbutton column2"><span>Hakkımızda</span></a>
+            <a data-href="#feedback_survey?id={{=it.id}}&type=place" style="background-image:url(images/place/geribildirim.png)"
+               class="nav_button hoverbutton column2"><span>Bize Ulaşın</span></a>
+
+
+            <a data-href="#place_campaigns?id={{=it.place_id}}" style="background-image:url(images/place/kampanyalar.png)"
+               class="nav_button hoverbutton column3"><span>Kampanyalar</span></a>
+            <a data-href="#place_discounts?id={{=it.place_id}}" style="background-image:url(images/place/indirimler.png)"
+               class="nav_button hoverbutton column3"><span>İndirimler</span></a>
+            <a data-href="#place_products?id={{=it.place_id}}" style="background-image:url(images/place/tumurunler.png)"
+               class="nav_button hoverbutton column3"><span> Ürünler</span></a>
+
+        </div>
+
+
+
+
+
+</div>
+
+
+<footer>
+    <div data-role="navbar">
+    		<ul>
+    			<li><a class="nav_button" data-icon="info" data-href="#show_location?to={{=it.place_id}}&from={{=it.place_id}}">Haritada Göster</a></li>
+    			<li><a class="nav_button" data-icon="check" data-href="meethere?id={{=it.place_id }}">Burada Buluşalım</a></li>
+    			<li><a class="share_link" data-icon="star" data-subject="{{=it.name }}" data-message="{{=it.name }} adlı mağazayı öneriyorum!">Paylaş</a></li>
+    		</ul>
+    	</div>
+</footer>

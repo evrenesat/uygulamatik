@@ -1,0 +1,64 @@
+{% extends "admin/tabbed_change_form.html" %}
+{% load i18n admin_static localeurl_tags %}
+<script>
+{% block footerjs %}
+//hide "save and continue editin" and "save and add another" buttons
+$('[name="_addanother"]').remove();
+$('[name="_continue"]').remove();
+
+// allow only one language to be choosen as the main language
+var lang_main_cbs = $('div#applang_set-group td.field-main input');
+lang_main_cbs.change(function(){
+{#    console.log($(this));#}
+    if($(this).attr('checked')){
+
+        lang_main_cbs.each(function(){$(this).attr('checked',false)});
+        $(this).attr('checked', true);
+    }
+});
+    $('#topsave').click(function(){$('form').submit()})
+    function update_icon(src){
+        $('a#'+CURRENT_ICON_ID).find('img:first-of-type').attr('src',src);
+    }
+    window.CURRENT_ICON_ID = '';
+    $('td.field-icon').each(function(){
+        var tds = $(this)
+        tds.find('a').on('click', function(){CURRENT_ICON_ID = $(this).attr('id')}).prepend(tds.find('strong').text())
+        tds.find('input').css({'display':'none'})
+        tds.find('strong').html('')
+    })
+
+
+if($('li.info').length){
+    //li.info varsa, uygulama ayarlari kaydedilmis demektir, o halde simulatoru yenilesek iyi olur
+    parent.sim_frame.contentDocument.rld()
+{#    simulator.refreshSimulator()#}
+}
+
+parent.mainframe.load()
+
+
+
+
+
+{% endblock %}
+</script>
+
+
+{% block object-tools-items %}
+    <li><input type="submit" id="topsave" value="{% trans "Save" %} " name="_save" /></li>
+    <li><a href="/payment/main/" id="buildpublish">{% trans "Build & Publish" %}</a></li>
+
+{#    <li><a href="history/" class="historylink">{% trans "History" %}</a></li>#}
+{#    {% if has_absolute_url %}#}
+{#        <li><a href="../../../r/{{ content_type_id }}/{{ object_id }}/"#}
+{#               class="viewsitelink">{% trans "View on site" %}</a></li>{% endif %}#}
+
+
+{% endblock %}
+
+
+{% block extra_js %}
+<script src="/media/cssjs/appconfig.js"></script>
+
+{% endblock %}

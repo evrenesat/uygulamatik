@@ -1,0 +1,18 @@
+<title>{{#t("Sponsor Profili")}}</title>
+<div data-role="fieldcontain" class="tmpl_wrapper pedli">
+    <div class="infoheader">
+        {{? it.logo}}
+        <img src="{{#tv.static}}/spn_l_{{=it.logo}}" onerror="downloadOnDemand(this)" />
+        {{?}}
+        <h3>{{=it.company}}</h3>
+        {{? it.email }}<a href="mailto:{{=it.email}}">{{=it.email}}</a><br>{{?}}
+        {{=it.phone }}
+
+    </div>
+    <div id="sponsor_detail_pane">
+        <div id="sponsor_description">
+
+            {{=it.profile }}
+        </div>
+    </div>
+</div>

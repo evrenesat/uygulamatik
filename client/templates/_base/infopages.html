@@ -1,0 +1,16 @@
+<title>Etkinlikler</title>
+<ul data-role='listview' class="tmpl_wrapper">
+        {{~it.infos :it}}
+        <li>
+            <a data-href="#infopage_details?id={{=it.page_id}}" class="nav_button">
+                {{? it.image}}
+                <img src="{{#tv.static}}/pg_s_{{=it.image}}" />
+                {{??}}
+                <img src="images/no_image.jpg" />
+                {{?}}
+                <h3>{{=it.name}}</h3>
+                <p>{{=it.description}}</p>
+            </a>
+        </li>
+    {{~}}
+</ul>

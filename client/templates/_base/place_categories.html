@@ -1,0 +1,12 @@
+<title>Mağaza Kategorileri</title>
+<div class='tmpl_wrapper'>
+
+        {%include place_info%}
+            {{~it.categories :it}}
+            <a data-href="#places?cat={{=it.id}}" data-role="button" class="category" style="background-image:url({{#tv.static}}/{{=it.image}})">
+                {{=it.name}}
+            </a>
+            {{~}}
+
+
+</div>

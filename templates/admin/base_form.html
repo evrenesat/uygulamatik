@@ -1,0 +1,56 @@
+{% extends "admin/base_site.html" %}
+{% load i18n %}
+{% block extrastyle %}
+    {{ block.super }}
+    <link rel="stylesheet" type="text/css" href="/static/admin/css/forms.css"/>
+{% endblock %}
+{% block bodyclass %}change-form{% endblock %}
+{% block content %}
+
+
+            <div id="content-main">
+
+{#                <ul class="object-tools">#}
+{##}
+{#                    <li><a href="history/" class="historylink">Geçmiş</a></li>#}
+{##}
+{##}
+{#                </ul>#}
+
+    <div class="submit-row">&nbsp;</div>
+                <form enctype="multipart/form-data" action="" method="post" id="exhibitorfiles_form">
+                    <div>{% csrf_token %}</div>
+                    <div>
+
+
+
+
+                        <fieldset class="module aligned ">
+
+
+{% block fieldset %}
+{% endblock %}
+
+
+
+
+                        </fieldset>
+
+
+                        <div class="submit-row">
+                            <input type="submit" value="{% block save_label %}{% trans "Save" %}{% endblock %}" class="default" name="_save"/>
+                        </div>
+
+{##}
+{#                        <script type="text/javascript">#}
+{#                            (function ($) {#}
+{#                                var field;#}
+{##}
+{##}
+{#                            })(django.jQuery);#}
+{#                        </script>#}
+
+
+                    </div>
+                </form>
+{% endblock %}

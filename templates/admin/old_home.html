@@ -1,0 +1,264 @@
+{% extends "admin/base.html" %}
+{% block extrahead %}
+    <link href="/media/cssjs/admin_style.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="/media/cssjs/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="/media/cssjs/jquery.iframe-auto-height.plugin.1.9.0.min.js"></script>
+{% endblock %}
+{% block breadcrumbs %}
+    <div class="breadcrumbs">
+        <a href="/admin/">Ev</a> › Site Yönetimi
+    </div>
+    <script>
+        $(document).ready(function () {
+            $(".iphone").click(function () {
+                if(otohide){
+                    otohide = 0;
+                    return
+                }
+                $(".iphone").toggleClass("iphoneAcik");
+            });
+            var otohide = 1;
+            setTimeout(function(){if(otohide){$(".iphone").toggleClass("iphoneAcik");otohide=0}},5000)
+            $('#cptable th').click(function(){
+                document.location = "/admin/" + $(this).data('href');
+
+            })
+        });
+    </script>
+
+
+
+
+{% endblock %}
+{% block coltype %}home{% endblock %}
+{% block bodyclass %}homebody{% endblock %}
+{% block content %}
+
+    <div class="mainCvr">
+    <div class="iphoneCvr">
+        <div class="iphone iphoneAcik">
+            <iframe class="iphone_iframe" name="iframe" src="/media/simulator_intro.html" frameborder="0"></iframe>
+            <div class="iphone_acik_kilitli" title="Sabitlemek için düğmeye basın"></div>
+        </div>
+    </div>
+    <div class="adminPanelCvr">
+        <div class="yonetimPaneli">
+            <span>Kontrol Paneli</span>
+        </div>
+        <table id="cptable">
+            <tr>
+                <th data-href="store/customer">
+                              <span class="ikon">
+                                  <img src="/media/admin_images/musteriler.png"/>
+                              </span>
+                              <span class="ikon_b">
+                                  <img src="/media/admin_images/musteriler_b.png"/>
+                              </span>
+                    <a href="#">Müşteriler</a>
+                </th>
+                <td class="ara_cita_dikey"></td>
+                <th data-href="store/{% if store %}store{% else %}base{% endif %}order">
+                                          <span class="ikon">
+                                              <img src="/media/admin_images/siparisler.png"/>
+                                          </span>
+                                          <span class="ikon_b">
+                                              <img src="/media/admin_images/siparisler_b.png"/>
+                                          </span>
+                                <a href="#">Siparişler</a></th>
+            </tr>
+            <tr>
+                <td class="ara_cita" colspan="5"></td>
+            </tr>
+            {% if not store %}
+            <tr>
+
+                <th data-href="store/store/?type__in=1,20">
+                              <span class="ikon">
+                                  <img src="/media/admin_images/magazalar.png"/>
+                              </span>
+                              <span class="ikon_b">
+                                  <img src="/media/admin_images/magazalar_b.png"/>
+                              </span>
+                    <a href="#">Mağazalar</a>
+                </th>
+                <td class="ara_cita_dikey"></td>
+                <th data-href="store/productcategory">
+                              <span class="ikon">
+                                  <img src="/media/admin_images/ana_kategoriler.png"/>
+                              </span>
+                              <span class="ikon_b">
+                                  <img src="/media/admin_images/ana_kategoriler_b.png"/>
+                              </span>
+                    <a href="#">Ana Kategoriler</a>
+                </th>
+            </tr>
+
+            <tr>
+                <td class="ara_cita" colspan="5"></td>
+            </tr>
+            {% endif %}
+            <tr>
+                <th data-href="store/campaign">
+                              <span class="ikon">
+                                  <img src="/media/admin_images/kampanyalar.png"/>
+                              </span>
+                              <span class="ikon_b">
+                                  <img src="/media/admin_images/kampanyalar_b.png"/>
+                              </span>
+                    <a href="#">Kampanyalar</a></th>
+                <td class="ara_cita_dikey"></td>
+                <th data-href="store/storeproductcategory">
+                              <span class="ikon">
+                                  <img src="/media/admin_images/urun_kategorileri.png"/>
+                              </span>
+                              <span class="ikon_b">
+                                  <img src="/media/admin_images/urun_kategorileri_b.png"/>
+                              </span>
+                    <a href="#">Ürün Kategorileri</a>
+                </th>
+            </tr>
+            <tr>
+                <td class="ara_cita" colspan="5"></td>
+            </tr>
+            <tr>
+                <th data-href="store/product">
+                              <span class="ikon">
+                                  <img src="/media/admin_images/urunler.png"/>
+                              </span>
+                              <span class="ikon_b">
+                                  <img src="/media/admin_images/urunler_b.png"/>
+                              </span>
+                    <a href="#">Ürünler</a></th>
+                <td class="ara_cita_dikey"></td>
+
+
+                <th data-href="store/feedback">
+                                <span class="ikon">
+                                    <img src="/media/admin_images/geribildirimler.png"/>
+                                </span>
+                                <span class="ikon_b">
+                                    <img src="/media/admin_images/geribildirimler_b.png"/>
+                                </span>
+                      <a href="#">Geri Bildirimler</a></th>
+
+
+            </tr>
+            {% if not store %}
+            <tr>
+                <td class="ara_cita" colspan="5"></td>
+            </tr>
+
+            <tr>
+
+
+                <th data-href="store/activity">
+                                              <span class="ikon">
+                                                  <img src="/media/admin_images/etkinlikler.png"/>
+                                              </span>
+                                               <span class="ikon_b">
+                                                  <img src="/media/admin_images/etkinlikler_b.png"/>
+                                              </span>
+                                    <a href="#">Etkinlikler</a>
+                                </th>
+
+
+
+                <td class="ara_cita_dikey"></td>
+                <th data-href="store/page">
+                              <span class="ikon">
+                                  <img src="/media/admin_images/bilgi_merkezi.png"/>
+                              </span>
+                              <span class="ikon_b">
+                                  <img src="/media/admin_images/bilgi_merkezi_b.png"/>
+                              </span>
+                    <a href="#">Bilgi Merkezi</a>
+                </th>
+            </tr>
+            <tr>
+                <td class="ara_cita" colspan="5"></td>
+            </tr>
+
+            <tr>
+                <th data-href="auth">
+                              <span class="ikon">
+                                  <img src="/media/admin_images/park_yerleri.png"/>
+                              </span>
+                              <span class="ikon_b">
+                                  <img src="/media/admin_images/park_yerleri_b.png"/>
+                              </span>
+                    <a href="#">Kullanıcılar</a></th>
+                <td class="ara_cita_dikey"></td>
+                <th data-href="harita">
+                              <span class="ikon">
+                                  <img src="/media/admin_images/poi.png"/>
+                              </span>
+                              <span class="ikon_b">
+                                  <img src="/media/admin_images/poi_b.png"/>
+                              </span>
+                    <a href="#">Harita Ögeleri</a>
+                </th>
+            </tr>
+                <tr>
+                    <td colspan="5" style="height:20px;"></td>
+                </tr>
+        {% endif %}
+        </table>
+    </div>
+    <div id="takipPanelCvr">
+        <div class="p1">
+            <table>
+                <tr>
+                    <td>Geribildirimler</td>
+                    <td>{% if store %}Siparişler{% else %}Son İşlemler{% endif %}</td>
+                </tr>
+            </table>
+        </div>
+        <div class="p2">
+            <div class="forumgb">
+                <ul>
+                    {% for fb in feedbacks %}
+                    <li>
+                        <div class="{{ fb.typecss }}{% if fb.archived %}okundu{% endif %}"></div>
+                        <a href="/admin/store/feedback/{{ fb.id }}"><span class="fbdate">{{ fb.date }}</span><br>{{ fb.customer.name }}</a>
+                    </li>
+                    {% endfor %}
+
+                </ul>
+            </div>
+            <div class="magazaislem">
+                <ul>
+                    {% if store %}
+                        {% for o in orders %}
+                            <li>
+                                <div class="bekleyen {%if o.status != 10 %}okundu{% endif %}"></div>
+                                <a href="/admin/store/storeorder/{{ o.id }}">{{ o.customer.name }} | {{ o.total_price }} TL . </a>
+                            </li>
+                        {% endfor %}
+                    {% else %}
+                {% for log in logs %}
+                    <li {%if log.is_deletion %}class='reddedilen'{% endif %}>
+                        <div class="{%if log.is_addition %}bekleyen{% endif %}{%if log.is_deletion %}reddedilen{% endif %}"></div>
+                        <a href="{{ log.get_admin_url }}">{{ log.user }}, {{ log.content_type }} işlemi yaptı. </a>
+                    </li>
+                {% endfor %}
+                {% endif %}
+                </ul>
+            </div>
+            <div class="sagbaslik">Uygulama  İstatistikeri</div>
+            <div class="istatistik">
+                <ul>
+                    <h6>Hazırlanmakta olan raporlama sistemiyle uygulamadan elde edilen aşağıdaki gibi veriler özet ve ayrıntılı raporlar halinde izlenebilecektir.</h6>
+                    <li>Zamana bağlı yeni kullanıcı sayısı</li>
+                    <li>Zamana bağlı  etkin kullanıcı sayısı</li>
+                    <li>En popüler mağaza, kampanya ve ürünler.</li>
+                    <li>En çok geribildirim yapılan mağazalar</li>
+                    <li>En çok okunan karekodlar</li>
+                </ul>
+                </div>
+
+        </div>
+    </div>
+    </div>
+    </div>
+
+{% endblock %}

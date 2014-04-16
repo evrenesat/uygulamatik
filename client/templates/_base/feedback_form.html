@@ -1,0 +1,14 @@
+    <div id="info_div">
+        {{=t("Sayın <strong>%s</strong> <br><em>%s</em> hakkındaki görüşlerinizi aşağıdaki formu doldurarak iletebilirsiniz.", user_name, feedback.target.name)}}
+
+</div><div>
+
+
+        <div data-role="fieldcontain">
+            <form data-ajax="false"  method="get" action="#feedback_form">
+                <textarea name="message" id="feedback_send_message"></textarea>
+            </form>
+        </div>
+
+    </div>
+

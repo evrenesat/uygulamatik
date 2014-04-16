@@ -1,0 +1,7 @@
+*.log
+*.db
+*.pyc
+*.py
+*~
+.idea
+

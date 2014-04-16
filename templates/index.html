@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+{% load blk %}
+{%block extrahead%}
+{{block.super}}
+<link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}engine1/style.css" />
+
+        <style>#tepe_anasayfa_link {color: #603D1B;}</style>
+{%endblock%}
+{% block 'content' %}
+	<div id="mainDivCvr">
+
+		<div id="mainDiv_Tp">
+			<div id="wowslider-container1">
+				<div class="ws_images">
+					<ul>
+						<li><a href="/kampanyalar/"><img src="{{ MEDIA_URL }}data1/images/B1.jpg" id="wows1_0"/></a></li>
+						<li><a href="/karekod/"><img src="{{ MEDIA_URL }}data1/images/B2.jpg" id="wows1_1"/></a></li>
+						<li><a href="/geribildirim/"><img src="{{ MEDIA_URL }}data1/images/B3.jpg" id="wows1_2"/></a></li>
+						<li><a href="/paylasim/"><img src="{{ MEDIA_URL }}data1/images/B4.jpg" id="wows1_3"/></a></li>
+						<li><img src="{{ MEDIA_URL }}data1/images/B5.jpg" id="wows1_4"/></li>
+                        <li><img src="{{ MEDIA_URL }}data1/images/B6.jpg" id="wows1_5"/></li>
+					</ul>
+				</div>
+				<div class="ws_bullets">
+					<div>
+						<a href="#"><img src="{{ MEDIA_URL }}data1/tooltips/b1.jpg" />1</a>
+						<a href="#"><img src="{{ MEDIA_URL }}data1/tooltips/b2.jpg" />2</a>
+						<a href="#"><img src="{{ MEDIA_URL }}data1/tooltips/b3.jpg" />3</a>
+						<a href="#"><img src="{{ MEDIA_URL }}data1/tooltips/b4.jpg" />4</a>
+						<a href="#"><img src="{{ MEDIA_URL }}data1/tooltips/b5.jpg" />5</a>
+                        <a href="#"><img src="{{ MEDIA_URL }}data1/tooltips/b6.jpg" />6</a>
+					</div>
+				</div>
+
+				<script type="text/javascript" src="{{ MEDIA_URL }}engine1/wowslider.js"></script>
+				<script type="text/javascript" src="{{ MEDIA_URL }}engine1/script.js"></script>
+			</div>
+		</div>
+	</div>
+
+{#	<!--<div id="bottomDiv">-->#}
+{##}
+{#        <!--<div id="leftDivCvr">-->#}
+{#            <!--<div id="leftDiv">-->#}
+{#                <!--<div class="rectangle">-->#}
+{#                    <!--<a href="/birbakista/">{% blk 'index sol kutu baslik' %}</a>-->#}
+{#                <!--</div>-->#}
+{#                <!--<div class="triangle-l"></div>-->#}
+{#                <!--<div class="triangle-r"></div>-->#}
+{#                <!--<div id="leftDivContent">-->#}
+{#                    <!--<a href="/birbakista/">{% blk 'index sol kutu icerik' %}</a>-->#}
+{#                <!--</div>-->#}
+{#            <!--</div>-->#}
+{#        <!--</div>-->#}
+{##}
+{#        <!--<div id="rightDivCvr">-->#}
+{#            <!--<div id="rightDiv">-->#}
+{#                <!--<div class="rectangle">-->#}
+{#                    <!--<a href="/birbakista/">{% blk 'index sag kutu baslik' %}</a>-->#}
+{#                <!--</div>-->#}
+{#                <!--<div class="triangle-l"></div>-->#}
+{#                <!--<div class="triangle-r"></div>-->#}
+{#                <!--<div id="rightDivContent">-->#}
+{#                    <!--<a href="/birbakista/">{% blk 'index sag kutu icerik' %}</a>-->#}
+{#                <!--</div>-->#}
+{#            <!--</div>-->#}
+{#        <!--</div>-->#}
+{##}
+{#	<!--</div>-->#}
+{% endblock 'content' %}
+

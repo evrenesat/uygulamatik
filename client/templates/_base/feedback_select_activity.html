@@ -1,0 +1,20 @@
+<title>Mağazalar</title>
+<div class="tmpl_wrapper">
+    <ul data-role="listview">
+        {{~it.items :it}}
+        <li>
+            <a data-href="#feedback_survey?id={{=it.id}}&type=activity" class="nav_button">
+                {{? it.image}}
+                <img src="{{#tv.static}}/ac_s_{{=it.image}}"/>
+                {{??}}
+                <img src="images/no_image.jpg"/>
+                {{?}}
+                <h3>{{=it.name}}</h3>
+
+                <p>{{=it.description}}</p>
+            </a>
+        </li>
+
+        {{~}}
+    </ul>
+</div>

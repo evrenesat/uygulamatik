@@ -1,0 +1,26 @@
+<div class="tmpl_wrapper">
+
+
+        {%include place_info%}
+
+        <ul data-role='listview'>
+
+            {{~it.campaigns :it}}
+                <li>
+                    <a data-href="#campaign_details?id={{=it.id}}" class="nav_button">
+                        {{? it.image}}
+                            <img src="{{#tv.static}}/cm_s_{{=it.image}}" />
+                        {{??}}
+                            <img src="images/no_image.jpg" />
+                        {{?}}
+                        <h3>{{=it.name}}</h3>
+                        <p>{{=it.description}}</p>
+                    </a>
+                    {{? it.momentary_campaign=='1'}}<img src="images/star_green.png" class="mom_campaign_sign" />{{?}}
+                </li>
+            {{~}}
+
+        </ul>
+
+
+</div>

@@ -1,0 +1,40 @@
+<div data-role="fieldcontain" class="tmpl_wrapper">
+
+        {%include place_info%}
+        {{? it.image}}
+            <img src="{{#tv.static}}/cm_lrg_{{=it.image}}"  onerror="downloadOnDemand(this)" class="full_width" />
+        {{??}}
+        <a id='place_campaign_slider' {{? it.special_background }}style="background-image:url({{#tv.static}}/{{=it.special_background}})"{{?}}>
+        {{?  !it.no_text}}
+
+            <h1>{{=it.name}}</h1>
+            {{? it.product}}
+
+            <img src="{{#tv.static}}/{{=it.product.image}}" />
+            <h2>{{=it.product.name}}</h2>
+            <h3>{{? it.product.cut_price}}{{=it.product.cut_price}}<br>{{?}} {{=it.product.price}} TL</h3>
+
+            {{?}}
+            <h4>{{=it.s_date}} - {{=it.e_date}}</h4>
+        {{?}}
+        </a>
+        {{?}}
+    {{? it.product}}
+      <a data-href="product_details?id={{=it.product.id}}" class="nav_button" data-icon="product" data-role="button">Ürünü İncele</a>
+          {{?}}
+        <p class="center"><strong>{{=it.name}}</strong></p>
+        <p class="justify">{{=it.description}}</p>
+        <p>
+            Bu kampanya <strong>{{=it.s_date}}</strong> - <strong>{{=it.e_date}}</strong> tarihleri arasında
+            {{? it.product__name}}<strong>{{=it.product__name}}</strong> adlı üründe{{?}}
+            {{? it.stock}}<strong>{{=it.stock}}</strong> adet stok için{{?}}
+            geçerlidir.
+        </p>
+        {{? it.momentary_campaign=='1'}}<img src="images/star_green.png" class="mom_campaign_sign" />{{?}}
+
+        <div class="center_element">
+            <a data-href="javascript:void(0);" class='share_link'><span>Paylaş</span> <img src="images/share.png" class="share" /></a>
+        </div>
+
+
+</div>

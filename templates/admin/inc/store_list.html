@@ -1,0 +1,11 @@
+{% load i18n %}
+
+<p>
+    <span>{% trans "Magaza" %}</span>
+    <select name="store">
+        <option value="">...</option>
+        {% for store in stores %}
+            <option value="{{ store.id }}">{{ store.name }}</option>
+        {% endfor %}
+    </select>
+</p>

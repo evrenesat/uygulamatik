@@ -1,0 +1,25 @@
+<div data-role='page' id="[[page_id]]"  [[page-extras]] class="thm-{{=document.theme }}">
+<div data-role='header' data-backbtn="false" id='header' data-tap-toggle="false" data-position="fixed">
+    [[head-left]]
+    <h1>[[title]]</h1>
+
+    <div data-role="controlgroup" data-type="horizontal" id="rightkontrol" class="ui-btn-right">
+        [[head-right]]
+    </div>
+
+    <!--div data-role="controlgroup" data-type="horizontal" id="leftkontrol" class="ui-btn-left"-->
+        <a data-role="button" rel="external" class="geriDugmesi" data-icon="back">{{#t("Back")}}</a>
+        <!--a data-role="button" data-iconpos="notext" id="gohome" data-icon="home">&nbsp;</a-->
+    <!--/div-->
+    [[head-extras]]
+</div>
+<div class='container'>
+    [[page_container]]
+
+</div>
+
+<div data-role="footer" data-position="fixed" data-tap-toggle="false">
+    [[footer]]
+</div>
+
+</div>

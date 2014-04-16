@@ -1,0 +1,47 @@
+<div class="tmpl_wrapper">
+    <div id='product_detail'>
+        <h3>{{=name}}</h3>
+        <div id="primgdiv">
+            {{? image}}
+            <img  src="{{#tv.static}}/mi_lrg_{{=image}}" onerror="downloadOnDemand(this)"/>
+            {{?}}
+        </div>
+
+
+        <div>
+            <div id='product_price'>
+                {{? cut_price}}
+                <span>{{=cut_price}}</span>
+                <span class="cutprice">{{=price}}</span>
+                {{??}}
+                <span>{{=price}}</span>
+                {{?}}
+            </div>
+            <a data-href="javascript:void(0);" class='share_link' data-subject="{{=name }}" data-message="Bu ürünü öneriyorum: {{=name }} "><img src="images/product/paylasButon.png"/></a>
+        </div>
+        <div class='clear'></div>
+        <p id='product_description'>{{=description}}</p>
+    </div>
+
+
+
+        <form data-ajax="false" action='#add_to_chart' method='get' class='static_form' id="add_to_chart_form">
+                        <div id="product_chart_wrapper" class="thm-c">
+                            <a class="hoverbutton" id='urun_sayi_azalt'></a>
+                            <a class="hoverbutton" id='urun_sayi_artir'></a>
+
+
+                            <div>
+                                <p id='urun_adet'>
+
+                                    <input type="text" name="count" value="1" maxlength="2" readonly="true"/>
+                                    Adet
+                                </p>
+                                <input type="hidden" id="oid" value="{{=id}}"/>
+                            </div>
+                            <button data-role="none" id="add_to_chart" type="button" />
+                        </div>
+        </form>
+
+
+</div>

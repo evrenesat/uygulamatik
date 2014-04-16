@@ -1,0 +1,18 @@
+<title>{{#t("Bilgi Merkezi")}}</title>
+<ul data-role='listview' class="tmpl_wrapper">
+        {{for(id in pages){}}
+        {{(n = tv.pages[id])}}
+        <li>
+            <a data-oid="{{=n.id}}" class="cB">
+                {{? n.image}}
+                <img src="{{#tv.static}}/pg_xs_{{=n.image}}" />
+                {{??}}
+                <img src="images/no_image.jpg" />
+                {{?}}
+                <h3>{{=n.title}}</h3>
+                <p>{{=fdate(n.timestamp)}}</p>
+                <p>{{=n.summary}}</p>
+            </a>
+        </li>
+    {{}}}
+</ul>

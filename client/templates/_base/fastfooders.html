@@ -1,0 +1,24 @@
+<title>Yiyecek & İçecek</title>
+
+<div  class="tmpl_wrapper" id="fastfoods">
+
+        {%include ara%}
+
+
+        {{~it.foodplaces :i}}
+        <div class="fast_title">
+            <span>{{=i.name}}</span>
+        </div>
+        <div id="fid{{=i.place_id}}" class="fast_placebox dev_fast_placebox">
+            <div id='ff_product_{{=i.place_id}}' class="fast_product_container">
+
+            </div>
+        </div>
+        {{~}}
+
+
+
+
+    <div id="fopup"></div>
+</div>
+

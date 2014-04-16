@@ -1,0 +1,35 @@
+<title>{{=map.name}}</title>
+
+<style>
+    #mapimg.zoom {
+      background-image: url({{#tv.static}}/{{=map.image}});
+    }
+
+    #mapimg {
+      background-image: url({{#tv.static}}/s_{{=map.image }});
+      background-size: 100% 100%;
+      width: {{=map.width}}px;
+      height: {{=map.height}}px;
+      -webkit-transform: translate3d(0, 0, 0);
+    }
+</style>
+<div id='wrapper' class="pedsiz">
+
+<div id="mapimg">
+
+
+    {{~nodes :n}}
+    <div class="nodes" id='nd{{=n.id}}' style="left:{{=n.left }}px;top:{{=n.top }}px"></div>
+    {{~}}
+
+
+
+
+</div>
+
+    <!--div id="mapzoom">
+        <div id="art">+</div>
+        <div id="eks">-</div>
+
+    </div-->
+</div>

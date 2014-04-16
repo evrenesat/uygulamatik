@@ -1,0 +1,89 @@
+{% load admin_static %}<!DOCTYPE html>
+<html lang="{{ LANGUAGE_CODE|default:"en-us" }}" {% if LANGUAGE_BIDI %}dir="rtl"{% endif %}>
+<head>
+    {% if user.is_authenticated %}<script type="text/javascript" src="/admin/jsi18n/"></script>{% endif %}
+    <script type="text/javascript" src="/media/cssjs/jquery-1.8.3.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/media/cssjs/admin_t.css"/>
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" type="text/css"
+          href="{% block stylesheet %}{% static "admin/css/base.css" %}{% endblock %}"/>
+    {% block extrastyle %}{% endblock %}
+    <!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="{% block stylesheet_ie %}{% static "admin/css/ie.css" %}{% endblock %}" />
+    <![endif]-->
+    {% if LANGUAGE_BIDI %}
+        <link rel="stylesheet" type="text/css"
+              href="{% block stylesheet_rtl %}{% static "admin/css/rtl.css" %}{% endblock %}"/>{% endif %}
+    <script type="text/javascript">window.__admin_media_prefix__ = "{% filter escapejs %}{% static "admin/" %}{% endfilter %}";</script>
+    {% block extrahead %}{% endblock %}
+    {% block blockbots %}
+        <meta name="robots" content="NONE,NOARCHIVE"/>{% endblock %}
+
+
+
+
+</head>
+{% load i18n %}
+
+<body class="{% if is_popup %}popup {% endif %}{% block bodyclass %}{% endblock %}">
+
+<!-- Container -->
+<div id="container">
+    {% block bodystart %}{% endblock %}
+    {% if not is_popup %}
+        <!-- Header -->
+
+        <!-- END Header -->
+        {#    {% block breadcrumbs %}#}
+        {#    <div class="breadcrumbs">#}
+        {#    <a href="{% url 'admin:index' %}">{% trans 'Home' %}</a>#}
+        {#    {% if title %} &rsaquo; {{ title }}{% endif %}#}
+        {#    </div>#}
+        {#    {% endblock %}#}
+    {% endif %}
+
+    {% block messages %}
+        {% if messages %}
+            <ul class="messagelist">{% for message in messages %}
+                <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+            {% endfor %}</ul>
+        {% endif %}
+    {% endblock messages %}
+
+    <!-- Content -->
+    <div id="content" class="{% block coltype %}colM{% endblock %}">
+        <div id="cont_icerik">
+            {% block pretitle %}{% endblock %}
+            {% block content_title %}{% if title %}<h1>{{ title }}</h1>{% endif %}{% endblock %}
+            {% block content %}
+                {% block object-tools %}{% endblock %}
+                {{ content }}
+                <div style="clear: both">&nbsp;</div>
+            {% endblock %}
+            {% block sidebar %}{% endblock %}
+        </div>
+
+        <div style="clear: both">&nbsp;</div>
+    </div>
+    <div id="n_user_content">
+        {% block n_user_content %}
+
+        {% endblock %}
+    </div>
+    <!-- END Content -->
+
+    <div style="clear: both">&nbsp;</div>
+
+    {% block footer %}
+        <div id="footer"></div>
+    {% endblock %}
+
+
+</div>
+
+{% block superfooter %}{% endblock %}
+
+
+<!-- END Container -->
+<script type="text/javascript" src="/media/cssjs/admin_genel.js"></script>
+</body>
+</html>

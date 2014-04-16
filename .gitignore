@@ -1,0 +1,27 @@
+#python specific
+*.pyc
+django
+local_settings.py
+media/uploads/*
+client/extern.js
+client/webimages/*
+client/apppackages/*
+client/webimages_test/*
+client/www/css/d*.css
+client/www/*.html
+client/js_vendors/settings.js
+client/www/js/*
+client/build_times*
+client/coffee/uygulamatik.coffee
+client/coffee/uygulamatik.js
+## generic files to ignore
+*~
+*.lock
+*.DS_Store
+*.swp
+*.out
+.idea
+cenevar/settings.py
+*.db
+*.directory
+.sass-cache

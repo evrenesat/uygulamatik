@@ -1,0 +1,54 @@
+<title>Yol Gösterici</title>
+
+
+<div class="tmpl_wrapper">
+
+    <form data-ajax="false" method="get" action="#navigation">
+        <div id="info_div">
+
+            {{#t("Lütfen başlangıç ve hedef noktalarınızı seçiniz")}};
+        </div>
+
+        <div id="secim" data-role="collapsible-set">
+            <div id="nav_from_container" data-role="collapsible" data-collapsed="true">
+                <h3>{{#t("Başlangıç")}}: <span class="nav_title">{{=from }}</span></h3>
+
+
+
+                <!--<ul data-filter-theme="a" data-filter="true" data-role="listview">-->
+                <ul data-role="listview">
+                    {{for (n in nodes){}}
+                    <li><a data-oid="{{=nodes[n].id}}" class="cB">{{=nodes[n].name }}</a></li>
+                    {{}}}
+                </ul>
+
+            </div>
+            <div id="nav_to_container" class="hoverbutton" data-role="collapsible" data-collapsed="true">
+                <h3>{{#t("Hedef")}}: <span class="nav_title">{{=to}}</span></h3>
+
+
+                <!--<ul data-filter-theme="a" data-filter="true" data-role="listview">-->
+                <ul data-role="listview">
+                    {{for (n in nodes){}}
+                    <li><a class="cB1" data-oid="{{=nodes[n].id}}">{{=nodes[n].name }}</a></li>
+                    {{}}}
+                </ul>
+
+            </div>
+
+        </div>
+
+    </form>
+</div>
+
+
+<footer>
+    <div data-tap-toggle="false" data-position="fixed" data-role="navbar">
+        <ul>
+            <li><a data-icon="search" id="iB0">{{#t("Bulunduğum Yeri <br>Karekodla Seç")}}</a></li>
+            <li><a data-icon="check" id="iB1">{{#t("Haritada<br> Göster")}}</a></li>
+
+
+        </ul>
+    </div>
+</footer>

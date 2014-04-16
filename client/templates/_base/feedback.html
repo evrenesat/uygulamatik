@@ -1,0 +1,41 @@
+<title>Geri Bildirim</title>
+
+<div class="pedli">
+
+    <div id="info_div">
+        {{#t("Düşünceleriniz bizim için çok önemli, her türlü görüş ve öneriniz incelenip size geri dönüş yapılacaktır.")}}
+    </div>
+<ul data-role="listview" >
+
+    <li>
+        <a data-href="#feedback_survey?target_type=host&target_name={{#tv.name_short}}" class="nav_button">
+            <img src="images/fbicon.png" />
+
+            <h3>{{#tv.company}}</h3>
+            <p>{{#t("Bizimle ilgili görüşlerinizi duymaktan mutluluk duyarız.")}}</p>
+        </a>
+    </li>
+
+    <li>
+        <a data-href="#feedback_select?target_type=activity" class="nav_button">
+            <img src="images/calendar.png" />
+
+            <h3>{{#t("Etkinlikler")}}</h3>
+            <p>{{#t("Etkinliklerimiz hakkındaki görüşlerinizi aktarabilirsiniz.")}}</p>
+        </a>
+    </li>
+
+
+    <li>
+        <a data-href="#feedback_select?target_type=place" class="nav_button">
+            <img src="images/shop.png" />
+
+            <h3>{{#t("Mağazalar")}}</h3>
+            <p>{{#t("Bu adımdan %s'deki mağaza yönetimleriyle doğrudan iletişime geçebilirsiniz.",tv.company)}}</p>
+        </a>
+    </li>
+
+
+
+</ul>
+</div>

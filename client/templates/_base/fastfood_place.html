@@ -1,0 +1,18 @@
+<title>-</title>
+
+<div  class="tmpl_wrapper" id="fastfoods">
+    {%include place_info%}
+
+    {{~it.categories :it}}
+        <div id="slid{{=it.store_product_category_id}}" class="fast_title"><span> {{=it.name}} </span></div>
+        <div id="sfid{{=it.store_product_category_id}}" class="fast_placebox">
+            <div id='sff_product_{{=it.store_product_category_id}}' class="fast_product_container">
+            </div>
+        </div>
+        {{~}}
+
+
+
+
+    <div id="fopup"></div>
+</div>

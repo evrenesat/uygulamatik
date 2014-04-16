@@ -1,0 +1,27 @@
+<div class="tmpl_wrapper">
+
+
+        <h3 class='center'>Sipariş Özeti</h3>
+        <table class="standard_table">
+            <tr>
+                <th>Ürün</th>
+                <th>Adet</th>
+                <th>Ücret</th>
+            </tr>
+            {{~it.items :i}}
+            <tr>
+                <td>{{=i.product__name}}</td>
+                <td>{{=i.count}}</td>
+                <td>{{=i.price}} TL</td>
+            </tr>
+            {{~}}
+            <tr>
+                <td>&nbsp;</td>
+                <td><strong>Toplam:</strong></td>
+                <td><strong>{{=it.sum}} TL</strong></td>
+            </tr>
+        </table>
+        <a data-href='#shopping_result' data-role='button' class='nav_button'>Siparişi Onaylıyorum</a>
+
+
+</div>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Order Interceptor</title>
+    {#    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css"/>#}
+        <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    {#    <script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>#}
+    {#    <link rel="stylesheet" href="/resources/demos/style.css"/>#}
+    <link href="/media/cssjs/admin.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<iframe id="mFrame"  src="/aso/list/{{ appid }}/1/" frameborder="0" class="mainFrame"></iframe>
+<div class="bottomdiv">
+    <div class="buttondiv">
+        {{ newOrderCount }}
+        <button id="newOrderBtn"> Yeni</button>
+    </div>
+    <div class="buttondiv">
+
+        {{ prepOrderCount }}
+        <button id="prepOrderBtn"> İşlenen</button>
+    </div>
+    <div class="buttondiv">
+
+        {{ readyOrderCount }}
+        <button id="readyOrderBtn"> Hazır</button>
+    </div>
+    <div class="buttondiv">
+        {{ oldOrderCount }}
+        <button id="oldOrderBtn"> Önceki</button>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $("#newOrderBtn").on("click", function () {
+        $('#mFrame').attr("src", "/aso/list/{{ appid }}/1/");
+    });
+    $("#prepOrderBtn").on("click", function () {
+        $('#mFrame').attr("src", "/aso/list/{{ appid }}/2/");
+    });
+    $("#readyOrderBtn").on("click", function () {
+        $('#mFrame').attr("src", "/aso/list/{{ appid }}/3/");
+    });
+    $("#oldOrderBtn").on("click", function () {
+        $('#mFrame').attr("src", "/aso/list/{{ appid }}/4/");
+    });
+</script>
+</body>
+</html>

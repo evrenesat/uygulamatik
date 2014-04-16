@@ -1,0 +1,15 @@
+<title>{{#t("Belge Klasörüm")}}</title>
+<ul data-role='listview' class="tmpl_wrapper" data-split-icon="delete">
+    {{~favorite_files :sid}}
+    <li id="exflfav{{=sid}}">
+        <a data-oid="{{=sid}}" class="cB">
+
+            <img src="images/icons/{{=tv.exhibitorfiles[sid].icon}}-icon-48x48.png"/>
+
+            <h3>{{=tv.exhibitorfiles[sid].title}} </h3>
+            <a data-oid="{{=sid}}" class="cB1"></a>
+        </a>
+    </li>
+
+    {{~}}
+</ul>

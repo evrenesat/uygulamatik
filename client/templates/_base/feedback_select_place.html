@@ -1,0 +1,25 @@
+<title>Mağazalar</title>
+<div class="tmpl_wrapper">
+    {%include ara%}
+    <ul class=" lstvw">
+        {{~it.items :it}}
+        <li>
+            <a data-href="#feedback_survey?id={{=it.id}}&type=place" class="nav_button">
+                {{? it.logo}}
+                <div class="ui-list-thmb-div">
+                    <img src="{{#tv.static}}/{{=it.logo}}"/>
+                </div>
+                {{??}}
+                <div class="ui-list-thmb-div">
+                    <img src="images/no_image.jpg"/>
+                </div>
+                {{?}}
+                <h3>{{=it.name}}</h3>
+
+                <p>{{=it.description}}</p>
+            </a>
+        </li>
+
+        {{~}}
+    </ul>
+</div>

@@ -1,0 +1,52 @@
+{% extends 'subpage_base.html' %}
+{% load blk %}
+
+	{%block extrahead%}
+		{{block.super}}
+		<link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}slayt2/engine1/style.css" />
+	{%endblock%}
+
+	{% block 'subpage_content' %}
+				<div class="altSayfa_icerikDivCvr">
+					<div class="altSayfa_icerikDiv">
+						<div class="altSayfa_icerikBaslik">{% blk 'baslik geribildirim' %}</div>
+						<div class="altSayfa_icerik">
+							{% blk 'icerik geribildirim' %}
+						</div>
+					</div>
+
+					<div class="altSayfa_resimCvr">
+						<div class="altSayfa_resim">
+
+							<div id="wowslider-container1">
+								<div class="ws_images">
+									<ul>
+										<li><img src="{{ MEDIA_URL }}slayt2/data1/images/geribildirim/1.jpg" id="wows1_0"/></li>
+										<li><img src="{{ MEDIA_URL }}slayt2/data1/images/geribildirim/2.jpg" id="wows1_1"/></li>
+										<li><img src="{{ MEDIA_URL }}slayt2/data1/images/geribildirim/3.jpg" id="wows1_2"/></li>
+										<li><img src="{{ MEDIA_URL }}slayt2/data1/images/geribildirim/4.jpg" id="wows1_3"/></li>
+									</ul>
+								</div>
+
+								<div class="ws_bullets">
+									<div>
+										<a href="#">1</a>
+										<a href="#">2</a>
+										<a href="#">3</a>
+										<a href="#">4</a>
+									</div>
+								</div>
+
+							</div>
+
+							<script type="text/javascript" src="{{ MEDIA_URL }}slayt2/engine1/wowslider.js"></script>
+							<script type="text/javascript" src="{{ MEDIA_URL }}slayt2/engine1/script.js"></script>
+
+						</div>
+					</div>
+				</div>
+			
+			{% endblock 'subpage_content' %}
+
+	</div>
+

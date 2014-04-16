@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load blk %}
+
+{% block 'content' %}
+	 <div class="altSayfaCvr">
+
+		<div id="menu">
+			<ul>
+				<li><a href="/birbakista/" class="styleTek activeLink">{% blk 'menu carsida ne var' %}</a></li>
+				<li><a href="/karekod/" class="styleTek activeLink">{% blk 'menu nedir bu karekod' %}</a></li>
+				<li><a href="/geribildirim/" class="styleTek">{% blk 'menu geribildirim' %}</a></li>
+                <li><a href="/neredeyim/" class="styleTek">{% blk 'menu neredeyim' %}</a></li>
+				<li><a href="/kampanyalar/" class="styleTek">{% blk 'menu kampanyalari yakalayin' %}</a></li>
+{#				<li><a href="/paylasim/" class="styleTek">{% blk 'menu paylasmak guzeldir' %}</a></li>#}
+				<li><a href="/iletisim/" class="styleTek">{% blk 'menu iletisim' %}</a></li>
+			</ul>
+		</div>
+
+		{% block 'subpage_content' %}
+
+		{% endblock 'subpage_content' %}
+
+		<div style="clear:both;">&nbsp;</div>
+
+	</div>
+
+{% endblock 'content' %}

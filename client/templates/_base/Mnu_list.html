@@ -1,0 +1,25 @@
+<title>{{#t("Menü")}}</title>
+<div  class="tmpl_wrapper" id="fastfoods">
+
+    {{~it :cat}}
+        <div  class="fast_title"><span> {{=cat.name}} </span></div>
+        <div class="fast_placebox">
+            <div class="fast_product_container" data-len="{{=cat.items.length}}">
+                {{~cat.items :i}}
+                    {{ (u=tv.menuitems[i]) }}
+                    <a data-oid="{{=u.id}}" style="background-image:url({{#tv.static}}/mi_s_{{=u.image}})" class="cB">
+
+                            <h4>{{=u.name}}</h4>
+
+                            <h5>{{=u.price}} TL</h5>
+                    </a>
+                {{~}}
+            </div>
+        </div>
+        {{~}}
+
+
+
+
+    <div id="fopup"></div>
+</div>

@@ -1,0 +1,28 @@
+{% extends "admin/index.html" %}
+{% load i18n %}
+<!--suppress ALL -->
+
+{% block content %}{% endblock %}
+
+{% block n_user_content %}
+
+    <div id="n_user_cvr_div">
+
+        <h1 id="registration_header">
+            {% trans "Yeni Yaratilacak Kullanici Hesabiniz Icin Gerekli Bilgileri Girin" %}
+        </h1>
+        <form method="post" action="">{% csrf_token %}
+
+            <div class="generic_input_wrapper">
+                {{ form.as_p }}
+                <div style="clear: both">&nbsp;</div>
+            </div>
+
+            <div id="hesap_olustur_btn">
+                <input id="hesap_btn" type="submit" name="submit" value="Hesabınızı Oluşturun" />
+            </div>
+        </form>
+
+    </div>
+
+{% endblock %}

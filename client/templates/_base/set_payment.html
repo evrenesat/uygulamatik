@@ -1,0 +1,33 @@
+<title>{{#t("Ödeme Yöntemi")}}</title>
+<div class="tmpl_wrapper">
+
+    <div id="info_div">
+        {{#t("Uygulamamızı kullanarak vereceğiniz siparişlerinizde ister kredi kartınızla isterseniz de nakit para kullanarak alışveriş yapabilirsiniz.")}}
+    </div>
+
+<ul data-role="listview" >
+
+    <li>
+        <a data-href="#payment_info_save?kw_odeme_tipi=paypal" class="nav_button">
+            <img src='images/paypal.png' />
+
+            <h3>PayPal</h3>
+            <p>{{#t("Dünyanın ve Türkiye'nin en çok kullanılan ve en güvenilen online ödeme yöntemi PayPal'ı kullanarak ödemelerinizi kredi kartınızla yapabilirsiniz.")}}</p>
+        </a>
+    </li>
+
+    <li>
+        <a data-href="#payment_info_save?kw_odeme_tipi=ozel" class="nav_button">
+            <img  src='images/forumpara.png' />
+
+            <h3>{{#tv.company}} Kart</h3>
+            <p>{{#t("Alışverişnizi nakit ya da kredi kartınızı kullanarak bakiye yükleyebileceğiniz %s kartınız ile yapabilirsiniz.", tv.company)}}</p>
+        </a>
+    </li>
+
+
+
+</ul>
+
+
+</div>

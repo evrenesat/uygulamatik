@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Order Interceptor</title>
+    {#    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css"/>#}
+    {#    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>#}
+    {#    <script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>#}
+    {#    <link rel="stylesheet" href="/resources/demos/style.css"/>#}
+    <link href="/media/cssjs/admin.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+{% for product in productList %}
+    <div>
+        <button>{{ product.order_table.name }} </button>
+    </div>
+{% endfor %}
+
+
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+<title>{{#t("Delege Profili")}}</title>
+<div data-role="fieldcontain" class="tmpl_wrapper pedli">
+    {{? it.photo}}
+          <img style="float:left;" src="{{#tv.static}}/dlg_s_{{=it.photo}}"/>
+          {{?}}
+          <h3>{{=it.firstname }} {{=it.lastname }}</h3>
+          {{=it.company }}<br>
+          {{=it.position }}
+    <hr>
+          {{=it.profile }}
+
+
+
+</div>

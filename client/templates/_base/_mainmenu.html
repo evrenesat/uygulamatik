@@ -1,0 +1,13 @@
+<div id="icons">
+
+
+    <ul class="mainmenu">
+        {{~it :i}}
+        {{?i.visible }}
+        <li><a class="cB" data-fn="{{=i.codename}}" data-oid="{{=i.id||''}}"><img src="{{#tv.static}}/{{=i.icon}}"><br><span>{{=i.title}}</span></a></li>
+        {{?}}
+                {{~}}
+    </ul>
+
+</div>
+</div>

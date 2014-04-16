@@ -1,0 +1,22 @@
+<div class="tmpl_wrapper">
+
+        <ul data-role="listview">
+            <li>
+                {{? it.logo}}
+                <img src="{{#tv.static}}/{{=it.logo}}" style="height:100%;" />
+                {{??}}
+                <img src="images/no_image.jpg" />
+                {{?}}
+                <h3>{{=it.name}}</h3>
+                <p>{{=it.description}}</p>
+            </li>
+        </ul>
+        <div data-role="fieldcontain" id="placeActions">
+            <a data-href="#place_campaigns?id={{=it.id}}" data-role="button" class="nav_button">Kampanyalar</a>
+            <a data-href="#place_discounts?id={{=it.id}}" data-role="button" class="nav_button">İndirimdekiler</a>
+            <a data-href="#place_products?id={{=it.id}}" data-role="button" class="nav_button">Tüm Ürünler</a>
+            <a data-href="#place_momentary_campaigns?id={{=it.id}}" data-role="button" class="nav_button">Anlık Kampanyalar</a>
+            <a data-href="#about_us?id={{=it.id}}" data-role="button" class="nav_button">Hakkımızda</a>
+        </div>
+
+</div>

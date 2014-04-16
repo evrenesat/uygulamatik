@@ -1,0 +1,43 @@
+    <html>
+  <head>
+    <title>Uygulama  Simülatörü</title>
+
+    <style>
+        body{
+            background-color:#000;
+            background-image:url(/media/admin_images/splash.png);
+            background-size:100% 100%;
+            cursor:pointer;
+            font-family: arial,tahoma, sans-serif;
+        }
+        ::-webkit-scrollbar {
+            display: none;
+        }
+        #nowebkit{
+            font-size:28px;
+            color: #7a7a7a;
+            display:none;
+            text-align:center;
+            text-shadow:#7E7A7A 2px 2px 7px;
+            margin-top:20px;
+        }
+
+    </style>
+
+  </head>
+  <body onclick="document.location='http://forumdanevar.com/app/'">
+
+  <div id="nowebkit">Simülatörün çalışabilmesi için Chrome ya da Safari web tarayıcılarından birini kullanmanız gerekiyor.</div>
+
+  </body>
+  <script>
+      var is_chrome = navigator.userAgent.toLowerCase().indexOf('webkit') > -1;
+      //var is_opera = navigator.userAgent.toLowerCase().indexOf('opera') > -1;
+      if (!is_chrome){
+          var nw = document.getElementById("nowebkit");
+          nw.style.display = 'block';
+          document.body.style.backgroundImage = 'none';
+          document.body.onclick=function(){};
+      }
+  </script>
+</html>

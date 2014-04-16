@@ -1,0 +1,12 @@
+{% load i18n %}
+
+{#TODO: Locale alınacak#}
+<tr>
+    <td>
+        <a href="/{{ LANGUAGE_CODE }}/admin/at_shop_order/ordertable/" target="mf"><img src="/media/images/ikonlar/masalar.png"/>Masalar</a>
+        <a href="/{{ LANGUAGE_CODE }}/admin/umatik/menucategory/" target="mf"><img src="/media/images/ikonlar/menu.png"/>{% trans "Menu Categories" %}</a>
+        <a  class="subm" href="/{{ LANGUAGE_CODE }}/admin/umatik/menuitem/" target="mf"><img src="/media/images/ikonlar/menu_ogeleri.png"/>{% trans "Menu Items" %}</a>
+        <a  class="subm" href="/{{ LANGUAGE_CODE }}/admin/at_shop_order/orderhead/" target="mf"><img src="/media/images/ikonlar/siparisler.png"/>{% trans "Siparişler" %}</a>
+    </td>
+</tr>
+{% include "admin/app/mobilbase.html" %}

@@ -1,0 +1,114 @@
+	{% extends 'subpage_base.html' %}
+    {% load blk %}
+
+		{% block 'subpage_content' %}
+				<div class="altSayfa_icerikBaslik iletisimBaslikStyle">
+                    İletişim
+                </div>
+
+                <div class="iletisim_Div" >
+
+                    <div class="iletisimFirmaBilgileri">
+
+                        <div class="firmaLogo">
+                            <img src="{{ MEDIA_URL }}images/elipsislogoiletisim.png"/>
+                        </div>
+
+                        <div class="firmaBilgileri">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <span class="bold">{% blk 'baslik firma isim' %}<br><br></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        {% blk 'icerik iletisim adres' %}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table>
+                                            <tr>
+                                                <td>{% blk 'icerik iletisim telefon' %}</td>
+                                                <td>{% blk 'icerik iletisim eposta' %}</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="iletisimKisiBilgileri">
+
+                        <form action="." method="POST">
+
+                            <div style='display:none'>
+
+{%csrf_token%}
+</div>
+
+                            <div class="form_Part_1">
+                                <table id="itable">
+                                    <tr>
+                                        <th>
+                                            <label for="id_firma">Firma / Kurum:</label>
+                                        </th>
+                                        <td>
+                                            <input id="id_firma" class="inputStyle" type="text" name="firma" maxlength="200" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <label for="id_tel">Telefon:</label>
+                                        </th>
+                                        <td>
+                                            <input id="id_tel" class="inputStyle" type="text" name="tel" maxlength="200" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <label for="id_gonderen_ad">İsminiz:</label>
+                                        </th>
+                                        <td>
+                                            <input id="id_gonderen_ad" class="inputStyle" type="text" name="gonderen_ad" maxlength="100" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <label for="id_gonderen_eposta">Eposta Adresiniz:</label>
+                                        </th>
+                                        <td>
+                                            <input id="id_gonderen_eposta" class="inputStyle" type="text" name="gonderen_eposta" maxlength="75" />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <div class="form_Part_2">
+                                <table>
+                                    <tr>
+                                        <th>
+                                            <label for="id_yazi">Mesajınız:</label>
+                                        </th>
+                                        <td>
+                                            <textarea id="id_yazi" rows="10" cols="40" name="yazi"></textarea>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <input type="submit" value="Gönder" id="iletigonder" class="gonderBttn">
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+		
+		{% endblock 'subpage_content' %}

@@ -1,0 +1,151 @@
+#header{
+    border-bottom:1px solid #f2f2f2;
+    width:100%;
+    background-color:#768288 !important;
+    height:55px;
+    vertical-align:middle;
+    margin:0px;
+    }
+#header h1{
+  display:inline  !important;
+  color:#fff  !important;
+    position:relative  !important;
+    top:20px  !important;
+    left:20px  !important;
+    font-size:16px  !important;
+    font-weight:bold  !important;
+    margin:0px;
+    padding:0px;
+  }
+#user-tools{
+    float:right;
+    padding-right:20px;
+    }
+
+ .breadcrumbs     {
+    width:100%;
+    background:white url(/media/img/admin/nav-bg-reverse.gif) 0 -10px repeat-x;
+    font-size:11px;
+     color:#999;
+     border-top:1px solid white;
+     border-bottom:1px solid #ccc;
+     text-align:left;
+    padding:0px !important;
+     margin:0px !important;
+     }
+.breadcrumbs a{padding-left:20px;}
+
+
+#user-tools { position:absolute; top:0; right:0; padding:1.6em 10px; font-size:11px; text-align:right; color:#fff; }
+
+.row1 {
+background:#D8E0E5;
+}
+
+.katkutu{
+    overflow:auto;
+    height:480px;
+    width:200px;
+    padding-left:10px;
+    }
+#sonuckutusu-etiket{
+    padding:3px;
+    background-color:#fff;
+    width:65px;
+    height:11px;
+    color:#8AA28F;
+    text-align:center;
+    position:relative;
+    left:7px;
+    top:8px;
+    z-index:100;
+    }
+
+#sk-kapsar{
+    display:none;
+    padding-top:10px;
+    }
+#sonuckutusu{
+    overflow:auto;
+    height:50px;
+    width:80%;
+    padding:3px;
+    padding-top:8px;
+    color:#3FA35D;
+    border:solid 1px #E0E0E0;
+    }
+
+
+
+#pano-etiket{
+    padding:3px;
+    /*background-color:#fff;*/
+    width:65px;
+    height:11px;
+    color:#8AA28F;
+    text-align:center;
+    position:relative;
+    left:7px;
+    top:8px;
+    z-index:100;
+    }
+
+#pano{
+    overflow:auto;
+    padding:3px;
+    margin-bottom:10px;
+    color:#3FA35D;
+    background-color:#B5E5EE;
+    border:solid 1px #2E64EE;
+    }
+
+ .soru{
+     background-color:#09C826 !important;
+     width:15px !important;
+     height:15px !important;
+     text-align:center !important;
+     font-size:14px !important;
+     font-weight:bold !important;
+    color:#fff !important;
+    border:solid 1px #07931C !important;
+     }
+
+
+
+.katkutu a{
+        color:#3E485C;
+}
+.katkutu li {
+    padding-left:5px;
+    margin:0px;
+    }
+.katkutu ul {
+    padding-left:5px;
+    margin:0px;
+    }
+
+.hatamesaji{
+    color:#C20017 !important;
+    font-weight:bold !important;
+    }
+
+.kutu1{
+    width:34px;
+    font-size:9px;
+    }
+
+.secili{
+    font-weight:bold;
+    }
+.secili a{
+    color:#4038CF;
+    }
+
+.paginator { text-align:right; padding: 0em 3em .6em .1em; font-size:14px !important;}
+.paginate-pages { padding: 2px 3px; border: 1px solid #ddd; cursor: pointer; text-decoration: underline; font-size:14px !important;}
+.paginate-first, .paginate-last { padding: 2px 6px; border: 1px solid #ddd; font-weight: bold; font-size:14px !important;}
+.paginate-previous, .paginate-next { padding: 2px 3px; border: 1px solid #ddd; font-size:14px !important;}
+.paginate-link { padding: 2px 4px; border: 1px solid #ddd; font-size:14px !important;}
+.paginate-current { padding: 2px 4px; border: 1px solid #ddd; font-weight: bold; background:#468CBB; color:#f4f379; font-size:14px !important;}
+
+.urunadi{color:#788C8F}

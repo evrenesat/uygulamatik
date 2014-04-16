@@ -1,0 +1,68 @@
+{% extends "admin/inc/node_form.html" %}
+{% load i18n %}
+
+
+{% block node_fields %}
+    <input type="hidden" name="nodeX" value="{{ node.x }}" />
+    <input type="hidden" name="nodeY" value="{{ node.y }}" />
+    <input type="hidden" name="nodeId" value="{{ node.id }}" />
+    {% if store_id %}
+        <input type="hidden" name="previousStore" value="{{ store_id }}" />
+    {% endif %}
+    {% if exhibitor_id %}
+        <input type="hidden" name="previousExhibitor" value="{{ exhibitor_id }}" />
+    {% endif %}
+{% endblock %}
+
+
+{% block additional_widget %}
+    {% if stores %}
+        <p>
+            <span>{% trans "Magaza" %}</span>
+            <select name="store">
+                <option value="">...</option>
+                {% for store in stores %}
+                    <option value="{{ store.id }}" {% if store.id == store_id %}selected="selected" {% endif %}>
+                        {{ store.name }}
+                    </option>
+                {% endfor %}
+            </select>
+        </p>
+    {% endif %}
+
+    {% if exhibitors %}
+        <p>
+            <span>{% trans "Katilimci" %}</span>
+            <select name="exhibitor">
+                <option value="">...</option>
+                {% for exhibitor in exhibitors %}
+                    <option value="{{ exhibitor.id }}"
+                            {% if exhibitor.id == exhibitor_id %}selected="selected" {% endif %}>
+                        {{ exhibitor }}
+                    </option>
+                {% endfor %}
+            </select>
+        </p>
+    {% endif %}
+{% endblock %}
+
+
+{% block node %}
+    <p>
+        <span>{% trans "Tur" %}</span>
+        <select name="type">
+            <option value="">....</option>
+            {% for i in types %}
+                <option value="{{ i.0 }}" {% if i.0 == node.type %}selected="selected" {% endif %}>{{ i.1 }}</option>
+            {% endfor %}
+        </select>
+
+        <span>{% trans "Isim" %}</span>
+        <input type="text" name="name" value="{{ node.name }}" />
+    </p>
+{% endblock %}
+
+
+{% block confirm_button %}
+    <input type="submit" name="node_update" value="{% trans 'Guncelle' %}" />
+{% endblock %}

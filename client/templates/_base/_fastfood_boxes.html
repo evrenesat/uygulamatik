@@ -1,0 +1,22 @@
+<a data-placeid="{{=it.place.place_id}}" class="magazayaGitCvr">
+	<div class="magazaLogo" style="background-image:url({{#tv.static}}/{{=it.place.logo}})">
+    </div>
+    <div class="tiklayinizBar">
+    	<span class="magaza">Mağazaya Giriş</span>
+
+    </div>
+</a>
+
+
+
+{{~it.products :i}}
+
+    <div class="hoverbutton" data-pid="{{=i.id}}" style="background-image:url({{#tv.static}}/pr_s_{{=i.image}})">
+
+            <h4>{{=i.name}}</h4>
+
+            <h5>{{=i.price}} TL</h5>
+    </div>
+
+
+{{~}}

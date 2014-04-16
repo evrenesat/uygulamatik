@@ -1,0 +1,14 @@
+<title>{{#t("Konuşmacılar")}}</title>
+<ul data-role='listview' class="tmpl_wrapper">
+    {{~speakers :spk}}
+        <li>
+            <a data-oid="{{=spk.id}}" class="cB">
+                {{? spk.photo}}
+                <img src="{{#tv.static}}/per_xs_{{=spk.photo}}" />
+                {{?}}
+                <h3>{{=spk.firstname}} {{=spk.lastname}}</h3>
+            </a>
+        </li>
+
+    {{~}}
+</ul>

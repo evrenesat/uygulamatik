@@ -1,0 +1,3219 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-02-28 16:30+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: Turkish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#: blok/models.py:24
+msgid "Keyword"
+msgstr "Anahtar kelime"
+
+#: blok/models.py:25 umatik/models.py:1055 umatik/models.py:1092
+msgid "Status"
+msgstr "Durumu"
+
+#: blok/models.py:26 umatik/models.py:595 umatik/models.py:756
+#: umatik/models.py:1054 umatik/models.py:1318
+msgid "Type"
+msgstr "Türü"
+
+#: blok/models.py:51 umatik/models.py:464
+msgid "Türkçesi"
+msgstr "Türkçesi"
+
+#: blok/models.py:53
+msgid "Language Code"
+msgstr "Dil kodu"
+
+#: blok/models.py:54
+msgid "Translation"
+msgstr "Çeviri"
+
+#: blok/models.py:60
+msgid "Block Translation"
+msgstr "Blok çeviri"
+
+#: blok/models.py:61
+msgid "Block Translations"
+msgstr "Blok çevirileri"
+
+#: mptt/admin.py:90 mptt/admin.py:92
+msgid "Add child"
+msgstr "Alt öğe ekleyin"
+
+#: mptt/admin.py:98 mptt/admin.py:100 templates/admin/change_form.html:33
+#: templates/admin/tabbed_change_form.html:17
+#: templates/admin/store/change_form.html:32
+msgid "View on site"
+msgstr "Sitede görmek"
+
+#: mptt/admin.py:112
+#, python-format
+msgid "Successfully deleted %s items."
+msgstr "Başarıyla %s öğe silindi."
+
+#: mptt/admin.py:117
+#, python-format
+msgid "Delete selected %(verbose_name_plural)s"
+msgstr "Seçili %(verbose_name_plural)s Sil"
+
+#: mptt/forms.py:68
+msgid "First child"
+msgstr "İlk çocuk"
+
+#: mptt/forms.py:69
+msgid "Last child"
+msgstr "Son alt"
+
+#: mptt/forms.py:70
+msgid "Left sibling"
+msgstr "Sol kardeş"
+
+#: mptt/forms.py:71
+msgid "Right sibling"
+msgstr "Sağ kardeş"
+
+#: mptt/forms.py:173
+msgid "Invalid parent"
+msgstr "Geçersiz üst"
+
+#: mptt/managers.py:327
+msgid "Cannot insert a node which has already been saved."
+msgstr "Önceden kaydedilmiş olan bir düğüm eklenemiyor."
+
+#: mptt/managers.py:536 mptt/managers.py:708 mptt/managers.py:744
+#: mptt/managers.py:902
+#, python-format
+msgid "An invalid position was given: %s."
+msgstr "Geçersiz bir pozisyon verildi: % s."
+
+#: mptt/managers.py:694 mptt/managers.py:882
+msgid "A node may not be made a sibling of itself."
+msgstr "Bir düğüm bir kardeş kendi başına yapılabilir değil."
+
+#: mptt/managers.py:861 mptt/managers.py:983
+msgid "A node may not be made a child of itself."
+msgstr "Bir düğüm bir çocuk kendisini yapılabilir değil."
+
+#: mptt/managers.py:863 mptt/managers.py:985
+msgid "A node may not be made a child of any of its descendants."
+msgstr "Bir düğümü alt öğelerinden biriyle alt yapılabilir değil."
+
+#: mptt/managers.py:884
+msgid "A node may not be made a sibling of any of its descendants."
+msgstr "Bir düğümü alt öğelerinden biriyle eşdüzey yapılabilir değil."
+
+#: mptt/models.py:273
+msgid "register() expects a Django model class argument"
+msgstr "Register() bir Django modeli sınıfının bağımsız değişkenin beklediği"
+
+#: mptt/templatetags/mptt_tags.py:28
+#, python-format
+msgid "full_tree_for_model tag was given an invalid model: %s"
+msgstr "full_tree_for_model etiketi geçersiz bir model verildi: %s"
+
+#: mptt/templatetags/mptt_tags.py:52
+#, python-format
+msgid "drilldown_tree_for_node tag was given an invalid model: %s"
+msgstr "drilldown_tree_for_node etiketi geçersiz bir model verildi: %s"
+
+#: mptt/templatetags/mptt_tags.py:59
+#, python-format
+msgid "drilldown_tree_for_node tag was given an invalid model field: %s"
+msgstr "drilldown_tree_for_node etiket bir geçersiz model alan verildi: %s"
+
+#: mptt/templatetags/mptt_tags.py:86
+#, python-format
+msgid "%s tag requires three arguments"
+msgstr "%s etiket üç bağımsız değişken gerektirir"
+
+#: mptt/templatetags/mptt_tags.py:88 mptt/templatetags/mptt_tags.py:143
+#, python-format
+msgid "second argument to %s tag must be 'as'"
+msgstr "%s etiket ikinci bağımsız değişkeni 'olarak' olmalıdır"
+
+#: mptt/templatetags/mptt_tags.py:140
+#, python-format
+msgid "%s tag requires either three, seven or eight arguments"
+msgstr "%s etiket ya da üç, yedi veya sekiz bağımsız değişken gerektirir"
+
+#: mptt/templatetags/mptt_tags.py:147
+#, python-format
+msgid "if seven arguments are given, fourth argument to %s tag must be 'with'"
+msgstr ""
+"yedi bağımsız değişken verilmezse, %s etiketlemek için dördüncü bağımsız "
+"değişken 'ile' olmalıdır"
+
+#: mptt/templatetags/mptt_tags.py:150
+#, python-format
+msgid "if seven arguments are given, sixth argument to %s tag must be 'in'"
+msgstr ""
+"yedi bağımsız değişken verilmezse, %s etiket altıncı bağımsız değişkeni 'ın' "
+"olmalıdır"
+
+#: mptt/templatetags/mptt_tags.py:155
+#, python-format
+msgid ""
+"if eight arguments are given, fourth argument to %s tag must be 'cumulative'"
+msgstr ""
+"sekiz bağımsız değişken verilmezse, %s etiketlemek için dördüncü bağımsız "
+"değişken 'toplu' olmalıdır"
+
+#: mptt/templatetags/mptt_tags.py:158
+#, python-format
+msgid "if eight arguments are given, fifth argument to %s tag must be 'count'"
+msgstr ""
+"sekiz bağımsız değişken verilmezse, %s etiketlemek için beşinci bağımsız "
+"değişken 'sayım' olmalıdır"
+
+#: mptt/templatetags/mptt_tags.py:161
+#, python-format
+msgid "if eight arguments are given, seventh argument to %s tag must be 'in'"
+msgstr ""
+"sekiz bağımsız değişken verilmezse, %s etiket yedinci bağımsız değişkeni "
+"'ın' olmalıdır"
+
+#: mptt/templatetags/mptt_tags.py:264
+#, python-format
+msgid "Node %s not in depth-first order"
+msgstr "Düğüm %s derinliği ilk sırada değil"
+
+#: mptt/templatetags/mptt_tags.py:341
+#, python-format
+msgid "%s tag requires a queryset"
+msgstr "%s etiketi için bir queryset gerekli"
+
+#: templates/admin/appselect.html:17
+msgid "Create a new app"
+msgstr "Yeni bir app oluşturun"
+
+#: templates/admin/appselect.html:25
+msgid "Application name"
+msgstr "Uygulama adı"
+
+#: templates/admin/appselect.html:26
+msgid "Create"
+msgstr "Oluşturmak"
+
+#: templates/admin/appselect.html:39
+msgid "Select the app that you want to edit."
+msgstr "Düzenlemek istediğiniz aapp seçin."
+
+#: templates/admin/appselect.html:49
+msgid "There aren't any apps to edit :("
+msgstr "Düzenlenecek 1şey herhangi bir apps Arena"
+
+#: templates/admin/base_site.html:4
+msgid "Uygulamatik Admin"
+msgstr "Uygulamatik yönetici"
+
+#: templates/admin/change_form.html:19 templates/admin/change_list.html:61
+#: templates/admin/store/change_form.html:18
+msgid "Home"
+msgstr "Ana sayfa"
+
+#: templates/admin/change_form.html:22
+#: templates/admin/store/change_form.html:21
+#, fuzzy
+msgid "Add"
+msgstr "Adres"
+
+#: templates/admin/change_form.html:32
+#: templates/admin/tabbed_change_form.html:14
+#: templates/admin/store/change_form.html:31
+msgid "History"
+msgstr "Geçmiş"
+
+#: templates/admin/change_form.html:44 templates/admin/change_list.html:88
+#: templates/admin/login.html:17 templates/admin/tabbed_change_form.html:29
+#: templates/admin/store/change_form.html:43
+msgid "Please correct the error below."
+msgid_plural "Please correct the errors below."
+msgstr[0] ""
+
+#: templates/admin/change_info.html:17
+msgid "Update Info"
+msgstr "Güncelleştirme bilgisi"
+
+#: templates/admin/change_list.html:78
+#, python-format
+msgid "Add %(name)s"
+msgstr "%(name)s ekle"
+
+#: templates/admin/change_list.html:99
+#: treeadmin/templates/admin/treeadmin/tree_editor.html:42
+msgid "Filter"
+msgstr "Filtre"
+
+#: templates/admin/change_password.html:17
+msgid "Change Password"
+msgstr "Parola Değiştir"
+
+#: templates/admin/home.html:25 templates/admin/app/mobilavm.html:6
+msgid "Uygulama Ayarları"
+msgstr "Uygulama Ayarları"
+
+#: templates/admin/index.html:111
+msgid "Welcome,"
+msgstr "Hoşgeldiniz,"
+
+#: templates/admin/index.html:151
+msgid "Ayarlar"
+msgstr "Ayarlar"
+
+#: templates/admin/index.html:156
+msgid "Change password"
+msgstr "Parola Değiştir"
+
+#: templates/admin/index.html:160
+msgid "Bilgilerimi Degistir"
+msgstr "Bilgilerimi Değiştir"
+
+#: templates/admin/index.html:170 templates/admin/index.html.py:172
+msgid "Simulator"
+msgstr "Simülatörü"
+
+#: templates/admin/index.html:178
+msgid "Log out"
+msgstr "Çıkış"
+
+#: templates/admin/index.html:196
+#, python-format
+msgid "%(name)s"
+msgstr "%(name)s"
+
+#: templates/admin/index.html:209
+msgid "You don't have permission to edit anything."
+msgstr "Bir şey düzenleme izniniz yok."
+
+#: templates/admin/index.html:235
+msgid "Çözümlerimiz"
+msgstr "Çözümlerimiz"
+
+#: templates/admin/index.html:247
+msgid "Uygulamatik"
+msgstr "Uygulamatik"
+
+#: templates/admin/index.html:251
+msgid "Hakkımızda"
+msgstr "Hakkımızda"
+
+#: templates/admin/index.html:252
+msgid "Blog"
+msgstr "Blog"
+
+#: templates/admin/index.html:261
+msgid "İletişim"
+msgstr "İletişim"
+
+#: templates/admin/login.html:43
+msgid "Password:"
+msgstr "Şifre:"
+
+#: templates/admin/login.html:50
+msgid "Forgotten your password or username?"
+msgstr "Parolanızı veya kullanıcı adınızı mı unuttunuz?"
+
+#: templates/admin/login.html:54
+msgid "Log in"
+msgstr "Oturum aç"
+
+#: templates/admin/user_appselect.html:11
+msgid "Yeni uygulama yaratın"
+msgstr "Yeni uygulama yaratın"
+
+#: templates/admin/user_appselect.html:37
+msgid "Güncellemek istediğiniz uygulamayı seçin"
+msgstr "Güncellemek istediğiniz uygulamayı seçin"
+
+#: templates/admin/user_registration.html:12
+msgid "Yeni Yaratilacak Kullanici Hesabiniz Icin Gerekli Bilgileri Girin"
+msgstr "Yeni Yaratilacak kullanıcı Hesabiniz Icin Gerekli Bilgileri Girin"
+
+#: templates/admin/app/mobilaktif.html:6 umatik/models.py:1241
+msgid "Exhibitors"
+msgstr "Katılımcılar"
+
+#: templates/admin/app/mobilaktif.html:8
+msgid "Files"
+msgstr "Dosya"
+
+#: templates/admin/app/mobilaktif.html:16 umatik/models.py:1331
+msgid "Sponsors"
+msgstr "Sponsorlar"
+
+#: templates/admin/app/mobilaktif.html:18
+#, fuzzy
+msgid "Sponsor Types"
+msgstr "Sponsorlar"
+
+#: templates/admin/app/mobilaktif.html:26 umatik/models.py:1292
+msgid "Events"
+msgstr "Etkinlikler"
+
+#: templates/admin/app/mobilaktif.html:28 umatik/models.py:1177
+msgid "Speakers"
+msgstr "Konuşmacılar"
+
+#: templates/admin/app/mobilaktif.html:30 umatik/models.py:1199
+msgid "Delegates"
+msgstr "Temsilciler"
+
+#: templates/admin/app/mobilavm.html:11
+msgid "Magazalar"
+msgstr "Magazalar"
+
+#: templates/admin/app/mobilavm.html:14
+msgid "Super Siparis"
+msgstr "Süper sipariş"
+
+#: templates/admin/app/mobilavm.html:17
+msgid "Urunler"
+msgstr "Ürünler"
+
+#: templates/admin/app/mobilavm.html:20
+msgid "Kampanyalar"
+msgstr "Kampanyalar"
+
+#: templates/admin/app/mobilbase.html:5
+msgid "CMS"
+msgstr "CMS"
+
+#: templates/admin/app/mobilbase.html:10
+msgid "Floor Plan"
+msgstr "Kat planı"
+
+#: templates/admin/app/mobilbase.html:14
+msgid "Feedback"
+msgstr "Geri bildirim"
+
+#: templates/admin/app/mobilbase.html:18
+msgid "Info Center"
+msgstr "Bilgi Merkezi"
+
+#: templates/admin/app/mobilbase.html:22
+msgid "Photo Gallery"
+msgstr "Fotoğraf Galerisi"
+
+#: templates/admin/app/mobilbase.html:27
+msgid "News"
+msgstr "Haberler"
+
+#: templates/admin/app/mobilkafe.html:5
+#, fuzzy
+msgid "Menu Categories"
+msgstr "Ürün Kategorileri"
+
+#: templates/admin/app/mobilkafe.html:5
+msgid "Menu Items"
+msgstr "Menü öğeleri"
+
+#: templates/admin/inc/exhibitor_list.html:4
+#: templates/admin/inc/node_update_form.html:35
+msgid "Katilimci"
+msgstr "Katılımcı"
+
+#: templates/admin/inc/node_form.html:12
+msgid "Node"
+msgstr "Düğüm"
+
+#: templates/admin/inc/node_form.html:16
+#: templates/admin/inc/node_update_form.html:52
+msgid "Tur"
+msgstr "Tur"
+
+#: templates/admin/inc/node_form.html:24
+#: templates/admin/inc/node_update_form.html:60
+msgid "Isim"
+msgstr "Isim"
+
+#: templates/admin/inc/node_form.html:32
+msgid "Matrix"
+msgstr "Matris"
+
+#: templates/admin/inc/node_form.html:38
+msgid "Kaydet"
+msgstr "Kaydet"
+
+#: templates/admin/inc/node_form.html:40
+msgid "Iptal"
+msgstr "Iptal"
+
+#: templates/admin/inc/node_update_form.html:21
+#: templates/admin/inc/store_list.html:4
+msgid "Magaza"
+msgstr "Magaza"
+
+#: templates/admin/inc/node_update_form.html:67
+msgid "Guncelle"
+msgstr "Guncelle"
+
+#: templates/admin/inc/right_click_context.html:4
+msgid "Yer Ekle"
+msgstr "Yer Ekle"
+
+#: templates/admin/inc/right_click_context.html:5
+msgid "Secili Yeri Duzenle"
+msgstr "Secili Yeri Duzenle"
+
+#: templates/admin/inc/right_click_context.html:6
+msgid "Secili Yeri Sil"
+msgstr "Secili Yeri Sil"
+
+#: treeadmin/admin.py:222
+msgid "title"
+msgstr "Başlık"
+
+#: treeadmin/admin.py:400
+#, python-format
+msgid "%s has been moved to a new position."
+msgstr "%s için yeni bir konuma taşındı."
+
+#: treeadmin/admin.py:404
+msgid "Did not understand moving instruction."
+msgstr "Hareket eğitimi anlamadı."
+
+#: treeadmin/admin.py:413
+msgid "actions"
+msgstr "Eylemler"
+
+#: treeadmin/templates/admin/treeadmin/tree_editor.html:36
+msgid "Shortcuts"
+msgstr "Kısayolları"
+
+#: treeadmin/templates/admin/treeadmin/tree_editor.html:38
+msgid "Collapse tree"
+msgstr "Daraltma ağaç"
+
+#: treeadmin/templates/admin/treeadmin/tree_editor.html:39
+msgid "Expand tree"
+msgstr "Ağacı"
+
+#: umatik/admin_views.py:76
+msgid "E-Mail or password incorrect."
+msgstr "E-posta veya şifre yanlış."
+
+#: umatik/admin_views.py:130
+msgid "Your password has been changed successfully."
+msgstr "Parola başarıyla değiştirildi."
+
+#: umatik/admin_views.py:156
+msgid "Your personal info has been changed successfully."
+msgstr "Kişisel bilgilerinizi başarıyla değiştirildi."
+
+#: umatik/admin_views.py:285
+msgid "Kayit sirasinda hata olustu! Yeniden deneyiniz."
+msgstr "Kayıt sirasinda hata olustu! Yeniden deneyiniz."
+
+#: umatik/admin_views.py:297
+msgid "Kayit islemi basarili."
+msgstr "Kayıt işlemi başarılı."
+
+#: umatik/admin_views.py:312
+msgid "Silme islemi basarili"
+msgstr "Silme işlemi başarılı"
+
+#: umatik/admin_views.py:317
+msgid "Silme islemi sirasinda hata olustu! Lutfen yeniden deneyin."
+msgstr "Silme işlemi sirasinda hata olustu! Lutfen yeniden deneyin."
+
+#: umatik/admin_views.py:391
+msgid "Node guncellemede hata meydana geldi."
+msgstr "Düğüm guncellemede hata meydana geldi."
+
+#: umatik/admin_views.py:421
+msgid "Guncelleme islemi basarili"
+msgstr "Guncelleme işlemi başarılı"
+
+#: umatik/admin_views.py:466 umatik/admin_views.py:481
+msgid " ile "
+msgstr " Ile "
+
+#: umatik/countries.py:6 umatik/countries.py:257
+msgid "Afghanistan"
+msgstr "Afganistan"
+
+#: umatik/countries.py:7 umatik/countries.py:258
+msgid "Åland Islands"
+msgstr "Åland Adaları"
+
+#: umatik/countries.py:8 umatik/countries.py:259
+msgid "Albania"
+msgstr "Arnavutluk"
+
+#: umatik/countries.py:9 umatik/countries.py:260
+msgid "Algeria"
+msgstr "Cezayir"
+
+#: umatik/countries.py:10 umatik/countries.py:261
+msgid "American Samoa"
+msgstr "Amerikan Samoası"
+
+#: umatik/countries.py:11 umatik/countries.py:262
+msgid "Andorra"
+msgstr "Andorra"
+
+#: umatik/countries.py:12 umatik/countries.py:263
+msgid "Angola"
+msgstr "Angola"
+
+#: umatik/countries.py:13 umatik/countries.py:264
+msgid "Anguilla"
+msgstr "Anguilla"
+
+#: umatik/countries.py:14 umatik/countries.py:265
+msgid "Antarctica"
+msgstr "Antarktika"
+
+#: umatik/countries.py:15 umatik/countries.py:266
+msgid "Antigua and Barbuda"
+msgstr "Antigua ve Barbuda"
+
+#: umatik/countries.py:16 umatik/countries.py:267
+msgid "Argentina"
+msgstr "Arjantin"
+
+#: umatik/countries.py:17 umatik/countries.py:268
+msgid "Armenia"
+msgstr "Ermenistan"
+
+#: umatik/countries.py:18 umatik/countries.py:269
+msgid "Aruba"
+msgstr "Aruba"
+
+#: umatik/countries.py:19 umatik/countries.py:270
+msgid "Australia"
+msgstr "Avustralya"
+
+#: umatik/countries.py:20 umatik/countries.py:271
+msgid "Austria"
+msgstr "Avusturya"
+
+#: umatik/countries.py:21 umatik/countries.py:272
+msgid "Azerbaijan"
+msgstr "Azerbaycan"
+
+#: umatik/countries.py:22 umatik/countries.py:273
+msgid "Bahamas"
+msgstr "Bahamalar"
+
+#: umatik/countries.py:23 umatik/countries.py:274
+msgid "Bahrain"
+msgstr "Bahreyn"
+
+#: umatik/countries.py:24 umatik/countries.py:275
+msgid "Bangladesh"
+msgstr "Bangladeş"
+
+#: umatik/countries.py:25 umatik/countries.py:276
+msgid "Barbados"
+msgstr "Barbados"
+
+#: umatik/countries.py:26 umatik/countries.py:277
+msgid "Belarus"
+msgstr "Belarus"
+
+#: umatik/countries.py:27 umatik/countries.py:278
+msgid "Belgium"
+msgstr "Belçika"
+
+#: umatik/countries.py:28 umatik/countries.py:279
+msgid "Belize"
+msgstr "Belize"
+
+#: umatik/countries.py:29 umatik/countries.py:280
+msgid "Benin"
+msgstr "Benin"
+
+#: umatik/countries.py:30 umatik/countries.py:281
+msgid "Bermuda"
+msgstr "Bermuda"
+
+#: umatik/countries.py:31 umatik/countries.py:282
+msgid "Bhutan"
+msgstr "Birleşik Arap Emirlikleri"
+
+#: umatik/countries.py:32 umatik/countries.py:284
+msgid "Bolivia, Plurinational State of"
+msgstr "Bolivya, Plurinational durumu"
+
+#: umatik/countries.py:33 umatik/countries.py:285
+msgid "Bosnia and Herzegovina"
+msgstr "Bosna Hersek"
+
+#: umatik/countries.py:34 umatik/countries.py:286
+msgid "Botswana"
+msgstr "Botsvana"
+
+#: umatik/countries.py:35 umatik/countries.py:287
+msgid "Bouvet Island"
+msgstr "Bouvet Adası"
+
+#: umatik/countries.py:36 umatik/countries.py:288
+msgid "Brazil"
+msgstr "Brezilya"
+
+#: umatik/countries.py:37 umatik/countries.py:289
+msgid "British Indian Ocean Territory"
+msgstr "Britanya Hint Okyanusu Toprakları"
+
+#: umatik/countries.py:38 umatik/countries.py:291
+msgid "Brunei Darussalam"
+msgstr "Brunei Darüsselam"
+
+#: umatik/countries.py:39 umatik/countries.py:292
+msgid "Bulgaria"
+msgstr "Bulgaristan"
+
+#: umatik/countries.py:40 umatik/countries.py:293
+msgid "Burkina Faso"
+msgstr "Burkina Faso"
+
+#: umatik/countries.py:41 umatik/countries.py:294
+msgid "Burundi"
+msgstr "Burundi"
+
+#: umatik/countries.py:42 umatik/countries.py:295
+msgid "Cambodia"
+msgstr "Kamboçya"
+
+#: umatik/countries.py:43 umatik/countries.py:296
+msgid "Cameroon"
+msgstr "Kamerun"
+
+#: umatik/countries.py:44 umatik/countries.py:297
+msgid "Canada"
+msgstr "Kanada"
+
+#: umatik/countries.py:45 umatik/countries.py:298
+msgid "Cape Verde"
+msgstr "Cape Verde"
+
+#: umatik/countries.py:46 umatik/countries.py:299
+msgid "Cayman Islands"
+msgstr "Cayman Adaları"
+
+#: umatik/countries.py:47 umatik/countries.py:300
+msgid "Central African Republic"
+msgstr "Orta Afrika Cumhuriyeti"
+
+#: umatik/countries.py:48 umatik/countries.py:301
+msgid "Chad"
+msgstr "Çad"
+
+#: umatik/countries.py:49 umatik/countries.py:302
+msgid "Chile"
+msgstr "Şili"
+
+#: umatik/countries.py:50 umatik/countries.py:303
+msgid "China"
+msgstr "Çin"
+
+#: umatik/countries.py:51 umatik/countries.py:304
+msgid "Christmas Island"
+msgstr "Noel Adası"
+
+#: umatik/countries.py:52 umatik/countries.py:305
+msgid "Cocos (Keeling) Islands"
+msgstr "Cocos (Keeling) Adaları"
+
+#: umatik/countries.py:53 umatik/countries.py:306
+msgid "Colombia"
+msgstr "Kolombiya"
+
+#: umatik/countries.py:54 umatik/countries.py:307
+msgid "Comoros"
+msgstr "Komor Adaları"
+
+#: umatik/countries.py:55 umatik/countries.py:308
+msgid "Congo"
+msgstr "Kongo"
+
+#: umatik/countries.py:56 umatik/countries.py:309
+msgid "Congo, The Democratic Republic of the"
+msgstr "Kongo, Demokratik Cumhuriyeti"
+
+#: umatik/countries.py:57 umatik/countries.py:310
+msgid "Cook Islands"
+msgstr "Cook Adaları"
+
+#: umatik/countries.py:58 umatik/countries.py:311
+msgid "Costa Rica"
+msgstr "Kosta Rika"
+
+#: umatik/countries.py:59 umatik/countries.py:312
+msgid "Côte D'ivoire"
+msgstr "Fildişi Sahilleri"
+
+#: umatik/countries.py:60 umatik/countries.py:313
+msgid "Croatia"
+msgstr "Hırvatistan"
+
+#: umatik/countries.py:61 umatik/countries.py:314
+msgid "Cuba"
+msgstr "Küba"
+
+#: umatik/countries.py:62 umatik/countries.py:315
+msgid "Cyprus"
+msgstr "Kıbrıs"
+
+#: umatik/countries.py:63 umatik/countries.py:316
+msgid "Czech Republic"
+msgstr "Çek Cumhuriyeti"
+
+#: umatik/countries.py:64 umatik/countries.py:318
+msgid "Denmark"
+msgstr "Danimarka"
+
+#: umatik/countries.py:65 umatik/countries.py:319
+msgid "Djibouti"
+msgstr "Cibuti"
+
+#: umatik/countries.py:66 umatik/countries.py:320
+msgid "Dominica"
+msgstr "Dominika"
+
+#: umatik/countries.py:67 umatik/countries.py:321
+msgid "Dominican Republic"
+msgstr "Dominik Cumhuriyeti"
+
+#: umatik/countries.py:68 umatik/countries.py:322
+msgid "Ecuador"
+msgstr "Ekvador"
+
+#: umatik/countries.py:69 umatik/countries.py:323
+msgid "Egypt"
+msgstr "Mısır"
+
+#: umatik/countries.py:70 umatik/countries.py:324
+msgid "El Salvador"
+msgstr "El Salvador"
+
+#: umatik/countries.py:71 umatik/countries.py:325
+msgid "Equatorial Guinea"
+msgstr "Ekvator Ginesi"
+
+#: umatik/countries.py:72 umatik/countries.py:326
+msgid "Eritrea"
+msgstr "Eritre"
+
+#: umatik/countries.py:73 umatik/countries.py:327
+msgid "Estonia"
+msgstr "Estonya"
+
+#: umatik/countries.py:74 umatik/countries.py:328
+msgid "Ethiopia"
+msgstr "Etiyopya"
+
+#: umatik/countries.py:75 umatik/countries.py:329
+msgid "Falkland Islands (Malvinas)"
+msgstr "Falkland Adaları (Malvinas)"
+
+#: umatik/countries.py:76 umatik/countries.py:330
+msgid "Faroe Islands"
+msgstr "Faroe Adaları"
+
+#: umatik/countries.py:77 umatik/countries.py:332
+msgid "Fiji"
+msgstr "Fiji"
+
+#: umatik/countries.py:78 umatik/countries.py:333
+msgid "Finland"
+msgstr "Finlandiya"
+
+#: umatik/countries.py:79 umatik/countries.py:334
+msgid "France"
+msgstr "Fransa"
+
+#: umatik/countries.py:80 umatik/countries.py:335
+msgid "French Guiana"
+msgstr "Fransız Guyanası"
+
+#: umatik/countries.py:81 umatik/countries.py:336
+msgid "French Polynesia"
+msgstr "Fransız Polinezyası"
+
+#: umatik/countries.py:82 umatik/countries.py:337
+msgid "French Southern Territories"
+msgstr "Fransız Güney bölgeleri"
+
+#: umatik/countries.py:83 umatik/countries.py:338
+msgid "Gabon"
+msgstr "Gabon"
+
+#: umatik/countries.py:84 umatik/countries.py:339
+msgid "Gambia"
+msgstr "Gambiya"
+
+#: umatik/countries.py:85 umatik/countries.py:340
+msgid "Georgia"
+msgstr "Gürcistan"
+
+#: umatik/countries.py:86 umatik/countries.py:341
+msgid "Germany"
+msgstr "Almanya"
+
+#: umatik/countries.py:87 umatik/countries.py:342
+msgid "Ghana"
+msgstr "Gana"
+
+#: umatik/countries.py:88 umatik/countries.py:343
+msgid "Gibraltar"
+msgstr "Gibraltar"
+
+#: umatik/countries.py:89 umatik/countries.py:344
+msgid "Greece"
+msgstr "Yunanistan"
+
+#: umatik/countries.py:90 umatik/countries.py:345
+msgid "Greenland"
+msgstr "Grönland"
+
+#: umatik/countries.py:91 umatik/countries.py:346
+msgid "Grenada"
+msgstr "Grenada"
+
+#: umatik/countries.py:92 umatik/countries.py:347
+msgid "Guadeloupe"
+msgstr "Guadeloupe"
+
+#: umatik/countries.py:93 umatik/countries.py:348
+msgid "Guam"
+msgstr "Guam"
+
+#: umatik/countries.py:94 umatik/countries.py:349
+msgid "Guatemala"
+msgstr "Guatemala"
+
+#: umatik/countries.py:95 umatik/countries.py:350
+msgid "Guernsey"
+msgstr "Guernsey"
+
+#: umatik/countries.py:96 umatik/countries.py:351
+msgid "Guinea"
+msgstr "Gine"
+
+#: umatik/countries.py:97 umatik/countries.py:352
+msgid "Guinea-bissau"
+msgstr "Gine Bissau"
+
+#: umatik/countries.py:98 umatik/countries.py:353
+msgid "Guyana"
+msgstr "Guyana"
+
+#: umatik/countries.py:99 umatik/countries.py:354
+msgid "Haiti"
+msgstr "Haiti"
+
+#: umatik/countries.py:100 umatik/countries.py:355
+msgid "Heard Island and McDonald Islands"
+msgstr "Heard ve McDonald Adaları"
+
+#: umatik/countries.py:101 umatik/countries.py:356
+msgid "Holy See (Vatican City State)"
+msgstr "Vatikan (Vatikan Şehir Devleti)"
+
+#: umatik/countries.py:102 umatik/countries.py:357
+msgid "Honduras"
+msgstr "Honduras"
+
+#: umatik/countries.py:103 umatik/countries.py:358
+msgid "Hong Kong"
+msgstr "Hong Kong"
+
+#: umatik/countries.py:104 umatik/countries.py:359
+msgid "Hungary"
+msgstr "Macaristan"
+
+#: umatik/countries.py:105 umatik/countries.py:360
+msgid "Iceland"
+msgstr "İzlanda"
+
+#: umatik/countries.py:106 umatik/countries.py:361
+msgid "India"
+msgstr "Hindistan"
+
+#: umatik/countries.py:107 umatik/countries.py:362
+msgid "Indonesia"
+msgstr "Endonezya"
+
+#: umatik/countries.py:108 umatik/countries.py:363
+msgid "Iran, Islamic Republic of"
+msgstr "Iran İslam Cumhuriyeti"
+
+#: umatik/countries.py:109 umatik/countries.py:364
+msgid "Iraq"
+msgstr "Irak"
+
+#: umatik/countries.py:110 umatik/countries.py:365
+msgid "Ireland"
+msgstr "İrlanda"
+
+#: umatik/countries.py:111 umatik/countries.py:367
+msgid "Isle of Man"
+msgstr "Isle of Man"
+
+#: umatik/countries.py:112 umatik/countries.py:368
+msgid "Israel"
+msgstr "İsrail"
+
+#: umatik/countries.py:113 umatik/countries.py:369
+msgid "Italy"
+msgstr "İtalya"
+
+#: umatik/countries.py:114 umatik/countries.py:370
+msgid "Jamaica"
+msgstr "Jamaika"
+
+#: umatik/countries.py:115 umatik/countries.py:371
+msgid "Japan"
+msgstr "Japonya"
+
+#: umatik/countries.py:116 umatik/countries.py:372
+msgid "Jersey"
+msgstr "Jersey"
+
+#: umatik/countries.py:117 umatik/countries.py:373
+msgid "Jordan"
+msgstr "Ürdün"
+
+#: umatik/countries.py:118 umatik/countries.py:374
+msgid "Kazakhstan"
+msgstr "Kazakistan"
+
+#: umatik/countries.py:119 umatik/countries.py:375
+msgid "Kenya"
+msgstr "Kenya"
+
+#: umatik/countries.py:120 umatik/countries.py:376
+msgid "Kiribati"
+msgstr "Kiribati"
+
+#: umatik/countries.py:121 umatik/countries.py:377
+msgid "Korea, Democratic People's Republic of"
+msgstr "Kore, Demokratik Halk Cumhuriyeti"
+
+#: umatik/countries.py:122 umatik/countries.py:378
+msgid "Korea, Republic of"
+msgstr "Kore Cumhuriyeti"
+
+#: umatik/countries.py:123 umatik/countries.py:379
+msgid "Kuwait"
+msgstr "Kuveyt"
+
+#: umatik/countries.py:124 umatik/countries.py:380
+msgid "Kyrgyzstan"
+msgstr "Kırgızistan"
+
+#: umatik/countries.py:125 umatik/countries.py:381
+msgid "Lao People's Democratic Republic"
+msgstr "Lao Demokratik Halk Cumhuriyeti"
+
+#: umatik/countries.py:126 umatik/countries.py:382
+msgid "Latvia"
+msgstr "Letonya"
+
+#: umatik/countries.py:127 umatik/countries.py:383
+msgid "Lebanon"
+msgstr "Lübnan"
+
+#: umatik/countries.py:128 umatik/countries.py:384
+msgid "Lesotho"
+msgstr "Lesotho"
+
+#: umatik/countries.py:129 umatik/countries.py:385
+msgid "Liberia"
+msgstr "Liberya"
+
+#: umatik/countries.py:130 umatik/countries.py:386
+msgid "Libyan Arab Jamahiriya"
+msgstr "Libya Arap Halk Sosyalist Cemahiriyesi"
+
+#: umatik/countries.py:131 umatik/countries.py:387
+msgid "Liechtenstein"
+msgstr "Liechtenstein"
+
+#: umatik/countries.py:132 umatik/countries.py:388
+msgid "Lithuania"
+msgstr "Litvanya"
+
+#: umatik/countries.py:133 umatik/countries.py:389
+msgid "Luxembourg"
+msgstr "Lüksemburg"
+
+#: umatik/countries.py:134 umatik/countries.py:390
+msgid "Macao"
+msgstr "Makao"
+
+#: umatik/countries.py:135 umatik/countries.py:391
+msgid "Macedonia, The Former Yugoslav Republic of"
+msgstr "Makedonya, eski Yugoslav Cumhuriyeti"
+
+#: umatik/countries.py:136 umatik/countries.py:392
+msgid "Madagascar"
+msgstr "Madagaskar"
+
+#: umatik/countries.py:137 umatik/countries.py:393
+msgid "Malawi"
+msgstr "Malavi"
+
+#: umatik/countries.py:138 umatik/countries.py:394
+msgid "Malaysia"
+msgstr "Malezya"
+
+#: umatik/countries.py:139 umatik/countries.py:395
+msgid "Maldives"
+msgstr "Maldivler"
+
+#: umatik/countries.py:140 umatik/countries.py:396
+msgid "Mali"
+msgstr "Mali"
+
+#: umatik/countries.py:141 umatik/countries.py:397
+msgid "Malta"
+msgstr "Malta"
+
+#: umatik/countries.py:142 umatik/countries.py:398
+msgid "Marshall Islands"
+msgstr "Marshall Adaları"
+
+#: umatik/countries.py:143 umatik/countries.py:399
+msgid "Martinique"
+msgstr "Martinique"
+
+#: umatik/countries.py:144 umatik/countries.py:400
+msgid "Mauritania"
+msgstr "Moritanya"
+
+#: umatik/countries.py:145 umatik/countries.py:401
+msgid "Mauritius"
+msgstr "Mauritius"
+
+#: umatik/countries.py:146 umatik/countries.py:402
+msgid "Mayotte"
+msgstr "Mayotte"
+
+#: umatik/countries.py:147 umatik/countries.py:403
+msgid "Mexico"
+msgstr "Meksika"
+
+#: umatik/countries.py:148 umatik/countries.py:404
+msgid "Micronesia, Federated States of"
+msgstr "Mikronezya Federe Devletleri"
+
+#: umatik/countries.py:149 umatik/countries.py:405
+msgid "Moldova, Republic of"
+msgstr "Moldova Cumhuriyeti"
+
+#: umatik/countries.py:150 umatik/countries.py:406
+msgid "Monaco"
+msgstr "Monaco"
+
+#: umatik/countries.py:151 umatik/countries.py:407
+msgid "Mongolia"
+msgstr "Moğolistan"
+
+#: umatik/countries.py:152 umatik/countries.py:408
+msgid "Montenegro"
+msgstr "Karadağ"
+
+#: umatik/countries.py:153 umatik/countries.py:409
+msgid "Montserrat"
+msgstr "Montserrat"
+
+#: umatik/countries.py:154 umatik/countries.py:410
+msgid "Morocco"
+msgstr "Fas"
+
+#: umatik/countries.py:155 umatik/countries.py:411
+msgid "Mozambique"
+msgstr "Mozambik"
+
+#: umatik/countries.py:156 umatik/countries.py:412
+msgid "Myanmar"
+msgstr "Myanmar"
+
+#: umatik/countries.py:157 umatik/countries.py:413
+msgid "Namibia"
+msgstr "Namibya"
+
+#: umatik/countries.py:158 umatik/countries.py:414 umatik/countries.py:883
+msgid "Nauru"
+msgstr "Nauru"
+
+#: umatik/countries.py:159 umatik/countries.py:415
+msgid "Nepal"
+msgstr "Nepal"
+
+#: umatik/countries.py:160 umatik/countries.py:416
+msgid "Netherlands"
+msgstr "Hollanda"
+
+#: umatik/countries.py:161 umatik/countries.py:417
+msgid "Netherlands Antilles"
+msgstr "Hollanda Antilleri"
+
+#: umatik/countries.py:162 umatik/countries.py:418
+msgid "New Caledonia"
+msgstr "Yeni Kaledonya"
+
+#: umatik/countries.py:163 umatik/countries.py:419
+msgid "New Zealand"
+msgstr "Yeni Zelanda"
+
+#: umatik/countries.py:164 umatik/countries.py:420
+msgid "Nicaragua"
+msgstr "Nikaragua"
+
+#: umatik/countries.py:165 umatik/countries.py:421
+msgid "Niger"
+msgstr "Nijer"
+
+#: umatik/countries.py:166 umatik/countries.py:422
+msgid "Nigeria"
+msgstr "Nijerya"
+
+#: umatik/countries.py:167 umatik/countries.py:423
+msgid "Niue"
+msgstr "Niue"
+
+#: umatik/countries.py:168 umatik/countries.py:424
+msgid "Norfolk Island"
+msgstr "Norfolk Adası"
+
+#: umatik/countries.py:169 umatik/countries.py:425
+msgid "Northern Mariana Islands"
+msgstr "Kuzey Mariana Adaları"
+
+#: umatik/countries.py:170 umatik/countries.py:426
+msgid "Norway"
+msgstr "Norveç"
+
+#: umatik/countries.py:171 umatik/countries.py:428
+msgid "Oman"
+msgstr "Umman"
+
+#: umatik/countries.py:172 umatik/countries.py:429
+msgid "Pakistan"
+msgstr "Pakistan"
+
+#: umatik/countries.py:173 umatik/countries.py:430
+msgid "Palau"
+msgstr "Palau"
+
+#: umatik/countries.py:174 umatik/countries.py:431
+msgid "Palestinian Territory, Occupied"
+msgstr "Filistin bölgesi, işgal"
+
+#: umatik/countries.py:175 umatik/countries.py:432
+msgid "Panama"
+msgstr "Panama"
+
+#: umatik/countries.py:176 umatik/countries.py:433
+msgid "Papua New Guinea"
+msgstr "Papua Yeni Gine"
+
+#: umatik/countries.py:177 umatik/countries.py:434
+msgid "Paraguay"
+msgstr "Paraguay"
+
+#: umatik/countries.py:178 umatik/countries.py:435
+msgid "Peru"
+msgstr "Peru"
+
+#: umatik/countries.py:179 umatik/countries.py:436
+msgid "Philippines"
+msgstr "Filipinler"
+
+#: umatik/countries.py:180 umatik/countries.py:437
+msgid "Pitcairn"
+msgstr "Pitcairn"
+
+#: umatik/countries.py:181 umatik/countries.py:439
+msgid "Poland"
+msgstr "Polonya"
+
+#: umatik/countries.py:182 umatik/countries.py:440
+msgid "Portugal"
+msgstr "Portekiz"
+
+#: umatik/countries.py:183 umatik/countries.py:442
+msgid "Puerto Rico"
+msgstr "Porto Riko"
+
+#: umatik/countries.py:184 umatik/countries.py:443
+msgid "Qatar"
+msgstr "Katar"
+
+#: umatik/countries.py:185 umatik/countries.py:446
+msgid "Réunion"
+msgstr "Réunion"
+
+#: umatik/countries.py:186 umatik/countries.py:447
+msgid "Romania"
+msgstr "Romanya"
+
+#: umatik/countries.py:187 umatik/countries.py:448
+msgid "Russian Federation"
+msgstr "Rusya Federasyonu"
+
+#: umatik/countries.py:188 umatik/countries.py:449
+msgid "Rwanda"
+msgstr "Ruanda"
+
+#: umatik/countries.py:189 umatik/countries.py:450
+msgid "Saint Barthélemy"
+msgstr "Saint Barthélemy"
+
+#: umatik/countries.py:190 umatik/countries.py:451
+msgid "Saint Helena"
+msgstr "Saint Helena"
+
+#: umatik/countries.py:191 umatik/countries.py:452
+msgid "Saint Kitts and Nevis"
+msgstr "Saint Kitts ve Nevis"
+
+#: umatik/countries.py:192 umatik/countries.py:453
+msgid "Saint Lucia"
+msgstr "Saint Lucia"
+
+#: umatik/countries.py:193 umatik/countries.py:454
+msgid "Saint Martin"
+msgstr "Saint Martin"
+
+#: umatik/countries.py:194 umatik/countries.py:455
+msgid "Saint Pierre and Miquelon"
+msgstr "Piyer ve Mikelon"
+
+#: umatik/countries.py:195 umatik/countries.py:456
+msgid "Saint Vincent and the Grenadines"
+msgstr "Saint Vincent ve Grenadinler"
+
+#: umatik/countries.py:196 umatik/countries.py:457
+msgid "Samoa"
+msgstr "Samoa"
+
+#: umatik/countries.py:197 umatik/countries.py:458
+msgid "San Marino"
+msgstr "San Marino"
+
+#: umatik/countries.py:198 umatik/countries.py:459
+msgid "Sao Tome and Principe"
+msgstr "Sao Tome ve Principe"
+
+#: umatik/countries.py:199 umatik/countries.py:460
+msgid "Saudi Arabia"
+msgstr "Suudi Arabistan"
+
+#: umatik/countries.py:200 umatik/countries.py:461
+msgid "Senegal"
+msgstr "Senegal"
+
+#: umatik/countries.py:201 umatik/countries.py:462
+msgid "Serbia"
+msgstr "Sırbistan"
+
+#: umatik/countries.py:202 umatik/countries.py:463
+msgid "Seychelles"
+msgstr "Seyşel Adaları"
+
+#: umatik/countries.py:203 umatik/countries.py:464
+msgid "Sierra Leone"
+msgstr "Sierra Leone"
+
+#: umatik/countries.py:204 umatik/countries.py:465
+msgid "Singapore"
+msgstr "Singapur"
+
+#: umatik/countries.py:205 umatik/countries.py:466
+msgid "Slovakia"
+msgstr "Slovakya"
+
+#: umatik/countries.py:206 umatik/countries.py:467
+msgid "Slovenia"
+msgstr "Slovenya"
+
+#: umatik/countries.py:207 umatik/countries.py:468
+msgid "Solomon Islands"
+msgstr "Solomon Adaları"
+
+#: umatik/countries.py:208 umatik/countries.py:469
+msgid "Somalia"
+msgstr "Somali"
+
+#: umatik/countries.py:209 umatik/countries.py:470
+msgid "South Africa"
+msgstr "Güney Afrika"
+
+#: umatik/countries.py:210 umatik/countries.py:471
+msgid "South Georgia and the South Sandwich Islands"
+msgstr "Güney Georgia ve Güney Sandwich Adaları"
+
+#: umatik/countries.py:211 umatik/countries.py:472
+msgid "Spain"
+msgstr "İspanya"
+
+#: umatik/countries.py:212 umatik/countries.py:473
+msgid "Sri Lanka"
+msgstr "Sri Lanka"
+
+#: umatik/countries.py:213 umatik/countries.py:474
+msgid "Sudan"
+msgstr "Sudan"
+
+#: umatik/countries.py:214 umatik/countries.py:475
+msgid "Suriname"
+msgstr "Surinam"
+
+#: umatik/countries.py:215 umatik/countries.py:476
+msgid "Svalbard and Jan Mayen"
+msgstr "Svalbard ve Jan Mayen"
+
+#: umatik/countries.py:216 umatik/countries.py:477
+msgid "Swaziland"
+msgstr "Swaziland"
+
+#: umatik/countries.py:217 umatik/countries.py:478
+msgid "Sweden"
+msgstr "İsveç"
+
+#: umatik/countries.py:218 umatik/countries.py:479
+msgid "Switzerland"
+msgstr "İsviçre"
+
+#: umatik/countries.py:219 umatik/countries.py:480
+msgid "Syrian Arab Republic"
+msgstr "Suriye Arap Cumhuriyeti"
+
+#: umatik/countries.py:220 umatik/countries.py:481
+msgid "Taiwan, Province of China"
+msgstr "Tayvan, Çin Eyaleti"
+
+#: umatik/countries.py:221 umatik/countries.py:482
+msgid "Tajikistan"
+msgstr "Tacikistan"
+
+#: umatik/countries.py:222 umatik/countries.py:483
+msgid "Tanzania, United Republic of"
+msgstr "Tanzanya Birleşik Cumhuriyeti"
+
+#: umatik/countries.py:223 umatik/countries.py:484
+msgid "Thailand"
+msgstr "Tayland"
+
+#: umatik/countries.py:224 umatik/countries.py:487
+msgid "Timor-leste"
+msgstr "Doğu Timor"
+
+#: umatik/countries.py:225 umatik/countries.py:488
+msgid "Togo"
+msgstr "Togo"
+
+#: umatik/countries.py:226 umatik/countries.py:489
+msgid "Tokelau"
+msgstr "Tokelau"
+
+#: umatik/countries.py:227 umatik/countries.py:490 umatik/countries.py:936
+msgid "Tonga"
+msgstr "Tonga"
+
+#: umatik/countries.py:228 umatik/countries.py:491
+msgid "Trinidad and Tobago"
+msgstr "Trinidad ve Tobago"
+
+#: umatik/countries.py:229 umatik/countries.py:492
+msgid "Tunisia"
+msgstr "Tunus"
+
+#: umatik/countries.py:230 umatik/countries.py:493
+msgid "Turkey"
+msgstr "Türkiye"
+
+#: umatik/countries.py:231 umatik/countries.py:494
+msgid "Turkmenistan"
+msgstr "Türkmenistan"
+
+#: umatik/countries.py:232 umatik/countries.py:495
+msgid "Turks and Caicos Islands"
+msgstr "Turks ve Caicos Adaları"
+
+#: umatik/countries.py:233 umatik/countries.py:496
+msgid "Tuvalu"
+msgstr "Tuvalu"
+
+#: umatik/countries.py:234 umatik/countries.py:498
+msgid "Uganda"
+msgstr "Uganda"
+
+#: umatik/countries.py:235 umatik/countries.py:499
+msgid "Ukraine"
+msgstr "Ukrayna"
+
+#: umatik/countries.py:236 umatik/countries.py:500
+msgid "United Arab Emirates"
+msgstr "Birleşik Arap Emirlikleri"
+
+#: umatik/countries.py:237 umatik/countries.py:501
+msgid "United Kingdom"
+msgstr "Birleşik Krallık"
+
+#: umatik/countries.py:238 umatik/countries.py:503
+msgid "United States"
+msgstr "Amerika Birleşik Devletleri"
+
+#: umatik/countries.py:239 umatik/countries.py:504
+msgid "United States Minor Outlying Islands"
+msgstr "Amerika Birleşik Devletleri Küçük Dış Adaları"
+
+#: umatik/countries.py:240 umatik/countries.py:505
+msgid "Uruguay"
+msgstr "Uruguay"
+
+#: umatik/countries.py:241 umatik/countries.py:506
+msgid "Uzbekistan"
+msgstr "Özbekistan"
+
+#: umatik/countries.py:242 umatik/countries.py:507
+msgid "Vanuatu"
+msgstr "Vanuatu Cumhuriyeti"
+
+#: umatik/countries.py:243 umatik/countries.py:508
+msgid "Venezuela, Bolivarian Republic of"
+msgstr "Venezuela, Bolivarya Cumhuriyeti"
+
+#: umatik/countries.py:244 umatik/countries.py:509
+msgid "Viet Nam"
+msgstr "Vietnam"
+
+#: umatik/countries.py:245 umatik/countries.py:510
+msgid "Virgin Islands, British"
+msgstr "Virgin Adaları, İngiliz"
+
+#: umatik/countries.py:246 umatik/countries.py:511
+msgid "Virgin Islands, U.s."
+msgstr "Virgin Adaları, Amerikan"
+
+#: umatik/countries.py:247 umatik/countries.py:512
+msgid "Wallis and Futuna"
+msgstr "Wallis ve Futuna Adaları"
+
+#: umatik/countries.py:248 umatik/countries.py:513
+msgid "Western Sahara"
+msgstr "Batı Sahra"
+
+#: umatik/countries.py:249 umatik/countries.py:514
+msgid "Yemen"
+msgstr "Yemen"
+
+#: umatik/countries.py:250 umatik/countries.py:515
+msgid "Zambia"
+msgstr "Zambiya"
+
+#: umatik/countries.py:251 umatik/countries.py:516
+msgid "Zimbabwe"
+msgstr "Zimbabve"
+
+#: umatik/countries.py:283
+msgid "Bolivarian Republic of Venezuela"
+msgstr "Venezuela Bolivar Cumhuriyeti"
+
+#: umatik/countries.py:290
+msgid "British Virgin Islands"
+msgstr "İngiliz Virgin Adaları"
+
+#: umatik/countries.py:317
+msgid "Democratic People's Republic of Korea"
+msgstr "Kore Demokratik Halk Cumhuriyeti"
+
+#: umatik/countries.py:331
+msgid "Federated States of Micronesia"
+msgstr "Mikronezya Federal Devletleri"
+
+#: umatik/countries.py:366
+msgid "Islamic Republic of Iran"
+msgstr "Iran İslam Cumhuriyeti"
+
+#: umatik/countries.py:427
+msgid "Occupied Palestinian Territory"
+msgstr "İşgal altındaki Filistin toprakları"
+
+#: umatik/countries.py:438
+msgid "Plurinational State of Bolivia"
+msgstr "Plurinational devlet Bolivya"
+
+#: umatik/countries.py:441
+msgid "Province of China Taiwan"
+msgstr "Eyaleti Çin'in Tayvan"
+
+#: umatik/countries.py:444
+msgid "Republic of Korea"
+msgstr "Kore Cumhuriyeti"
+
+#: umatik/countries.py:445
+msgid "Republic of Moldova"
+msgstr "Moldova Cumhuriyeti"
+
+#: umatik/countries.py:485
+msgid "The Democratic Republic of the Congo"
+msgstr "Kongo Demokratik Cumhuriyeti"
+
+#: umatik/countries.py:486
+msgid "The Former Yugoslav Republic of Macedonia"
+msgstr "Eski Yugoslav Makedonya Cumhuriyeti"
+
+#: umatik/countries.py:497
+msgid "U.s. Virgin Islands"
+msgstr "ABD Virgin Adaları"
+
+#: umatik/countries.py:502
+msgid "United Republic of Tanzania"
+msgstr "Tanzanya Birleşik Cumhuriyeti"
+
+#: umatik/countries.py:772
+msgid "Afar"
+msgstr "Afar"
+
+#: umatik/countries.py:773
+msgid "Abkhazian"
+msgstr "Abhazya"
+
+#: umatik/countries.py:774
+msgid "Avestan"
+msgstr "Avesta"
+
+#: umatik/countries.py:775
+msgid "Afrikaans"
+msgstr "Afrikaner"
+
+#: umatik/countries.py:776
+msgid "Akan"
+msgstr "Akan"
+
+#: umatik/countries.py:777
+msgid "Amharic"
+msgstr "Amhara dili"
+
+#: umatik/countries.py:778
+msgid "Aragonese"
+msgstr "Aragonca"
+
+#: umatik/countries.py:779
+msgid "Arabic"
+msgstr "Arapça"
+
+#: umatik/countries.py:780
+msgid "Assamese"
+msgstr "Assamese"
+
+#: umatik/countries.py:781
+msgid "Avaric"
+msgstr "Avaric"
+
+#: umatik/countries.py:782
+msgid "Aymara"
+msgstr "Aymara"
+
+#: umatik/countries.py:783
+msgid "Azerbaijani"
+msgstr "Azerbaycan"
+
+#: umatik/countries.py:784
+msgid "Bashkir"
+msgstr "Başkurt"
+
+#: umatik/countries.py:785
+msgid "Belarusian"
+msgstr "Beyaz Rusça"
+
+#: umatik/countries.py:786
+msgid "Bulgarian"
+msgstr "Bulgarca"
+
+#: umatik/countries.py:787
+msgid "Bihari"
+msgstr "Bihari"
+
+#: umatik/countries.py:788
+msgid "Bislama"
+msgstr "Bislama"
+
+#: umatik/countries.py:789
+msgid "Bambara"
+msgstr "Bambara"
+
+#: umatik/countries.py:790
+msgid "Bengali; Bangla"
+msgstr "Bengal dili; Bangla"
+
+#: umatik/countries.py:791
+msgid "Tibetan"
+msgstr "Tibet"
+
+#: umatik/countries.py:792
+msgid "Breton"
+msgstr "Breton"
+
+#: umatik/countries.py:793
+msgid "Bosnian"
+msgstr "Boşnakça"
+
+#: umatik/countries.py:794
+msgid "Catalan"
+msgstr "Katalanca"
+
+#: umatik/countries.py:795
+msgid "Chechen"
+msgstr "Çeçen"
+
+#: umatik/countries.py:796
+msgid "Chamorro"
+msgstr "İspanyolca"
+
+#: umatik/countries.py:797
+msgid "Corsican"
+msgstr "Korsika lehçesi"
+
+#: umatik/countries.py:798
+msgid "Cree"
+msgstr "Cree"
+
+#: umatik/countries.py:799
+msgid "Czech"
+msgstr "Çekçe"
+
+#: umatik/countries.py:800
+msgid "Church Slavic"
+msgstr "Kilise Slav"
+
+#: umatik/countries.py:801
+msgid "Chuvash"
+msgstr "Chuvash"
+
+#: umatik/countries.py:802
+msgid "Welsh"
+msgstr "Galce"
+
+#: umatik/countries.py:803
+msgid "Danish"
+msgstr "Danca"
+
+#: umatik/countries.py:804
+msgid "German"
+msgstr "Almanca"
+
+#: umatik/countries.py:805
+msgid "Divehi; Maldivian"
+msgstr "Divehi dili; Maldivlere"
+
+#: umatik/countries.py:806
+msgid "Dzongkha; Bhutani"
+msgstr "Dzongkha; Bhutani"
+
+#: umatik/countries.py:807
+msgid "Éwé"
+msgstr "Éwé"
+
+#: umatik/countries.py:808
+msgid "Greek"
+msgstr "Yunanca"
+
+#: umatik/countries.py:809
+msgid "English"
+msgstr "İngilizce"
+
+#: umatik/countries.py:810
+msgid "Esperanto"
+msgstr "Esperanto"
+
+#: umatik/countries.py:811
+msgid "Spanish"
+msgstr "İspanyolca"
+
+#: umatik/countries.py:812
+msgid "Estonian"
+msgstr "Estonca"
+
+#: umatik/countries.py:813
+msgid "Basque"
+msgstr "Bask dili"
+
+#: umatik/countries.py:814
+msgid "Persian"
+msgstr "Farsça"
+
+#: umatik/countries.py:815
+msgid "Fulah"
+msgstr "Fulah"
+
+#: umatik/countries.py:816
+msgid "Finnish"
+msgstr "Fince"
+
+#: umatik/countries.py:817
+msgid "Fijian; Fiji"
+msgstr "Fiji; Fiji"
+
+#: umatik/countries.py:818
+msgid "Faroese"
+msgstr "Faroe dili"
+
+#: umatik/countries.py:819
+msgid "French"
+msgstr "Fransızca"
+
+#: umatik/countries.py:820
+msgid "Western Frisian"
+msgstr "Batı Frizce"
+
+#: umatik/countries.py:821
+msgid "Irish"
+msgstr "İrlanda dili"
+
+#: umatik/countries.py:822
+msgid "Scottish Gaelic"
+msgstr "Kırım Tatarca"
+
+#: umatik/countries.py:823
+msgid "Galician"
+msgstr "Galiçya lehçesi"
+
+#: umatik/countries.py:824
+msgid "Guarani"
+msgstr "Guarani"
+
+#: umatik/countries.py:825
+msgid "Gujarati"
+msgstr "Gucerat dili"
+
+#: umatik/countries.py:826
+msgid "Manx"
+msgstr "Manx"
+
+#: umatik/countries.py:827
+msgid "Hausa"
+msgstr "Hausa"
+
+#: umatik/countries.py:828
+msgid "Hebrew (formerly iw)"
+msgstr "İbranice (formerly IW)"
+
+#: umatik/countries.py:829
+msgid "Hindi"
+msgstr "Hintçe"
+
+#: umatik/countries.py:830
+msgid "Hiri Motu"
+msgstr "Hiri Motu"
+
+#: umatik/countries.py:831
+msgid "Croatian"
+msgstr "Hırvatça"
+
+#: umatik/countries.py:832
+msgid "Haitian; Haitian Creole"
+msgstr "Haiti; Haitice"
+
+#: umatik/countries.py:833
+msgid "Hungarian"
+msgstr "Macarca"
+
+#: umatik/countries.py:834
+msgid "Armenian"
+msgstr "Ermenice"
+
+#: umatik/countries.py:835
+msgid "Herero"
+msgstr "Herero"
+
+#: umatik/countries.py:836
+msgid "Interlingua"
+msgstr "Interlingua"
+
+#: umatik/countries.py:837
+msgid "Indonesian (formerly in)"
+msgstr "Endonezya (eskiden gelen)"
+
+#: umatik/countries.py:838
+msgid "Interlingue; Occidental"
+msgstr "Okzitanca; Occidental"
+
+#: umatik/countries.py:839
+msgid "Igbo"
+msgstr "İbo dili"
+
+#: umatik/countries.py:840
+msgid "Sichuan Yi; Nuosu"
+msgstr "Sichuan Yi; Nuosu"
+
+#: umatik/countries.py:841
+msgid "Inupiak; Inupiaq"
+msgstr "Inupiak; İnyupikçe"
+
+#: umatik/countries.py:842
+msgid "Ido"
+msgstr "Ido"
+
+#: umatik/countries.py:843
+msgid "Icelandic"
+msgstr "İzlanda dili"
+
+#: umatik/countries.py:844
+msgid "Italian"
+msgstr "İtalyanca"
+
+#: umatik/countries.py:845
+msgid "Inuktitut"
+msgstr "İnuit dili"
+
+#: umatik/countries.py:846
+msgid "Japanese"
+msgstr "Japonca"
+
+#: umatik/countries.py:847
+msgid "Javanese"
+msgstr "Cava"
+
+#: umatik/countries.py:848
+msgid "Georgian"
+msgstr "Gürcüce"
+
+#: umatik/countries.py:849
+msgid "Kongo"
+msgstr "Kongo"
+
+#: umatik/countries.py:850
+msgid "Kikuyu; Gikuyu"
+msgstr "Kikuyu; Gikuyu"
+
+#: umatik/countries.py:851
+msgid "Kuanyama; Kwanyama"
+msgstr "Kuanyama; Kwanyama"
+
+#: umatik/countries.py:852
+msgid "Kazakh"
+msgstr "Kazakça"
+
+#: umatik/countries.py:853
+msgid "Kalaallisut; Greenlandic"
+msgstr "Kalaallisut; Grönland dili"
+
+#: umatik/countries.py:854
+msgid "Central Khmer; Cambodian"
+msgstr "Merkez Khmer; Kamboçya"
+
+#: umatik/countries.py:855
+msgid "Kannada"
+msgstr "Kannada dili"
+
+#: umatik/countries.py:856
+msgid "Korean"
+msgstr "Kore dili"
+
+#: umatik/countries.py:857
+msgid "Kanuri"
+msgstr "Kanuri"
+
+#: umatik/countries.py:858
+msgid "Kashmiri"
+msgstr "Keşmir"
+
+#: umatik/countries.py:859
+msgid "Kurdish"
+msgstr "Kürtçe"
+
+#: umatik/countries.py:860
+msgid "Komi"
+msgstr "Komi"
+
+#: umatik/countries.py:861
+msgid "Cornish"
+msgstr "Cornish"
+
+#: umatik/countries.py:862
+msgid "Kirghiz"
+msgstr "Kırgız"
+
+#: umatik/countries.py:863
+msgid "Latin"
+msgstr "Latin"
+
+#: umatik/countries.py:864
+msgid "Letzeburgesch; Luxembourgish"
+msgstr "Letzeburgesch; Lüksemburg dili"
+
+#: umatik/countries.py:865
+msgid "Ganda"
+msgstr "Ganda"
+
+#: umatik/countries.py:866
+msgid "Limburgish; Limburger; Limburgan"
+msgstr "Limburgish; Limburger; Limburgan"
+
+#: umatik/countries.py:867
+msgid "Lingala"
+msgstr "Lingala"
+
+#: umatik/countries.py:868
+msgid "Lao; Laotian"
+msgstr "Lao; Laotian"
+
+#: umatik/countries.py:869
+msgid "Lithuanian"
+msgstr "Litvanca"
+
+#: umatik/countries.py:870
+msgid "Luba-Katanga"
+msgstr "Luba-Katanga"
+
+#: umatik/countries.py:871
+msgid "Latvian; Lettish"
+msgstr "Letonya; Letonyalı"
+
+#: umatik/countries.py:872
+msgid "Malagasy"
+msgstr "Madagaskar"
+
+#: umatik/countries.py:873
+msgid "Marshallese"
+msgstr "Marşal"
+
+#: umatik/countries.py:874
+msgid "Maori"
+msgstr "Maori dili"
+
+#: umatik/countries.py:875
+msgid "Macedonian"
+msgstr "Makedonya"
+
+#: umatik/countries.py:876
+msgid "Malayalam"
+msgstr "Malayalam dili"
+
+#: umatik/countries.py:877
+msgid "Mongolian"
+msgstr "Moğolca"
+
+#: umatik/countries.py:878
+msgid "Moldavian"
+msgstr "Moldova"
+
+#: umatik/countries.py:879
+msgid "Marathi"
+msgstr "Marathi"
+
+#: umatik/countries.py:880
+msgid "Malay"
+msgstr "Malay dili"
+
+#: umatik/countries.py:881
+msgid "Maltese"
+msgstr "Malta dili"
+
+#: umatik/countries.py:882
+msgid "Burmese"
+msgstr "Birmanya"
+
+#: umatik/countries.py:884
+msgid "Norwegian Bokmål"
+msgstr "Norveç Bokmål"
+
+#: umatik/countries.py:885
+msgid "Ndebele, North"
+msgstr "Ndebele, Kuzey"
+
+#: umatik/countries.py:886
+msgid "Nepali"
+msgstr "Nepal dili"
+
+#: umatik/countries.py:887
+msgid "Ndonga"
+msgstr "Ndonga"
+
+#: umatik/countries.py:888
+msgid "Dutch"
+msgstr "Hollanda dili"
+
+#: umatik/countries.py:889
+msgid "Norwegian Nynorsk"
+msgstr "Norveç Nynorsk"
+
+#: umatik/countries.py:890
+msgid "Norwegian"
+msgstr "Norveç dili"
+
+#: umatik/countries.py:891
+msgid "Ndebele, South"
+msgstr "Ndebele, Güney"
+
+#: umatik/countries.py:892
+msgid "Navajo; Navaho"
+msgstr "Navajo; Navaho"
+
+#: umatik/countries.py:893
+msgid "Chichewa; Nyanja"
+msgstr "Chichewa; Nyanja"
+
+#: umatik/countries.py:894
+msgid "Occitan; Provençal"
+msgstr "Oksitanca; Provençal"
+
+#: umatik/countries.py:895
+msgid "Ojibwa"
+msgstr "Ojibva"
+
+#: umatik/countries.py:896
+msgid "(Afan) Oromo"
+msgstr "(Afan) Lugati't"
+
+#: umatik/countries.py:897
+msgid "Oriya"
+msgstr "Oriya dili"
+
+#: umatik/countries.py:898
+msgid "Ossetian; Ossetic"
+msgstr "Osetya; Ossetic"
+
+#: umatik/countries.py:899
+msgid "Panjabi; Punjabi"
+msgstr "Panjabi; Pencap dili"
+
+#: umatik/countries.py:900
+msgid "Pali"
+msgstr "Pali"
+
+#: umatik/countries.py:901
+msgid "Polish"
+msgstr "Lehçe"
+
+#: umatik/countries.py:902
+msgid "Pashto; Pushto"
+msgstr "Peştuca; Pushto"
+
+#: umatik/countries.py:903
+msgid "Portuguese"
+msgstr "Portekizce"
+
+#: umatik/countries.py:904
+msgid "Quechua"
+msgstr "Keçuva dilleri"
+
+#: umatik/countries.py:905
+msgid "Romansh"
+msgstr "Romanş"
+
+#: umatik/countries.py:906
+msgid "Rundi; Kirundi"
+msgstr "Rundi; Kirundi"
+
+#: umatik/countries.py:907
+msgid "Romanian"
+msgstr "Rumence"
+
+#: umatik/countries.py:908
+msgid "Russian"
+msgstr "Rusça"
+
+#: umatik/countries.py:909
+msgid "Kinyarwanda"
+msgstr "Kinyarwanda"
+
+#: umatik/countries.py:910
+msgid "Sanskrit"
+msgstr "Sanskrit"
+
+#: umatik/countries.py:911
+msgid "Sardinian"
+msgstr "Sardunya"
+
+#: umatik/countries.py:912
+msgid "Sindhi"
+msgstr "Sindi"
+
+#: umatik/countries.py:913
+msgid "Northern Sami"
+msgstr "Sami (Kuzey)"
+
+#: umatik/countries.py:914
+msgid "Sango; Sangro"
+msgstr "Paul; Sangro"
+
+#: umatik/countries.py:915
+msgid "Sinhala; Sinhalese"
+msgstr "Dhivehi; Sinhalese"
+
+#: umatik/countries.py:916
+msgid "Slovak"
+msgstr "Slovakça"
+
+#: umatik/countries.py:917
+msgid "Slovenian"
+msgstr "Slovence"
+
+#: umatik/countries.py:918
+msgid "Samoan"
+msgstr "Samoaca"
+
+#: umatik/countries.py:919
+msgid "Shona"
+msgstr "Shona"
+
+#: umatik/countries.py:920
+msgid "Somali"
+msgstr "Somali"
+
+#: umatik/countries.py:921
+msgid "Albanian"
+msgstr "Arnavutça"
+
+#: umatik/countries.py:922
+msgid "Serbian"
+msgstr "Sırp"
+
+#: umatik/countries.py:923
+msgid "Swati; Siswati"
+msgstr "Kadir; SiSwati"
+
+#: umatik/countries.py:924
+msgid "Sesotho; Sotho, Southern"
+msgstr "Kuzey; Sotho Dili, Güney"
+
+#: umatik/countries.py:925
+msgid "Sundanese"
+msgstr "Sundanese"
+
+#: umatik/countries.py:926
+msgid "Swedish"
+msgstr "İsveç dili"
+
+#: umatik/countries.py:927
+msgid "Swahili"
+msgstr "Svahili dili"
+
+#: umatik/countries.py:928
+msgid "Tamil"
+msgstr "Tamil dili"
+
+#: umatik/countries.py:929
+msgid "Telugu"
+msgstr "Telugu dili"
+
+#: umatik/countries.py:930
+msgid "Tajik"
+msgstr "Tacik dili"
+
+#: umatik/countries.py:931
+msgid "Thai"
+msgstr "Tay dili"
+
+#: umatik/countries.py:932
+msgid "Tigrinya"
+msgstr "Tigrinya"
+
+#: umatik/countries.py:933
+msgid "Turkmen"
+msgstr "Türkmen"
+
+#: umatik/countries.py:934
+msgid "Tagalog"
+msgstr "Portekizce"
+
+#: umatik/countries.py:935
+msgid "Tswana; Setswana"
+msgstr "Setsvana dili; Setsvana dili"
+
+#: umatik/countries.py:937
+msgid "Turkish"
+msgstr "Türkçe"
+
+#: umatik/countries.py:938
+msgid "Tsonga"
+msgstr "Tsonga"
+
+#: umatik/countries.py:939
+msgid "Tatar"
+msgstr "Tatarca"
+
+#: umatik/countries.py:940
+msgid "Twi"
+msgstr "Twi"
+
+#: umatik/countries.py:941
+msgid "Tahitian"
+msgstr "Tahiti"
+
+#: umatik/countries.py:942
+msgid "Uighur"
+msgstr "Uygurca"
+
+#: umatik/countries.py:943
+msgid "Ukrainian"
+msgstr "Ukrayna dili"
+
+#: umatik/countries.py:944
+msgid "Urdu"
+msgstr "Urduca"
+
+#: umatik/countries.py:945
+msgid "Uzbek"
+msgstr "Özbek"
+
+#: umatik/countries.py:946
+msgid "Venda"
+msgstr "Venda"
+
+#: umatik/countries.py:947
+msgid "Vietnamese"
+msgstr "Vietnam dili"
+
+#: umatik/countries.py:948
+msgid "Volapük; Volapuk"
+msgstr "Volapük; Volapuk"
+
+#: umatik/countries.py:949
+msgid "Walloon"
+msgstr "Valon"
+
+#: umatik/countries.py:950
+msgid "Wolof"
+msgstr "Volof dili"
+
+#: umatik/countries.py:951
+msgid "Xhosa"
+msgstr "Zosa dili"
+
+#: umatik/countries.py:952
+msgid "Yiddish (formerly ji)"
+msgstr "Yidiş (formerly ji)"
+
+#: umatik/countries.py:953
+msgid "Yoruba"
+msgstr "Yoruba dili"
+
+#: umatik/countries.py:954
+msgid "Zhuang"
+msgstr "Zhuang"
+
+#: umatik/countries.py:955
+msgid "Chinese"
+msgstr "Çince"
+
+#: umatik/countries.py:956
+msgid "Zulu"
+msgstr "Zulu dili"
+
+#: umatik/forms.py:9 umatik/forms.py:26
+msgid "E-Posta"
+msgstr "E-Posta"
+
+#: umatik/forms.py:10 umatik/forms.py:27
+msgid "Sifre"
+msgstr "Sifre"
+
+#: umatik/forms.py:11
+msgid "Sifre (Tekrar)"
+msgstr "Sifre (Tekrar)"
+
+#: umatik/forms.py:15
+msgid "Sifre alanlari birbirinin aynisi olmali."
+msgstr "Sifre alanları birbirinin şunlardan olmali."
+
+#: umatik/forms.py:21
+msgid "Bu e-posta adresi zaten kullanilmakta."
+msgstr "Bu e-posta adresi zaten kullanilmakta."
+
+#: umatik/forms.py:32 umatik/forms.py:33
+msgid "Current Password"
+msgstr "Geçerli şifre"
+
+#: umatik/forms.py:34 umatik/forms.py:35
+msgid "New Password"
+msgstr "Yeni şifre"
+
+#: umatik/forms.py:36 umatik/forms.py:37
+msgid "New Password (Again)"
+msgstr "Yeni şifre (tekrar)"
+
+#: umatik/forms.py:47
+msgid "New password fields do not match."
+msgstr "Yeni parola alanları eşleşmiyor."
+
+#: umatik/forms.py:54
+msgid "Please enter your current password correctly."
+msgstr "Lütfen doğru geçerli parolanızı girin."
+
+#: umatik/forms.py:60 umatik/models.py:147 umatik/models.py:209
+#: umatik/models.py:229 umatik/models.py:295 umatik/models.py:494
+#: umatik/models.py:517 umatik/models.py:551 umatik/models.py:596
+#: umatik/models.py:622 umatik/models.py:718 umatik/models.py:760
+#: umatik/models.py:1149 umatik/models.py:1275 umatik/models.py:1339
+#: umatik/models.py:1347 umatik/models.py:1354 umatik/models.py:1388
+msgid "Name"
+msgstr "Ad"
+
+#: umatik/forms.py:61
+msgid "Surname"
+msgstr "Soyadı"
+
+#: umatik/forms.py:62
+msgid "E-Mail"
+msgstr "E-posta"
+
+#: umatik/helpers.py:29
+msgid "Name of the node should not be longer than 30 characters."
+msgstr "Düğüm adı 30 karakterden uzun olmaması gerekir."
+
+#: umatik/helpers.py:35
+msgid "You must choose a node type."
+msgstr "Bir düğüm türü seçmeniz gerekir."
+
+#: umatik/models.py:60 umatik/models.py:841
+msgid "Language"
+msgstr "Dil"
+
+#: umatik/models.py:148 umatik/models.py:210 umatik/models.py:230
+msgid "Code name"
+msgstr "Kod adı"
+
+#: umatik/models.py:149 umatik/models.py:190 umatik/models.py:856
+#: umatik/models.py:913
+msgid "Menu title"
+msgstr "Menü başlığı"
+
+#: umatik/models.py:150 umatik/models.py:187 umatik/models.py:235
+#: umatik/models.py:317 umatik/models.py:399 umatik/models.py:863
+msgid "Active"
+msgstr "Etkin"
+
+#: umatik/models.py:151 umatik/models.py:191 umatik/models.py:620
+msgid "Display order"
+msgstr "Görüntüleme sırası"
+
+#: umatik/models.py:152
+msgid "Visible"
+msgstr "Görünür"
+
+#: umatik/models.py:152
+msgid "Module has an icon on app menu"
+msgstr "Modül bir simgesi uygulama menüsü vardır."
+
+#: umatik/models.py:154 umatik/models.py:193 umatik/models.py:212
+#: umatik/models.py:238 umatik/models.py:355 umatik/models.py:387
+#: umatik/models.py:665 umatik/models.py:1057 umatik/models.py:1096
+#: umatik/models.py:1126 umatik/models.py:1254 umatik/models.py:1304
+msgid "timestamp"
+msgstr "zaman damgası"
+
+#: umatik/models.py:192
+msgid "Custom icon"
+msgstr "Özel simge"
+
+#: umatik/models.py:213 umatik/models.py:341 umatik/models.py:860
+msgid "Icon"
+msgstr "Simge"
+
+#: umatik/models.py:214
+msgid "Big icon"
+msgstr "Büyük simge"
+
+#: umatik/models.py:231 umatik/models.py:373
+msgid "JM Theme"
+msgstr "JM Tema"
+
+#: umatik/models.py:232 umatik/models.py:374
+msgid "CSS"
+msgstr "CSS"
+
+#: umatik/models.py:233 umatik/models.py:234
+msgid "Processed CSS"
+msgstr "İşleme CSS"
+
+#: umatik/models.py:236 umatik/models.py:296 umatik/models.py:493
+#: umatik/models.py:516 umatik/models.py:797 umatik/models.py:818
+#: umatik/models.py:866 umatik/models.py:1208 umatik/models.py:1302
+#: umatik/models.py:1362 umatik/models.py:1390
+msgid "Sort order"
+msgstr "Sıralama düzeni"
+
+#: umatik/models.py:237
+msgid "Preview"
+msgstr "Önizleme"
+
+#: umatik/models.py:278 umatik/models.py:315 umatik/models.py:1255
+msgid "File"
+msgstr "Dosya"
+
+#: umatik/models.py:279
+#, fuzzy
+msgid "Image name"
+msgstr "Resim"
+
+#: umatik/models.py:287
+msgid "Theme image"
+msgstr "Konu görüntü"
+
+#: umatik/models.py:288
+msgid "Theme images"
+msgstr "Tema resimleri"
+
+#: umatik/models.py:300
+#, fuzzy
+msgid "Icon category"
+msgstr "Kategori"
+
+#: umatik/models.py:301
+#, fuzzy
+msgid "Icon categories"
+msgstr "Ürün Kategorileri"
+
+#: umatik/models.py:313
+msgid "Keywords"
+msgstr "Anahtar kelimeler"
+
+#: umatik/models.py:314
+msgid "Primary icon"
+msgstr "Birincil simge"
+
+#: umatik/models.py:314
+msgid "Preferred icon for the module"
+msgstr "Modül için tercih edilen simgesi"
+
+#: umatik/models.py:316
+msgid "HD File"
+msgstr "HD dosya"
+
+#: umatik/models.py:342
+msgid "Banner"
+msgstr "Başlık sayfası"
+
+#: umatik/models.py:343
+msgid "Text"
+msgstr "Metin"
+
+#: umatik/models.py:344
+msgid "Empty space"
+msgstr "Boş alan"
+
+#: umatik/models.py:345
+msgid "None"
+msgstr "Hiçbiri"
+
+#: umatik/models.py:353 umatik/models.py:792 umatik/models.py:813
+#: umatik/models.py:855 umatik/models.py:912 umatik/models.py:1207
+#: umatik/models.py:1252 umatik/models.py:1301
+msgid "Title"
+msgstr "Başlık"
+
+#: umatik/models.py:354 umatik/models.py:554 umatik/models.py:719
+#: umatik/models.py:761 umatik/models.py:1277 umatik/models.py:1348
+#: umatik/models.py:1356
+msgid "Description"
+msgstr "Tanım"
+
+#: umatik/models.py:372
+msgid "Base theme"
+msgstr "Temel Tema"
+
+#: umatik/models.py:375
+msgid "Short name"
+msgstr "Kısa adı"
+
+#: umatik/models.py:376
+msgid "Long name   "
+msgstr "Uzun ad   "
+
+#: umatik/models.py:377
+msgid "Company / Organisation"
+msgstr "Şirket / organizasyon"
+
+#: umatik/models.py:378
+msgid "App icon"
+msgstr "App simgesi"
+
+#: umatik/models.py:379
+msgid "Logo (small)"
+msgstr "Logo (küçük)"
+
+#: umatik/models.py:380
+msgid "Logo (big)"
+msgstr "Logo (büyük)"
+
+#: umatik/models.py:382
+msgid "Header type"
+msgstr "Başlık türü"
+
+#: umatik/models.py:383
+msgid "Header banner"
+msgstr "Header banner"
+
+#: umatik/models.py:384
+msgid "Splash image"
+msgstr "Splash Image"
+
+#: umatik/models.py:385
+#, fuzzy
+msgid "Background image"
+msgstr "Arkaplan"
+
+#: umatik/models.py:386
+#, fuzzy
+msgid "Background color"
+msgstr "Arkaplan"
+
+#: umatik/models.py:388
+msgid "Application language"
+msgstr "Uygulama dili"
+
+#: umatik/models.py:391
+msgid "Latitude"
+msgstr "Enlem"
+
+#: umatik/models.py:392
+msgid "Longitude"
+msgstr "Boylam"
+
+#: umatik/models.py:393
+#, fuzzy
+msgid "Address Line"
+msgstr "Adres"
+
+#: umatik/models.py:394
+msgid "Country"
+msgstr "Ülke"
+
+#: umatik/models.py:395
+msgid "Street"
+msgstr "Sokak"
+
+#: umatik/models.py:396
+msgid "City"
+msgstr "Şehir"
+
+#: umatik/models.py:397 umatik/models.py:557 umatik/models.py:1229
+#: umatik/models.py:1321
+msgid "Phone"
+msgstr "Telefon"
+
+#: umatik/models.py:398
+msgid "Fax"
+msgstr "Faks"
+
+#: umatik/models.py:400
+msgid "Publish App"
+msgstr "Uygulamayı yayına al"
+
+#: umatik/models.py:436 umatik/models.py:463 umatik/models.py:490
+#: umatik/models.py:514 umatik/models.py:548 umatik/models.py:593
+#: umatik/models.py:619 umatik/models.py:641 umatik/models.py:714
+#: umatik/models.py:755 umatik/models.py:791 umatik/models.py:812
+#: umatik/models.py:838 umatik/models.py:853 umatik/models.py:956
+#: umatik/models.py:975 umatik/models.py:1007 umatik/models.py:1053
+#: umatik/models.py:1090 umatik/models.py:1117 umatik/models.py:1148
+#: umatik/models.py:1162 umatik/models.py:1184 umatik/models.py:1206
+#: umatik/models.py:1226 umatik/models.py:1251 umatik/models.py:1274
+#: umatik/models.py:1300 umatik/models.py:1317 umatik/models.py:1352
+#: umatik/models.py:1387
+msgid "Application"
+msgstr "Uygulama"
+
+#: umatik/models.py:437
+msgid "Anahtar kelime"
+msgstr "Anahtar kelime"
+
+#: umatik/models.py:438
+msgid "Durum"
+msgstr "Durum"
+
+#: umatik/models.py:439 umatik/models.py:1010
+msgid "Tip"
+msgstr "İpucu"
+
+#: umatik/models.py:466
+msgid "Dil kodu"
+msgstr "Dil kodu"
+
+#: umatik/models.py:467
+msgid "Çevirisi"
+msgstr "Çevirisi"
+
+#: umatik/models.py:473
+msgid "Blok çevirisi"
+msgstr "Blok çevirisi"
+
+#: umatik/models.py:474
+msgid "Blok çevirileri"
+msgstr "Blok çevirileri"
+
+#: umatik/models.py:491
+#, fuzzy
+msgid "Parent Category"
+msgstr "Üst Kategori"
+
+#: umatik/models.py:492 umatik/models.py:723 umatik/models.py:767
+#: umatik/models.py:795 umatik/models.py:816 umatik/models.py:859
+#: umatik/models.py:1355 umatik/models.py:1389
+msgid "Image"
+msgstr "Resim"
+
+#: umatik/models.py:500 umatik/models.py:549 umatik/models.py:715
+#: umatik/models.py:757 umatik/models.py:1353
+msgid "Category"
+msgstr "Kategori"
+
+#: umatik/models.py:501
+#, fuzzy
+msgid "Categories"
+msgstr "Kategori"
+
+#: umatik/models.py:523 umatik/models.py:716
+#, fuzzy
+msgid "Store category"
+msgstr "Üst Kategori"
+
+#: umatik/models.py:524
+#, fuzzy
+msgid "Store categories"
+msgstr "Ürün Kategorileri"
+
+#: umatik/models.py:552
+msgid "Mağaza şablonu"
+msgstr "Lojistürk şablonu"
+
+#: umatik/models.py:555
+msgid "Authorized Person"
+msgstr "Yetkili Kişi"
+
+#: umatik/models.py:556
+msgid "Address"
+msgstr "Adres"
+
+#: umatik/models.py:558
+msgid "GSM"
+msgstr "GSM"
+
+#: umatik/models.py:559 umatik/models.py:1230 umatik/models.py:1322
+msgid "Email"
+msgstr "E-Posta"
+
+#: umatik/models.py:560
+msgid "Tepe logo"
+msgstr "Tepe logosu"
+
+#: umatik/models.py:561
+msgid "Liste logo"
+msgstr "Liste logosu"
+
+#: umatik/models.py:562
+msgid "Background"
+msgstr "Arkaplan"
+
+#: umatik/models.py:569
+msgid "Place"
+msgstr "Yer"
+
+#: umatik/models.py:570
+msgid "Places"
+msgstr "Yerler"
+
+#: umatik/models.py:581 umatik/models.py:717 umatik/models.py:758
+#: umatik/models.py:1095 umatik/models.py:1120
+msgid "Store"
+msgstr "Mağaza"
+
+#: umatik/models.py:582
+msgid "Booth"
+msgstr "Kabin"
+
+#: umatik/models.py:583
+msgid "Conferance Hall"
+msgstr "Konferans Salonu"
+
+#: umatik/models.py:584
+msgid "Restaurant"
+msgstr "Restoran"
+
+#: umatik/models.py:585
+msgid "WC"
+msgstr "DÜNYA KUPASI"
+
+#: umatik/models.py:586
+msgid "Junction"
+msgstr "Kavşak"
+
+#: umatik/models.py:587
+msgid "Gate"
+msgstr "Kapısı"
+
+#: umatik/models.py:588
+msgid "Parking Lot"
+msgstr "Otopark"
+
+#: umatik/models.py:621
+msgid "Target offset"
+msgstr "Hedef uzaklığı"
+
+#: umatik/models.py:623
+msgid "Map file"
+msgstr "Harita dosya"
+
+#: umatik/models.py:630
+msgid "Node'lari Duzenle"
+msgstr "Node'lari Duzenle"
+
+#: umatik/models.py:644
+msgid "Distance"
+msgstr "Mesafe"
+
+#: umatik/models.py:664
+msgid "Is super user"
+msgstr "Süper kullanıcı"
+
+#: umatik/models.py:720 umatik/models.py:1122 umatik/models.py:1357
+msgid "Price"
+msgstr "Fiyat"
+
+#: umatik/models.py:721 umatik/models.py:1358
+msgid "Cut Price"
+msgstr "İndirimli Fiyat"
+
+#: umatik/models.py:722
+#, fuzzy
+msgid "Discount Rate"
+msgstr "İndirim Oranı"
+
+#: umatik/models.py:725 umatik/models.py:1359
+msgid "Showcase"
+msgstr "Vitrin"
+
+#: umatik/models.py:733 umatik/models.py:759 umatik/models.py:1121
+msgid "Product"
+msgstr "Ürün"
+
+#: umatik/models.py:734
+msgid "Products"
+msgstr "Ürünler"
+
+#: umatik/models.py:762
+msgid "Start Date"
+msgstr "Başlangıç Tarihi"
+
+#: umatik/models.py:763
+msgid "End Date"
+msgstr "Bitiş Tarihi"
+
+#: umatik/models.py:765
+msgid "Full image banner"
+msgstr "Tam görüntü afiş"
+
+#: umatik/models.py:766
+msgid "Stock"
+msgstr "Stok"
+
+#: umatik/models.py:768
+msgid "Thumbnail image"
+msgstr "Küçük resim"
+
+#: umatik/models.py:769
+#, fuzzy
+msgid "Special background"
+msgstr "Arkaplan"
+
+#: umatik/models.py:777
+msgid "Campaign"
+msgstr "Kampanya"
+
+#: umatik/models.py:778
+msgid "Campaigns"
+msgstr "Kampanyalar"
+
+#: umatik/models.py:793 umatik/models.py:814 umatik/models.py:857
+#: umatik/models.py:914
+msgid "Summary"
+msgstr "Özet"
+
+#: umatik/models.py:794 umatik/models.py:815 umatik/models.py:858
+#: umatik/models.py:915
+msgid "Detail"
+msgstr "Detay"
+
+#: umatik/models.py:796 umatik/models.py:817 umatik/models.py:980
+msgid "zamanpulu"
+msgstr "zamanpulu"
+
+#: umatik/models.py:804
+msgid "News Entry"
+msgstr "Haberler giriş"
+
+#: umatik/models.py:805
+msgid "News Entries"
+msgstr "Haberler yazılar"
+
+#: umatik/models.py:825
+msgid "Page Entry"
+msgstr "Sayfa girişi"
+
+#: umatik/models.py:826
+msgid "Page Entries"
+msgstr "Sayfa girişleri"
+
+#: umatik/models.py:840
+msgid "Main language"
+msgstr "Ana dil"
+
+#: umatik/models.py:847
+msgid "Enabled language"
+msgstr "Etkin dili"
+
+#: umatik/models.py:848
+msgid "Enabled languages"
+msgstr "Etkinleştirilmiş diller"
+
+#: umatik/models.py:861
+msgid "Cusom icon"
+msgstr "Cusom simgesi"
+
+#: umatik/models.py:862
+msgid "Show in menu"
+msgstr "Menüde göster"
+
+#: umatik/models.py:864
+msgid "Publish date"
+msgstr "Yayın tarihi"
+
+#: umatik/models.py:903
+#, fuzzy
+msgid "Page"
+msgstr "Sayfa düğüm"
+
+#: umatik/models.py:904
+#, fuzzy
+msgid "Pages"
+msgstr "Sayfa düğümleri"
+
+#: umatik/models.py:957
+msgid "Current Version"
+msgstr "Geçerli sürüm"
+
+#: umatik/models.py:976
+msgid "İsim"
+msgstr "İsim"
+
+#: umatik/models.py:977
+msgid "E-posta"
+msgstr "E-posta"
+
+#: umatik/models.py:978
+msgid "Telefon"
+msgstr "Telefon"
+
+#: umatik/models.py:979
+#, fuzzy
+msgid "Adres"
+msgstr "Adres"
+
+#: umatik/models.py:987 umatik/models.py:1008
+msgid "Müşteri"
+msgstr "Müşteri"
+
+#: umatik/models.py:988
+msgid "Müşteriler"
+msgstr "Müşteriler"
+
+#: umatik/models.py:1009
+msgid "Mağaza"
+msgstr "Lojistürk"
+
+#: umatik/models.py:1011
+msgid "Müşteri iletisi"
+msgstr "Müşteri iletisi"
+
+#: umatik/models.py:1015
+msgid "Tarih"
+msgstr "Tarih"
+
+#: umatik/models.py:1016
+msgid "Genel geribildirim"
+msgstr "Genel geribildirim"
+
+#: umatik/models.py:1017
+msgid "Called back?"
+msgstr "Geri çağırdı?"
+
+#: umatik/models.py:1018
+msgid "Arşivlendi?"
+msgstr "Arşivlendi?"
+
+#: umatik/models.py:1019
+msgid "Görüşme ile ilgili notlar"
+msgstr "Görüşme ile ilgili notlar"
+
+#: umatik/models.py:1023
+msgid "Geribildirim"
+msgstr "Geribildirim"
+
+#: umatik/models.py:1024
+msgid "Geribildirimler"
+msgstr "Geribildirimler"
+
+#: umatik/models.py:1041
+msgid "Received"
+msgstr "Alınan"
+
+#: umatik/models.py:1042
+msgid "Processing"
+msgstr "İşleme"
+
+#: umatik/models.py:1043
+msgid "Preparing"
+msgstr "Hazırlama"
+
+#: umatik/models.py:1044
+msgid "Ready"
+msgstr "Hazır"
+
+#: umatik/models.py:1045
+msgid "Shipped"
+msgstr "Sevk"
+
+#: umatik/models.py:1046
+msgid "Delivered"
+msgstr "Teslim"
+
+#: umatik/models.py:1056 umatik/models.py:1093
+msgid "Customer"
+msgstr "Müşteri"
+
+#: umatik/models.py:1058
+msgid "Completion time"
+msgstr "Tamamlanma süresi"
+
+#: umatik/models.py:1059 umatik/models.py:1098
+#, fuzzy
+msgid "Total price"
+msgstr "İndirimli Fiyat"
+
+#: umatik/models.py:1064
+msgid "Order"
+msgstr "Sipariş"
+
+#: umatik/models.py:1065
+msgid "Orders"
+msgstr "Siparişler"
+
+#: umatik/models.py:1091
+msgid "Estimated preparation time"
+msgstr "Tahmin edilen hazırlık süresine"
+
+#: umatik/models.py:1094
+msgid "Base order"
+msgstr "Temel düzeni"
+
+#: umatik/models.py:1097 umatik/models.py:1360
+msgid "Preparation time"
+msgstr "Hazırlık süresi"
+
+#: umatik/models.py:1103
+#, fuzzy
+msgid "Store Order"
+msgstr "Mağaza"
+
+#: umatik/models.py:1104
+#, fuzzy
+msgid "Store Orders"
+msgstr "Mağazalar"
+
+#: umatik/models.py:1118 umatik/models.py:1119
+msgid "Chart"
+msgstr "Grafiği"
+
+#: umatik/models.py:1123
+msgid "Quantity"
+msgstr "Miktar"
+
+#: umatik/models.py:1124
+msgid "Line total"
+msgstr "Satır toplamı"
+
+#: umatik/models.py:1131
+msgid "Order item"
+msgstr "Sipariş maddesi"
+
+#: umatik/models.py:1132
+msgid "Order items"
+msgstr "Öğeleri sıralama"
+
+#: umatik/models.py:1150 umatik/models.py:1276
+#, fuzzy
+msgid "Date"
+msgstr "Bitiş Tarihi"
+
+#: umatik/models.py:1154
+msgid "Client Error"
+msgstr "İstemci hata"
+
+#: umatik/models.py:1155
+msgid "Client Errors"
+msgstr "İstemci hataları"
+
+#: umatik/models.py:1163 umatik/models.py:1185
+msgid "First Name"
+msgstr "İlk ad"
+
+#: umatik/models.py:1164 umatik/models.py:1186
+#, fuzzy
+msgid "Last Name"
+msgstr "Ad"
+
+#: umatik/models.py:1165 umatik/models.py:1187 umatik/models.py:1227
+#: umatik/models.py:1319
+msgid "Company / Organization"
+msgstr "Şirket / organizasyon"
+
+#: umatik/models.py:1166 umatik/models.py:1188
+#, fuzzy
+msgid "Position"
+msgstr "Tanım"
+
+#: umatik/models.py:1167 umatik/models.py:1189 umatik/models.py:1228
+#: umatik/models.py:1320
+msgid "Profile"
+msgstr "Profili"
+
+#: umatik/models.py:1168 umatik/models.py:1190 umatik/models.py:1209
+#: umatik/models.py:1217
+msgid "Photo"
+msgstr "Fotoğraf"
+
+#: umatik/models.py:1176
+msgid "Speaker"
+msgstr "Hoparlör"
+
+#: umatik/models.py:1198
+msgid "Delegate"
+msgstr "Temsilci"
+
+#: umatik/models.py:1218
+msgid "Photos"
+msgstr "Fotoğraflar"
+
+#: umatik/models.py:1231 umatik/models.py:1323
+msgid "Detail logo"
+msgstr "Ayrıntı logosu"
+
+#: umatik/models.py:1240 umatik/models.py:1253
+msgid "Exhibitor"
+msgstr "Katılımcı"
+
+#: umatik/models.py:1279
+#, fuzzy
+msgid "Start"
+msgstr "Başlangıç Tarihi"
+
+#: umatik/models.py:1280
+msgid "End"
+msgstr "Bitiş"
+
+#: umatik/models.py:1281
+msgid "Event image"
+msgstr "Olay görüntüsü"
+
+#: umatik/models.py:1282
+msgid "Location"
+msgstr "Konum"
+
+#: umatik/models.py:1291
+msgid "Event"
+msgstr "Olay"
+
+#: umatik/models.py:1330
+msgid "Sponsor"
+msgstr "Sponsor"
+
+#: umatik/models.py:1361
+msgid "As seconds. Enter an integer between 1 - 255"
+msgstr "Saniye. 1-255 Arasında bir tamsayı girin"
+
+#: umatik/models.py:1374
+msgid "Menu item"
+msgstr "Menü öğesi"
+
+#: umatik/models.py:1375
+msgid "Menu items"
+msgstr "Menü öğeleri"
+
+#: umatik/models.py:1405
+#, fuzzy
+msgid "Menu category"
+msgstr "Üst Kategori"
+
+#: umatik/models.py:1406
+#, fuzzy
+msgid "Menu categories"
+msgstr "Ürün Kategorileri"
+
+#: umatik/admin/__init__.py:54
+msgid "Personal info"
+msgstr "Kişisel bilgi"
+
+#: umatik/admin/application.py:41
+msgid "Languages"
+msgstr "Diller"
+
+#: umatik/admin/application.py:100
+msgid "Application saved successfuly"
+msgstr "Uygulama başarıyla kaydedildi"
+
+#~ msgid "Yerlesim Plani"
+#~ msgstr "Yerleşim planı"
+
+#~ msgid "Etkinlikler"
+#~ msgstr "Etkinlikler"
+
+#~ msgid "Geri Bildirim"
+#~ msgstr "Geri Bildirim"
+
+#~ msgid "Bilgi Merkezi"
+#~ msgstr "Bilgi Merkezi"
+
+#~ msgid "Galeri"
+#~ msgstr "Galeri"
+
+#~ msgid "Haberler"
+#~ msgstr "Haberler"
+
+#~ msgid "Dil"
+#~ msgstr "Dil"
+
+#~ msgid "Content node"
+#~ msgstr "İçerik düğümü"
+
+#, fuzzy
+#~ msgid "Page Translation"
+#~ msgstr "Çeviri"
+
+#, fuzzy
+#~ msgid "Page Translations"
+#~ msgstr "Çeviri"
+
+#~ msgid "Logo"
+#~ msgstr "Logo"
+
+#~ msgid "Product Category"
+#~ msgstr "Ürün Kategorisi"
+
+#, fuzzy
+#~ msgid "Momentary Campaign"
+#~ msgstr "Anlık Kampanya"

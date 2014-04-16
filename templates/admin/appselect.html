@@ -1,0 +1,53 @@
+{% load i18n admin_static %}
+<!--suppress ALL -->
+<link rel="stylesheet" type="text/css" href="{% static "admin/css/dashboard.css" %}"/>
+<link rel="stylesheet" type="text/css" href="/media/cssjs/admin.css" />
+<link rel="stylesheet" type="text/css" href="/media/cssjs/admin_t.css"/>
+<style>
+    div#adselcont *{
+        font-size:20px;
+    }
+    div#adselcont{
+        padding:40px;
+
+    }
+</style>
+<div id="adselcont">
+<div>
+    <p>{% trans "Create a new app" %}</p>
+    <form method="post" action="">{% csrf_token %}
+        <select id="create_new_app" name="app_type">
+            <option value="">...</option>
+            {% for i in avail_apptypes %}
+                <option value="{{ i.id }}">{{ i }}</option>
+            {% endfor %}
+        </select>
+        <input type="text" name="app_name" placeholder="{% trans "Application name" %}" />
+        <input type="submit" name="submit" value="{% trans "Create" %}" />
+    </form>
+    {% if messages %}
+        <ul>
+            {% for message in messages %}
+                <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+</div>
+
+<div>
+    {% if avail_apps %}
+        <p>{% trans "Select the app that you want to edit." %}</p>
+        <ul>
+        {% for i in avail_apps %}
+            <li>
+                <a href="?appid={{ i.id }}">{{ i }}</a>
+            </li>
+        {% endfor %}
+        </ul>
+
+    {% else %}
+        <p>{% trans "There aren't any apps to edit :(" %}</p>
+    {% endif %}
+</div>
+
+</div>

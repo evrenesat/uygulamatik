@@ -1,0 +1,16 @@
+<div data-role="fieldcontain" class="tmpl_wrapper">
+
+        <h3 class="center details_header">{{=it.name}}</h3>
+        {{? it.image}}
+        <img src="{{#tv.static}}/ac_lrg_{{=it.image}}" onerror="downloadOnDemand(this)"  class="full_width" />
+        {{?}}
+
+        <p class="justify">{{=it.description}}</p>
+        <p>Bu etkinlik <strong>{{=it.start_date}}</strong> - <strong>{{=it.end_date}}</strong> tarihleri arasında geçerlidir.</p>
+
+        <div class="center_element">
+            <a data-href="javascript:void(0);" class='share_link'><span>Paylaş</span> <img src="images/share.png" class="share" /></a>
+        </div>
+
+
+</div>

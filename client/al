@@ -1,0 +1,3 @@
+#!/bin/sh
+
+rsync -rz  --progress --exclude-from=exclude.list cnvar@elipsis.com.tr:/home/cnvar/forum-server/media/uploads/* www/webimages/

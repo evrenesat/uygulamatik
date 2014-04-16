@@ -1,0 +1,16 @@
+{% load i18n %}
+
+<tr>
+    <td><a href="/{{ LANGUAGE_CODE }}/admin/umatik/place/" target="mf"><img src="/media/images/ikonlar/magazalar.png"/>{% trans "Magazalar" %}</a></td>
+</tr>
+<tr>
+    <td><a href="/{{ LANGUAGE_CODE }}/admin/umatik/baseorder" target="mf"><img src="/media/images/ikonlar/supersiparis.png"/>{% trans "Super Siparis" %}</a></td>
+</tr>
+<tr>
+    <td><a href="/{{ LANGUAGE_CODE }}/admin/umatik/product/" target="mf"><img src="/media/images/ikonlar/urunler.png"/>{% trans "Urunler" %}</a></td>
+</tr>
+<tr>
+    <td><a href="/{{ LANGUAGE_CODE }}/admin/umatik/campaign/" target="mf"><img src="/media/images/ikonlar/kampanyalar.png"/>{% trans "Kampanyalar" %}</a></td>
+</tr>
+
+{% include "admin/app/mobilbase.html" %}

@@ -1,0 +1,68 @@
+<title>{{#t("Katılımcı Detayları")}}</title>
+<div data-role="fieldcontain" class="tmpl_wrapper pedli">
+    <div class="infoheader">
+        {{? it.logo}}
+        <img onerror="downloadOnDemand(this)"  src="{{#tv.static}}/exh_l_{{=it.logo}}"/>
+        {{?}}
+        <h3>{{=it.company}}</h3>
+        {{? it.email }}<a data-inline="true" data-role="button" href="mailto:{{=it.email}}">{{=it.email}}</a>{{?}}
+        {{? it.phone}}<a data-inline="true" data-role="button" href="tel:{{=it.phone }}">{{=it.phone }}</a>{{?}}
+
+    </div>
+    <div id="exhibitor_detail_pane">
+        <div id="exhibitor_description">
+
+            {{=it.profile }}
+        </div>
+        {{? it.files.length}}
+        <div id="exhibitor_files" style="display:none"><br>&nbsp;
+            <ul data-role='listview' data-split-icon="star">
+                {{~it.files :sid}}
+                <li>
+                    <a data-oid="{{=sid}}" class="cB">
+
+                        <img src="images/icons/{{=tv.exhibitorfiles[sid].icon}}-icon-48x48.png"/>
+
+                        <h3>{{=tv.exhibitorfiles[sid].title}} </h3>
+                    </a>
+                        <a data-oid="{{=sid}}" class="cB1"></a>
+
+                </li>
+
+                {{~}}
+            </ul>
+
+        </div>
+    {{?}}
+    </div>
+    <footer>
+        {{? it.files_enabled || it.favorites_enabled }}
+        <div data-role="navbar" data-position="fixed" data-tap-toggle="false">
+            <ul>
+
+
+
+                <li><a id="iB0" class="ui-btn-active" data-icon="forward">{{#t("Bilgi <br>&nbsp;")}}</a>
+                </li>
+                {{? it.files_enabled && it.files.length}}
+                <li><a id="iB1" data-icon="info">{{#t("Dosyalar <br>&nbsp;")}}</a></li>
+                {{?}}
+                {{? it.favorites_enabled }}
+
+                <li>
+                <a {{? it.infavorites==false }}style="display:none"{{?}} id="iB2" data-oid="{{=it.id}}" data-icon="delete">{{#t("Remove from <br> Favorites")}}</a>
+
+                <a {{? it.infavorites }}style="display:none"{{?}} id="iB3" data-oid="{{=it.id}}" data-icon="star">{{#t("Add to <br> Favorites")}}</a>
+                </li>
+
+                {{?}}
+
+                {{? it.node }}<li>
+                <a id="iB4" data-oid="{{=it.node}}" data-icon="grid">{{#t("Haritada<br>Göster")}}</a></li>
+                {{?}}
+            </ul>
+
+        </div>
+        {{?}}
+    </footer>
+</div>

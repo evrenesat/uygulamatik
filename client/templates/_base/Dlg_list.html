@@ -1,0 +1,14 @@
+<title>{{#t("Delegeler")}}</title>
+<ul data-role='listview' class="tmpl_wrapper">
+    {{for (id in delegates) { }}
+        <li>
+            <a data-oid="{{=id}}" class="cB">
+                {{? delegates[id].photo}}
+                <img src="{{#tv.static}}/dlg_xs_{{=delegates[id].photo}}" />
+                {{?}}
+                <h3>{{=delegates[id].firstname}} {{=delegates[id].lastname}}</h3>
+            </a>
+        </li>
+
+    {{}}}
+</ul>

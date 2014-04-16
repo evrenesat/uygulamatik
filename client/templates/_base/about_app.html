@@ -1,0 +1,68 @@
+<div class="tmpl_wrapper" xmlns="http://www.w3.org/1999/html">
+
+    <div style="text-align:center;" class='pedli'>
+        <h5 class='center' style="font-size:14px;">{{#tv.company }} Uygulama Demosu</h5>
+
+        <img src="images/about/logo.png"><br>
+        Elipsis Ltd.<br>
+        www.elipsis.com.tr
+        <br><br>
+
+        <div id="devinfo">
+            <h5>Geliştirici Bilgisi</h5><br>
+
+            {{~it.info :i}}
+            <b>{{=i[0]}} </b> : {{=i[1]}}<br>
+
+            {{~}}
+
+<hr class="hr1">
+            <h5>Geliştirici Ayarları</h5><br>
+            <br>
+            <br>
+            <!--<fieldset data-role="controlgroup" data-type="horizontal">-->
+            <form>
+
+
+                <label for="devpower"> Dvice.power: {{=it.devpower}}</label>
+                <select  id="devpower" data-inline="true">
+                    <option value="0" {{?it.devpower=='0'}}selected{{?}}>0</option>
+                    <option value="1" {{?it.devpower=='1'}}selected{{?}}>1</option>
+                    <option value="2" {{?it.devpower=='2'}}selected{{?}}>2</option>
+                    <option value="3" {{?it.devpower=='3'}}selected{{?}}>3</option>
+                    <option value="4" {{?it.devpower=='4'}}selected{{?}}>4</option>
+
+                    </select>
+                <label for="devcaps"> Dvice.caps: {{=it.devcaps}}</label>
+                <select  id="devcaps" data-inline="true">
+                    <option value="0" {{?it.devcaps=='0'}}selected{{?}}>0</option>
+                    <option value="1" {{?it.devcaps=='1'}}selected{{?}}>1</option>
+                    <option value="2" {{?it.devcaps=='2'}}selected{{?}}>2</option>
+                    <option value="3" {{?it.devcaps=='3'}}selected{{?}}>3</option>
+                    <option value="4" {{?it.devcaps=='4'}}selected{{?}}>4</option>
+
+                    </select>
+                <label for="devdigit"> Dvice.vdigit: {{=it.devdigit }}</label>
+                <select  id="devdigit" data-inline="true">
+                    <option value="1" {{?it.devdigit=='1'}}selected{{?}}>1</option>
+                    <option value="2" {{?it.devdigit=='2'}}selected{{?}}>2</option>
+                    <option value="3" {{?it.devdigit=='3'}}selected{{?}}>3</option>
+                    <option value="4" {{?it.devdigit=='4'}}selected{{?}}>4</option>
+
+                    </select>
+
+                <br><br>
+                <a  data-role="button" id="resetdb" data-icon="delete">Veritabanını Sıfırla</a>
+
+
+            </form>
+                    <!--<button data-theme="b"  data-icon="search" id="seteffect">set effect</button>-->
+<!--</fieldset>-->
+            <br>
+            <br>
+            <br>
+
+        </div>
+    </div>
+
+</div>

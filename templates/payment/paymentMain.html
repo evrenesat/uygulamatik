@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" />
+   <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+   <script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
+{#    <link rel="stylesheet" href="/resources/demos/style.css"/>#}
+    <script>
+        $(function () {
+            $("#tabs").tabs(
+                    {
+                        disabled: [1, 2]
+                    }
+            );
+{#            $("#tabs").tabs.disabled=[1, 2];#}
+        });
+    </script>
+    <link href="/media/cssjs/admin.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div class="paymentMain">
+    <div class="paymentHead">Ödeme</div>
+    <div class="paymentBody">
+
+
+        <div id="tabs">
+            <ul>
+                <li><a href="#tabs-1">Ücretsiz Beta Sürümü</a></li>
+                <li><a href="#tabs-2"><img src="/media/images/ikonlar/paypal.png"></a></li>
+                <li><a href="#tabs-3"><img src="/media/images/ikonlar/visa.png"></a></li>
+            </ul>
+            <div id="tabs-1">
+                <p>Beta sürecimiz boyunca tüm uygulamalarımız ücretsizdir.Şimdi sahip olun kazanın!</p>
+                <br>
+                <p><span class="uyg_adi_company">{{ appCompany }}</span> adına kayıtlı <span class="uyg_adi_company">{{ appName }}</span> uygulamanızı yayına sokmak istiyormusunuz? </p>
+
+                <a href="/payment/free/" id="btnAppRelease">Yayınla</a>
+
+            </div>
+            <div id="tabs-2">
+                tab 2 içerik
+            </div>
+            <div id="tabs-3">
+                tab 3 içerik
+            </div>
+        </div>
+
+    </div>
+</div>
+</body>

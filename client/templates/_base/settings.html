@@ -1,0 +1,32 @@
+<div class="tmpl_wrapper" xmlns="http://www.w3.org/1999/html">
+
+    <div class='pedli'>
+        <div class="settingpane">
+
+            {{#t("Uygulama temasını değiştirebilirsiniz.")}}
+            <div id="themeselect">
+                <a data-href="setTheme?theme=c" class="nav_button">
+                    <span>Açık</span>
+                    <img src="images/backgroundc.jpg" class="{{?it.theme=='c'}}selected{{?}}">
+                </a>
+                <a data-href="setTheme?theme=a" class="nav_button">
+                    <span>Koyu</span>
+                    <img src="images/background.jpg" class="{{?it.theme=='a'}}selected{{?}}">
+                </a>
+            </div>
+        </div>
+        <div class="settingpane">
+            <label for="downloadimages">{{#t("Daha hızlı gezinti için tüm ürün görsellerini cihazınızın önbelleğine kayededebilirsiniz.")}}
+                {{#t("Bağlantı hızınıza bağlı olarak bu işlem birkaç dakika sürebilir.")}}</label><br>
+            <a data-role="button" data-inline="true" id="downloadimages" data-icon="arrow-d">Görselleri Önbellekle</a>
+        </div>
+        <div class="settingpane">
+            <label for="effect"> {{#t("Sayfa geçiş efekti")}}:</label>
+            <select name="effect" id="effect"  data-role="slider">
+            	<option value="none" class="" {{?it.efekt=='none'}}selected{{?}}>{{#t("Kapalı")}}</option>
+            	<option value="fade" {{?it.efekt=='fade'||it.efekt==''}}selected{{?}}>{{#t("Açık")}}</option>
+            </select>
+
+        </div>
+
+    </div>

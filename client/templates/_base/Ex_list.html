@@ -1,0 +1,16 @@
+<title>{{#t("Katılımcılar")}}</title>
+<ul data-role='listview' class="tmpl_wrapper">
+    {{ for(id in exhibitors){ }}
+        <li>
+            <a data-oid="{{=id}}" class="cB">
+                {{? exhibitors[id].logo}}
+                <div class="ui-list-thmb-div">
+                    <img class="ui-btn-hover-a" src="{{#tv.static}}/exh_s_{{=exhibitors[id].logo}}" />
+                </div>
+                {{?}}
+                <h3>{{=exhibitors[id].company}}</h3>
+            </a>
+        </li>
+
+    {{}}}
+</ul>

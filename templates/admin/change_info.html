@@ -1,0 +1,17 @@
+{% extends "admin/base_form.html" %}
+{% load i18n %}
+
+
+{% block fieldset %}
+
+<div id="bilgi_degisiklikler_cvr">
+    <div class="form-row"><div><label class="required">{{ form.name.label }}:</label> {{ form.name }}</div></div>
+    <div class="form-row"><div><label class="required">{{ form.surname.label }}:</label> {{ form.surname }}</div></div>
+    <div class="form-row"><div><label class="required">{{ form.email.label }}:</label> {{ form.email }}</div></div>
+</div>
+
+{% endblock %}
+{% block save_label %}{% trans "Update my info" %}{% endblock %}
+
+
+

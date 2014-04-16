@@ -1,0 +1,51 @@
+<div class="tmpl_wrapper">
+
+        {{~it.parent_category :it}}
+            <h3>{{=it.name}} Kategorisi Ürünleri</h3>
+        {{~}}
+
+
+        {{? it.categories}}
+            <ul data-role='listview' data-filter="true">
+                {{~it.categories :it}}
+                    <li>
+                        <a data-href="#category_details?id={{=it.id}}" class="nav_button">
+                            {{=it.name}}
+                        </a>
+                    </li>
+                {{~}}
+            </ul>
+        {{?}}
+
+
+        {{? it.products}}
+            <ul data-role='listview' data-filter="true">
+                {{~it.products :it}}
+                <li>
+                    <a data-href="#product_details?id={{=it.id}}" class="nav_button">
+                        {{? it.image}}
+                            <img src="{{#tv.static}}/{{=it.image}}" style="height:100%;" />
+                        {{??}}
+                            <img src="images/no_image.jpg" />
+                        {{?}}
+                        <h3>{{=it.place__name}}</h3>
+                        <p><strong>{{=it.name}}</strong></p>
+                        {{? it.cut_price}}
+                        <p>
+                            <span style="margin-right:5%;font-weight:bold;font-size:1.2em;">{{=it.cut_price}} TL</span>
+                            <span style="margin-right:5%;"><strike>{{=it.price}} TL</strike></span>
+                            {{? it.discount_rate}}
+                            <span style="font-weight:bold;">%{{=it.discount_rate}} İndirim</span>
+                            {{?}}
+                        </p>
+                        {{??}}
+                        <p style="font-weight:bold;">{{=it.price}} TL</p>
+                        {{?}}
+                    </a>
+                </li>
+                {{~}}
+            </ul>
+        {{?}}
+
+
+</div>

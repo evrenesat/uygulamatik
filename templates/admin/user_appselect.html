@@ -1,0 +1,82 @@
+{% extends "admin/index.html" %}
+{% load i18n %}
+<!--suppress ALL -->
+
+{% block content %}{% endblock %}
+
+{% block n_user_content %}
+
+    <div id="n_user_cvr_div">
+        <div id="n_user_left_div">
+            <p>
+                {% trans "Select your app type and give it a name!" %}
+
+            </p>
+            <form method="post" action="">{% csrf_token %}
+                {% for i in avail_apptypes %}
+                    <div class="n_user_input_radio">
+                        <input class="n_user_input_radio" type="radio" value="{{ i.id }}" id="at{{ i.id }}" name="app_type">
+                            <label for="at{{ i.id }}"><div class="mobil_ikon">{% if i.icon %}<img src="{{ i.icon.url }}"/>{% endif %}</div>
+                            <div class="input_radio_name">{{ i }}</div></label>
+                        </input>
+                    </div>
+                {% endfor %}
+                <input id="uygulamanizin_adi"  type="text" name="app_name" placeholder="{% trans "Enter a name for your app" %}" />
+                <div id="uygulama_olustur_btn">
+                    <input id="uyg_olstur_btn" type="submit" name="app_submit" value="Create My App" />
+                </div>
+            </form>
+            {% if messages %}
+                <ul>
+                    {% for message in messages %}
+                        <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        </div>
+
+        <div id="n_user_right_div">
+            {% if avail_apps %}
+                <p>{% trans "Please select the app you want to edit" %}</p>
+                <ul>
+                    {% for i in avail_apps %}
+                        <li>
+                            <a class="uyg_guncelle" href="/{{ LANGUAGE_CODE }}/admin/application_details/{{ i.id }}">
+                                <div class="mobil_uyg_ikon">{% if i.icon %}<img src="{{ i.icon.url }}"/>{% endif %}</div>
+                                {{ i }}
+                            </a>
+                        </li>
+                    {% endfor %}
+                </ul>
+
+            {% else %}
+                {% if not request.user.is_authenticated %}
+                    <p>
+                        {% trans "Already have an account." %}<br>
+                        {% trans "Log in here" %}
+
+                    </p>
+                    <div id="uye_giris_yap_metin">
+                        {% trans "You can login here if you already have an account." %}
+                        {% trans "You can create an app at left side. Just select a package and give it a name." %}
+                    </div>
+                    <form method="post" action="">
+                        {% csrf_token %}
+                        {{ login_form.as_p }}
+                        <button id="uye_giris_yap" type="submit" name="login_submit">{% trans "Log in" %}</button>
+                    </form>
+                {% else %}
+                    <p>Uygulamatik' e hoşgeldiniz.
+                        <div id="hosgeldiniz_div">
+                            <br>
+                            Sitemize başarılı bir şekilde üye oldunuz fakat henüz bir uygulamanız bulunmamaktadır. Yeni Uygulama yarat menümüzü
+                            kullanarak hemen uygulamanızı yaratabilirsiniz.
+                        </div>
+                    </p>
+                {% endif %}
+            {% endif %}
+        </div>
+        <div style="clear: both">&nbsp;</div>
+    </div>
+
+{% endblock %}

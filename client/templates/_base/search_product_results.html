@@ -1,0 +1,34 @@
+<div data-role="fieldcontain">
+    <form method="get" action="#search_product_results">
+        <input type="search" name="keyword" id="search_product" />
+        <input type="submit" value="Ara" />
+    </form>
+</div>
+
+<h4>Arama Sonuçları</h4>
+<ul data-role='listview' class="tmpl_wrapper">
+
+        <li>
+            <a data-href="#product_details?id={{=it.id}}" class="nav_button">
+                {{? it.image}}
+                <img src="{{#tv.static}}/{{=it.image}}" />
+                {{??}}
+                <img src="images/no_image.jpg" />
+                {{?}}
+                <h3>{{=it.name}}</h3>
+                <p><strong>{{=it.place__name}}</strong></p>
+                {{? it.cut_price}}
+                <p>
+                    <span class="cut_price">{{=it.cut_price}} TL</span>
+                    <span class="price"><strike>{{=it.price}} TL</strike></span>
+                    {{? it.discount_rate}}
+                        <span class='discount_rate'>%{{=it.discount_rate}} İndirim</span>
+                    {{?}}
+                </p>
+                {{??}}
+                <p class="bold">{{=it.price}} TL</p>
+                {{?}}
+            </a>
+        </li>
+
+</ul>

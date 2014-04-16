@@ -1,0 +1,35 @@
+{% load i18n %}
+
+<tr>
+    <td>
+        <a href="/{{ LANGUAGE_CODE }}/admin/umatik/exhibitor/" target="mf"><img
+                src="/media/images/ikonlar/katilimcilar.png"/>{% trans "Exhibitors" %}</a>
+        <a class="subm" href="/{{ LANGUAGE_CODE }}/admin/umatik/exhibitorfiles/" target="mf"><img
+                src="/media/images/ikonlar/dosyalar.png"/>{% trans "Files" %}</a>
+
+    </td>
+</tr>
+<tr>
+    <td>
+
+        <a href="/{{ LANGUAGE_CODE }}/admin/umatik/sponsor/" target="mf"><img
+                src="/media/images/ikonlar/sponsorlar.png"/>{% trans "Sponsors" %}</a>
+        <a class="subm" href="/{{ LANGUAGE_CODE }}/admin/umatik/sponsortype/" target="mf"><img
+                src="/media/images/ikonlar/sponsor_type.png"/>{% trans "Sponsor Types" %}</a>
+
+
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="/{{ LANGUAGE_CODE }}/admin/umatik/event/" target="mf"><img
+                src="/media/images/ikonlar/etkinlikler.png"/>{% trans "Events" %}</a>
+        <a class="subm" href="/{{ LANGUAGE_CODE }}/admin/umatik/speaker/" target="mf"><img
+                src="/media/images/ikonlar/konusmacilar.png"/>{% trans "Speakers" %}</a>
+        <a class="subm" href="/{{ LANGUAGE_CODE }}/admin/umatik/delegate/" target="mf"><img
+                src="/media/images/ikonlar/delegeler.png"/>{% trans "Delegates" %}</a>
+    </td>
+</tr>
+
+
+{% include "admin/app/mobilbase.html" %}

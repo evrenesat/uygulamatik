@@ -1,0 +1,53 @@
+<div class="tmpl_wrapper">
+
+
+    {%include place_info%}
+
+    <div id='product_detail'>
+        <h3>{{=it.name}}</h3>
+        <div id="primgdiv">
+            {{? it.image}}
+            <img src="{{#tv.static}}/pr_lrg_{{=it.image}}" onerror="downloadOnDemand(this)"/>
+            {{?}}
+        </div>
+
+
+        <div>
+            <div id='product_price'>
+                {{? it.cut_price}}
+                <span>{{=it.cut_price}}</span>
+                <span class="cutprice">{{=it.price}}</span>
+                {{? it.discount_rate}}
+                <span class='discount_rate'>%{{=it.discount_rate}}</span>
+                {{?}}
+                {{??}}
+                <span>{{=it.price}}</span>
+                {{?}}
+            </div>
+            <a data-href="javascript:void(0);" class='share_link' data-subject="{{=it.name }}" data-message="Bu ürünü öneriyorum: {{=it.name }} "><img src="images/product/paylasButon.png"/></a>
+        </div>
+        <div class='clear'></div>
+        <p id='product_description'>{{=it.description}}</p>
+    </div>
+
+
+
+        <form data-ajax="false" action='#add_to_chart' method='get' class='static_form' id="add_to_chart_form">
+                        <div id="product_chart_wrapper" class="thm-{{=document.theme }}">
+                            <a class="hoverbutton" id='urun_sayi_azalt'></a>
+                            <a class="hoverbutton" id='urun_sayi_artir'></a>
+
+
+                            <div>
+                                <p id='urun_adet'><input type="text" name="count" value="1" maxlength="2"
+                                                         readonly="true"/><br>
+                                    Adet
+                                </p>
+                                <input type="hidden" name="product_id" value="{{=it.product_id}}"/>
+                            </div>
+                            <button data-role="none" type="submit" id="add_to_chart" />
+                        </div>
+        </form>
+
+
+</div>

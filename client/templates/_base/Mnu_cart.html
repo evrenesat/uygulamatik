@@ -1,0 +1,49 @@
+<div class="tmpl_wrapper pedli">
+    <div id="info_div">
+        {{#t("Your order items are listed below")}}
+        {{#t("You can complete your order after table selection. ")}}
+    </div>
+
+    <table class='kafecartable boxer standard_table generic_center'>
+        <tr>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+            <th>Ürün</th>
+            <th>Adet</th>
+            <th>Fiyat</th>
+            <th>&nbsp;</th>
+        </tr>
+        <tbody>
+        {{~it.cart :item}}
+        <tr id='tr_{{=item.id}}' class="menuitemstatus{{=item.status}}">
+            <td class="menuitemflag menuflag{{=item.status}}"><span></span></td>
+            <td><img class="cart_image" width="50" src="{{#tv.static}}/mi_s_{{=item.item.image}}"/></td>
+            <td data-oid="{{=item.id}}" class="cB2">{{=item.item.name}}</td>
+            <td>{{=item.count}}</td>
+            <td>{{=item.price}} TL</td>
+
+            <td>
+                <a data-oid="{{=item.id}}" class="cB"  data-role="button" data-icon="delete" data-iconpos="notext" data-mini="true" data-inline="true" data-corners="true" data-shadow="true" data-iconshadow="true"/>
+            </td>
+        </tr>
+        {{~}}
+
+        </tbody>
+    </table>
+
+<p style="text-align:center">
+    {{? selected_table}}
+    {{#t("Selected table")}}: {{=selected_table.name}}<a id="iB3" href="#" data-role="button"  data-icon="delete" data-mini="true" data-inline="true" data-theme="a">{{#t("Clear table selection")}}</a><br><br>
+    {{??}}
+    <a id="iB1" href="#" data-role="button"  data-icon="grid" data-inline="true" data-theme="a">{{#t("Select table with QRCode")}}</a>
+    <a id="iB2" href="#" data-role="button" data-icon="bars" data-inline="true" data-theme="a">{{#t("Select table from list")}}</a>
+    {{?}}
+    <a id="iB0" href="#" data-role="button" {{? !selected_table}}class="ui-disabled"{{?}}  data-icon="check" data-theme="a">{{#t("Place order")}}</a>
+</p>
+
+</div>
+
+
+
+
+

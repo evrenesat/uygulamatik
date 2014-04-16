@@ -1,0 +1,19 @@
+<title>{{#t("Etkinlikler")}}</title>
+<ul data-role='listview' class="tmpl_wrapper">
+        {{~events :day_event:didx}}
+        <li data-role="list-divider">{{=day_event[0]}}</li>
+        {{~day_event[1] :ev:idx}}
+            <li>
+                <a data-oid="{{? ev.didx}}{{=ev.didx}}{{??}}{{=didx}}{{?}}" data-idx="{{? ev.idx}}{{=ev.idx}}{{??}}{{=idx}}{{?}}" class="cB">
+                    {{? ev.image}}
+                    <img src="{{#tv.static}}/evnt_xs_{{=ev.image}}" />
+                    {{?}}
+                    <h3>{{=ev.title}}</h3>
+                    <p>{{=ev.start}} - {{=ev.end}} </p>
+                    <p>{{=ev.description}}</p>
+                    <p>{{=ev.location}}</p>
+                </a>
+            </li>
+        {{~}}
+    {{~}}
+</ul>

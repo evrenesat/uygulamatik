@@ -1,0 +1,44 @@
+{% load i18n %}
+
+<div id="uygulama_adi">{{ app }}</div>
+
+<div id="home_btn_div_cvr">
+    <a id="admn_anasayfa_lnk" href="/admin/">
+        <div id="home_btn_div">
+        </div>
+    </a>
+    <div id="home_metin">
+        <div id="id">APP ID:</div>
+        <div id="id_id">{{ app.id }}</div>
+    </div>
+</div>
+
+
+
+<div class="module" style="border:none;">
+    <table style="width:180px;" class="module_list">
+{#        <tr>#}
+{#            <td>#}
+{#                <a class="common" href="/{{ LANGUAGE_CODE }}/admin/support/support/" target="mf">#}
+{#                    <strong>{% trans "Sık Sorulan Sorular" %}</strong>#}
+{#                </a>#}
+{#            </td>#}
+{#        </tr>#}
+{#        <tr>#}
+{#            <td>#}
+{#                <a class="common" href="/{{ LANGUAGE_CODE }}/admin/support/support/" target="mf">#}
+{#                    <strong>{% trans "Müşteri Hizmetleri" %}</strong>#}
+{#                </a>#}
+{#            </td>#}
+{#        </tr>#}
+        <tr>
+            <td>
+                <a class="common" id="uygulama_detay_link" href="/{{ LANGUAGE_CODE }}/admin/umatik/application/{{ request.session.appid }}/" target="mf">
+                    <strong>{% trans "Uygulama Ayarları" %}</strong>
+                </a>
+            </td>
+        </tr>
+        {% include app_template %}
+    </table>
+</div>
+
