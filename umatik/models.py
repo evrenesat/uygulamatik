@@ -1152,7 +1152,7 @@ class Content(MPTTModel, UModel):
     def make_main(self):
         if self.main:
             if not self.module_selection:
-                module = Module.objects.filter(codename='cms')[0]
+                module = Module.objects.filter(codename='Cms')[0]
                 xtra = json.dumps({'oid': self.id})
                 icon = Icon.objects.filter(keywords__startswith='placeholder')
                 icon = icon[0] if icon else None

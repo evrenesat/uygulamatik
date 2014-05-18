@@ -136,6 +136,7 @@ MIDDLEWARE_CLASSES = (
 
     # 'middleware.dil.MultilingualURLMiddleware',
     'django.middleware.cache.FetchFromCacheMiddleware',
+    'umatik.crossdomainxhrmiddleware.XsSharing',
 
 )
 TEMPLATE_CONTEXT_PROCESSORS = (
@@ -148,6 +149,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     "django.core.context_processors.request",
     "django.contrib.messages.context_processors.messages",
     'umatik.preprocessors.available_languages',
+
 )
 
 ROOT_URLCONF = 'uygulamatik.urls'
@@ -207,13 +209,17 @@ LOGGING = {
 CACHE_MIDDLEWARE_ANONYMOUS_ONLY = True
 CACHE_MIDDLEWARE_KEY_PREFIX = 'ghh'
 CACHE_MIDDLEWARE_SECONDS = 99999
-CACHES = {
-    'default': {
-        'BACKEND': 'django.core.cache.backends.memcached.MemcachedCache',
-        'LOCATION': '127.0.0.1:11211',
-        #        'LOCATION': 'unix:/home/sleytr/memcached.sock',
-    }
-}
+# CACHES = {
+#     'default': {
+#         'BACKEND': 'redis_cache.cache.RedisCache',
+#         'LOCATION': '127.0.0.1:6379:8',
+#         'OPTIONS': {
+#             # 'DB': 1,
+#             # 'PARSER_CLASS': 'redis.connection.HiredisParser',
+#             'CLIENT_CLASS': 'redis_cache.client.DefaultClient',
+#         },
+#     },
+# }
 
 CKEDITOR_MEDIA_URL = '/media'
 CKEDITOR_CONFIGS = {

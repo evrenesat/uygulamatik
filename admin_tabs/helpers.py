@@ -390,4 +390,4 @@ class TabbedModelAdmin(ModelAdmin):
         css = {
             "all": ("/media/css/jquery-ui-1.8.22.custom.css", "/media/css/tabs.css")
         }
-        js = ("/media/js/jquery-ui-1.8.22.custom.min.js",)  # Note: was modified to use django.jQuery and not jQuery
+        js = ("/media/js/jquery-ui-1.10.1.custom.min.js",)  # Note: was modified to use django.jQuery and not jQuery

@@ -6,16 +6,17 @@ Mnu=
     render : (data=null, callback)-> display.renderPage(data, callback, @)
     bind : (query, callback)-> utils.bind(query, callback, @)
 
-    status_messages:0: trans.t 'Selected'
-                    10: trans.t 'Ordered'
-                    20: trans.t 'Preparing'
-                    30: trans.t 'Ready'
-                    40: trans.t 'On the road'
-                    50: trans.t 'On the table'
-                    90: trans.t 'Return'
-                    91: trans.t 'Sold out'
-                    95: trans.t 'Cancel requested'
-                    96: trans.t 'Canceled'
+    status_messages:
+        0: trans.t 'Selected'
+        10: trans.t 'Ordered'
+        20: trans.t 'Preparing'
+        30: trans.t 'Ready'
+        40: trans.t 'On the road'
+        50: trans.t 'On the table'
+        90: trans.t 'Return'
+        91: trans.t 'Sold out'
+        95: trans.t 'Cancel requested'
+        96: trans.t 'Canceled'
 
     get_table:->
         id = udb.getit('mnu_table',0)
