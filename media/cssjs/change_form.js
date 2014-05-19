@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    $('div.inline-related tr.add-row a').live('click', function () {
+    $('div.inline-related tr.add-row a').on('click', function () {
         parent.mainframe.load();
     });
 
@@ -61,7 +61,7 @@ $(document).ready(function () {
 
 
     // tabular inline icin ckeditor gizleme
-    $('tr.add-row a').live('click', function () {
+    $('tr.add-row a').on('click', function () {
         $('div.tabular textarea').css({'visibility':'visible', 'display':'block'});
         $('div.tabular span[id^=cke_id]').remove();
     });

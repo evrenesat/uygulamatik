@@ -13,6 +13,8 @@ start_points=
 
     'Pgl':  [Page, Page.list]
 
+    'Cms':  [Cms, Cms.detail]
+
     'Phg':  [Pht, Pht.gallery]
 
     'Nwl':  [Nws, Nws.list]

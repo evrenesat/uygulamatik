@@ -51,7 +51,8 @@
                 {% endfor %}
             </div>
             <script type="text/javascript">
-                (function ($) {
+                $(function () {
+
                     $('#tabs').tabs({
                         {% if add %}
                             // when adding, don't select a tab by default, we'll do it ourselves
@@ -87,7 +88,8 @@
                             $('#tabs #for_' + this.id).addClass("errortab");
                         }
                     });
-                })(django.jQuery);
+
+                })
             </script>
             <!-- end admin_tabs stuff -->
 

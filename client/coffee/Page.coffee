@@ -5,7 +5,7 @@ Page=
         if udb.cache["pages"]["none"]?
             display.showMessage 'Kayıt bulunamadı'
         else
-            @render 'template':'Page_list', 'data': {'pages': udb.cache["pages"]}, ()=>
+            @render {'template':'Page_list', 'data': {'pages': udb.cache["pages"]}}, ()=>
                 @bind cB, @detail
 
 
