@@ -1,6 +1,6 @@
 #python specific
 *.pyc
-django
+./django
 local_settings.py
 media/uploads/*
 client/extern.js
