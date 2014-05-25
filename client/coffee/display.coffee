@@ -6,6 +6,7 @@ display =
     templates:{}
 
 
+
     fetchTemplate: ->
         # tüm şablonu çeker, parcalar boler, derler, onbellekler
 #        if document.on_the_web
@@ -13,6 +14,7 @@ display =
         $.get settings.TEMPLATES_PATH, (data) =>
             window['t'] = trans.t
             window['tv'] = udb.cache
+
             if document.on_the_web
                 re = new RegExp settings.STORAGE_PATH, "g"
                 data = data.replace re, settings.STORAGE_PATH
@@ -55,6 +57,7 @@ display =
             clearInterval Paginator.watcher_watcher
             Paginator.stopScrollWatch()
         new_page = true
+        force_new_page = false
         page_id = display.current_template
         display.render_callback = callback
         display.that = that or views #TODO FIX this hard coded 'views' shit!!!
@@ -69,11 +72,15 @@ display =
             if data['pagechange_options']
                 pagechange_options = data['pagechange_options']
                 delete data['pagechange_options']
+            if data['page_id']
+                page_id = data['page_id']
+                delete data['page_id']
             if data['page_title']
                 display.set_title = data['page_title']
                 delete data['page_title']
             if data['template']
                 page_id = data['template']
+                template = data['template']
                 delete data['template']
             if data['data']
                 data = data['data']
@@ -83,26 +90,35 @@ display =
             data = {}
         data['tv'] = udb.cache
         data['t'] = trans.t
+        data['assert'] = utils.assert
         data['fdate'] = utils.format_date
 
         console.log "renderPage final pageid: #{page_id} new_page: #{new_page} "
 
-        temp = display.templates[page_id](data)
+        temp = display.templates[template](data)
+
 
         if new_page
 #            $('div.ui-page-active').hide('fast')
             existing = $('div#' + page_id)
             #            console.log "existence", existing
+#            if existing.length and force_new_page
+#                console.log "WE NEED FORCE NEW"
+#                existing.removeClass('ui-page-active')
             if existing.length
                 new_page = not existing.hasClass 'ui-page-active'
                 console.log "hala yenimi", new_page
-        if new_page
+        if new_page or force_new_page
 #            display.shade.addClass('on')
-            if existing then existing.remove()
+            if existing and not force_new_page
+                existing.remove()
+            if existing and force_new_page
+                $("##{document.page_id} div.tmpl_wrapper").html($(temp).find(".tmpl_wrapper")).trigger("create")
             $(document.body).append temp
 #            console.log("ABOOOOOO", temp)
             $.mobile.changePage "##{page_id}", pagechange_options
         else
+#            $.mobile.navigate(page_id + '_' + udb.get_random())
             $("##{document.page_id} div.tmpl_wrapper").html($(temp).find(".tmpl_wrapper")).trigger("create")
             display.afterRenderJobs(page_id)
 #        $("div[data-role='footer']").css({'position':'relative'})

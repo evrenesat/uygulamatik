@@ -6,7 +6,7 @@ Evnt=
         if udb.cache["sponsors"]["none"]?
             display.showMessage 'Kayıt bulunamadı'
         else
-            @render  'template':'Spn_list', 'data': udb.cache["sponsortypes"], ()=>
+            @render  {'template':'Spn_list', 'data': udb.cache["sponsortypes"]}, ()=>
                 @bind cB, @spn_detail
 
 
@@ -20,7 +20,7 @@ Evnt=
         if udb.cache["delegates"]["none"]?
             display.showMessage 'Kayıt bulunamadı'
         else
-            @render 'template':'Dlg_list', 'delegates':udb.cache["delegates"], ()=>
+            @render {'template':'Dlg_list', 'delegates':udb.cache["delegates"]}, ()=>
                 @bind cB, @dlg_detail
 
     dlg_detail:(id)->
@@ -53,7 +53,7 @@ Evnt=
 
     exhibitors: ()->
         if not (udb.cache["exhibitors"]["none"]? and udb.cache["exhibitors"]["none"])
-            @render 'template': 'Ex_list', 'exhibitors': udb.cache["exhibitors"], ()=>
+            @render {'template': 'Ex_list', 'exhibitors': udb.cache["exhibitors"]}, ()=>
                 @bind cB, @exh_detail
         else
             display.showMessage 'Kayıt bulunamadı'
@@ -121,7 +121,7 @@ Evnt=
             display.showMessage 'Kayıt bulunamadı'
         else
             events = []
-            @render 'template':'Evnt_list', 'events': udb.cache["events"], ()=>
+            @render {'template':'Evnt_list', 'events': udb.cache["events"]}, ()=>
                 @bind cB, @event_detail
 
 
@@ -191,7 +191,7 @@ Evnt=
             display.showMessage 'Kayıt bulunamadı'
         else
             speakers = (udb.cache["speakers"][keys] for keys in Object.keys(udb.cache["speakers"]))
-            @render 'template':'Evnt_speakers', 'speakers': speakers, ()=>
+            @render {'template':'Evnt_speakers', 'speakers': speakers}, ()=>
                 @bind cB, @show_speaker
 
     description:->

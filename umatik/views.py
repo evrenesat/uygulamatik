@@ -199,6 +199,7 @@ def get_all_records(request, appid):
                 'sort': ms.order,
                 'visible': ms.visible,
                 'icon': ms.customicon.name if ms.customicon else ms.icon.getFileName(),
+                'id': ms.get_xtra().get('oid',''),
                 }
                for ms in app.moduleselection_set.select_related().filter(active=True)]
     modules.extend([{'codename': module.codename, 'title': '', 'visible': '', 'icon': ''} for module in

@@ -239,7 +239,10 @@ class ModuleSelection(models.Model):
         #        get_latest_by = "timestamp"
         #verbose_name = _('')
         #verbose_name_plural = _('')
-        unique_together = ('module', 'app')
+        unique_together = ('module', 'app', 'xtra')
+
+    def get_xtra(self):
+        return json.loads(self.xtra) if self.xtra else {}
 
     def __unicode__(self):
         return '%s' % (self.module.name,)

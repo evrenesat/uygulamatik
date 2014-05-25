@@ -1,4 +1,9 @@
 utils =
+
+    assert: (condition, message)->
+        if not condition
+            throw message or "Assertion failed"
+
     getDocSize : ()->
         docsize = "@doc_height:#{$(window).height()}px;@doc_width:#{$(window).width()}px;"
 

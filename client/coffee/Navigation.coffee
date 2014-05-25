@@ -105,7 +105,7 @@ Nav=
                     node_cords.push 'id': path, 'left': coordinates[path]['x'], 'top': coordinates[path]['y']
             console.log "SHOWLOCATION, path nodes :: ", paths
 
-            @render 'template':'show_location', 'map': map,  'nodes': node_cords, 'pagechange_options': {'transition': 'none'}, ()=>
+            @render {'template':'show_location', 'map': map, 'nodes': node_cords, 'pagechange_options': {'transition': 'none'}},()=>
                 $("#nd#{paths[0]}").addClass('startNode')
                 $("#nd#{paths[(paths.length)-1]}").addClass('endNode')
 

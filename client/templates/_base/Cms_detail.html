@@ -1,11 +1,36 @@
 
-        <div data-role="fieldcontain" class="tmpl_wrapper pedli">        {{? image}} <img
+        <div data-role="fieldcontain" class="tmpl_wrapper">        {{? image}} <img
                 src="{{#tv.static}}/cng_lrg_{{=image}}" onerror="downloadOnDemand(this)" class="full_width"/> {{?}} <h3
                 class="center details_header">{{=title}}</h3>
 
             <p class="justify">{{=detail}}</p>
 
-            <div class="center_element"><a data-oid="{{=id}}" data-otyp="news" class='SL'><span>{{#t("Paylaş")}}</span>
-                <img src="images/share.png" class="share"/></a></div>
+
+
+
+            <!--div class="center_element"><a data-oid="{{=id}}" data-otyp="news" class='SL'><span>{{#t("Paylaş")}}</span>
+                <img src="images/share.png" class="share"/></a></div-->
+
+            {{? children.length}}
+
+                 <ul data-role='listview'>
+                     {{~children :sid}}
+                     <li>
+                         <a data-oid="{{=sid}}" class="cB">
+
+                                 <!--img src="images/icons/{{=tv.cms[sid].icon}}-icon-48x48.png"/-->
+
+                             <h3>{{=tv.cms[sid].title}} </h3>
+                         </a>
+
+                     </li>
+
+                     {{~}}
+                 </ul>
+
+
+         {{?}}
+
+
         </div>
 
