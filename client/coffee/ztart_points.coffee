@@ -26,3 +26,9 @@ start_points=
 
 
 
+for key, val of start_points
+    val[0].render = (data=null, callback)->
+        display.renderPage(data, callback, @)
+
+    val[0].bind = (query, callback)->
+        utils.bind(query, callback, @)
