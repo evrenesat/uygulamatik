@@ -9,7 +9,8 @@ Base=
         @set_header()
         @set_module_icons()
         @show_optional_icons()
-        $(cB).on 'tap', (e) ->
+#        debugger
+        $(cB).on tapEv, (e) ->
             e.stopImmediatePropagation()
             e.preventDefault()
             mdl = start_points[$(this).data('fn')]

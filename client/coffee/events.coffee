@@ -127,10 +127,10 @@ $(window).bind 'uygulamatik_ready', () ->
         $(this).addClass 'etkin'
         setTimeout((()=>$(this).removeClass 'etkin'), 400)
 
-    $('a#gohome').live 'tap', (e) ->
+    $('a#gohome').live tapEv, (e) ->
         gotohome()
 
-#    $('ul.mainmenu li').live 'tap', (e) ->
+#    $('ul.mainmenu li').live tapEv, (e) ->
 #        e.stopImmediatePropagation()
 #        e.preventDefault()
 #        command = $(this).find('a').data('href')

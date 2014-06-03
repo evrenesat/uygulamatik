@@ -240,3 +240,9 @@ utils =
     #                window.location.reload()
     #    $("<link rel='stylesheet' type='text/css' href='css/d#{getClosestResolution()}.css'>").appendTo 'head'
 
+
+$.mobile =
+    loading : ->
+        console.log arguments
+    changePage: ->
+        console.log arguments

@@ -249,7 +249,7 @@ Nav=
             console.log "Calculated Squares"
             console.log @squares
         mapimg.on 'touchstart',(e)=>@recordTouches(e)
-        mapimg.on 'tap', (e)=>@processTouch(e)
+        mapimg.on tapEv, (e)=>@processTouch(e)
 
     recordTouches: (e)->
         ###

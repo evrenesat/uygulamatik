@@ -96,6 +96,13 @@ display =
         console.log "renderPage final pageid: #{page_id} new_page: #{new_page} "
 
         temp = display.templates[template](data)
+        display.renderCache[template] = temp
+        PUSH
+          url        : document.location.href + template
+          hash       : '#' + template
+          timeout    : undefined
+          transition : 'slide-in'
+
 
 
         if new_page
@@ -152,11 +159,12 @@ display =
             console.log e.message
 
     showLoadingMessage: (msg = 'Yükleniyor', autohide_timeout = 0) ->
-        setTimeout ()=>
-            $.mobile.loading 'hide'
-            $.mobile.loading 'show', theme: document.theme, text: msg, textVisible: true
-            if autohide_timeout then setTimeout (()=>$.mobile.loading 'hide'), autohide_timeout
-        ,0
+        console.log msg
+#        setTimeout ()=>
+#            $.mobile.loading 'hide'
+#            $.mobile.loading 'show', theme: document.theme, text: msg, textVisible: true
+#            if autohide_timeout then setTimeout (()=>$.mobile.loading 'hide'), autohide_timeout
+#        ,0
 
     showMessage: (msg, auto = true, html = '') ->
         if msg
@@ -165,12 +173,12 @@ display =
 
     showMessageBase: (msg, auto = true, html = '') ->
         console.log msg
-        $.mobile.loading 'hide'
-        $.mobile.loading 'show', 'theme': document.theme, 'textVisible': true,
-        'textonly': true, 'text': msg, 'html': html
-        if auto
-            timeout = if typeof auto == "number"  then auto else 4000
-            setTimeout (()=>$.mobile.loading 'hide'), timeout
+#        $.mobile.loading 'hide'
+#        $.mobile.loading 'show', 'theme': document.theme, 'textVisible': true,
+#        'textonly': true, 'text': msg, 'html': html
+#        if auto
+#            timeout = if typeof auto == "number"  then auto else 4000
+#            setTimeout (()=>$.mobile.loading 'hide'), timeout
 
     insert_search: (page_id)->
         searchButton = $("div##{page_id} .searchbutton")
@@ -220,6 +228,22 @@ display =
                 return if html then html.substring(0, 1) else ''
             })
 
+    renderCache: {}
+    XMLHttpRequest:->
+        x =
+            url: ''
+            abort: ->
+            setRequestHeader: ->
+            status: 200
+            readyState: 4
+            responseText: ''
+            open: (method, url)->
+                @url = url
+            send: ->
+                @responseText = display.renderCache[@url.split('#')[1]]
+                @onreadystatechange()
+
+        return x
 
 
 

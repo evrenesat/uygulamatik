@@ -4,54 +4,58 @@
 EMPTY = {}
 
 ###@const###
-aP = 'div.ui-page-active '
+aP = 'div '
 
 
 
 ###@const###
-cB = '.ui-page-active .cB'
+cB = '.cB'
 
 ###@const###
-cB1 = 'div.ui-page-active .cB1'
+cB1 = 'div .cB1'
 
 ###@const###
-cB2 = 'div.ui-page-active .cB2'
+cB2 = 'div .cB2'
 
 ###@const###
-cB3 = 'div.ui-page-active .cB3'
+cB3 = 'div .cB3'
 
 ###@const###
-cB4 = 'div.ui-page-active .cB4'
+cB4 = 'div .cB4'
 
 
 
 
 ###@const###
-iB0 = 'div.ui-page-active a#iB0'
+iB0 = 'div a#iB0'
 
 ###@const###
-iB1 = 'div.ui-page-active a#iB1'
+iB1 = 'div a#iB1'
 
 ###@const###
-iB2 = 'div.ui-page-active a#iB2'
+iB2 = 'div a#iB2'
 
 ###@const###
-iB3 = 'div.ui-page-active a#iB3'
+iB3 = 'div a#iB3'
 
 ###@const###
-iB4 = 'div.ui-page-active a#iB4'
+iB4 = 'div a#iB4'
 
 ###@const###
-iB5 = 'div.ui-page-active a#iB5'
+iB5 = 'div a#iB5'
 
 ###@const###
-iB6 = 'div.ui-page-active a#iB6'
+iB6 = 'div a#iB6'
 
 ###@const###
-iB7 = 'div.ui-page-active a#iB7'
+iB7 = 'div a#iB7'
 
 ###@const###
-iB8 = 'div.ui-page-active a#iB8'
+iB8 = 'div a#iB8'
 
 ###@const###
-iB9 = 'div.ui-page-active a#iB9'
+iB9 = 'div a#iB9'
+
+###@const###
+tapEv = 'click'
+

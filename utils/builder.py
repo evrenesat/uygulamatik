@@ -65,7 +65,8 @@ VENDOR_JS = [
     'bios.js',
     #burdan sonrasi otomatik yuklenebilir
     'json-serialization.js',
-    'jquery.mobile.min.js',
+    'ratchet.js',
+    # 'jquery.mobile.min.js',
     'less-1.3.0.min.js',
     'jed.js',
     'klass.min.js',
@@ -391,15 +392,16 @@ class Builder:
         self.do_settings()
         isok, stout = self._sh("cat %s > %s" % (' '.join(VENDOR_JS), self.current['www_path']))
         os.chdir(join(WWW_DIR, 'js'))
-        compile_result = self._sh(COMPRESS_LIB_CMD)
-        if compile_result[0]:
-            os.remove('lib.js')
-            move('lib_out.js', 'lib.js')
-            result = 'SUCCESS'
-        else:
-            result = compile_result[1][:100]
-            print compile_result
-        self._show_message("compress lib.js %s" % result, 10, 1, 1)
+        #BYPASS LIB COMPRESS
+        # compile_result = self._sh(COMPRESS_LIB_CMD)
+        # if compile_result[0]:
+        #     os.remove('lib.js')
+        #     move('lib_out.js', 'lib.js')
+        #     result = 'SUCCESS'
+        # else:
+        #     result = compile_result[1][:100]
+        #     print compile_result
+        # self._show_message("compress lib.js %s" % result, 10, 1, 1)
 
         self._mark_rebuild(isok)
         self.sync()

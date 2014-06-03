@@ -248,6 +248,7 @@
   // ==========================================
 
   var touchend = function (e) {
+//    debugger
     var target = getTarget(e);
 
     if (!target) {
@@ -360,7 +361,8 @@
       xhr.abort();
     }
 
-    xhr = new XMLHttpRequest();
+    xhr = new display.XMLHttpRequest();
+
     xhr.open('GET', options.url, true);
     xhr.setRequestHeader('X-PUSH', 'true');
 
