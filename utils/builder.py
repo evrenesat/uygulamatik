@@ -27,7 +27,8 @@ except:
 
 #Custom tags for precomplation of html templates
 TAGS = {'head-left': [], 'head-right': [], 'head-extras': [], 'page-extras': [], 'footer': [],
-        'title': ['<h1>&nbsp;</h1>']}
+        # 'title': ['<h1>&nbsp;</h1>']
+}
 
 PROJ_DIR = join(os.path.dirname(os.path.abspath(__file__)), '../')
 BASE_DIR = join(os.path.dirname(os.path.abspath(__file__)), '../client/')
